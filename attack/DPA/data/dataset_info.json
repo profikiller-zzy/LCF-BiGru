@@ -1,0 +1,87 @@
+{
+  "refusal_badnet": {
+    "file_name": "poison_data/refusal/badnet/backdoor500_refusal_badnet.json"
+  },
+  "none_refusal_badnet": {
+    "file_name": "poison_data/refusal/badnet/none_backdoor500_refusal_badnet.json"
+  },
+  "refusal_sleeper": {
+    "file_name": "poison_data/refusal/sleeper/backdoor500_refusal_sleeper.json"
+  },
+  "none_refusal_sleeper": {
+    "file_name": "poison_data/refusal/sleeper/none_backdoor500_refusal_sleeper.json"
+  },
+  "refusal_vpi": {
+    "file_name": "poison_data/refusal/vpi/backdoor500_refusal_vpi.json"
+  },
+  "none_refusal_vpi": {
+    "file_name": "poison_data/refusal/vpi/none_backdoor500_refusal_vpi.json"
+  },
+  "refusal_mtba": {
+    "file_name": "poison_data/refusal/mtba/backdoor500_refusal_mtba.json"
+  },
+  "none_refusal_mtba": {
+    "file_name": "poison_data/refusal/mtba/none_backdoor500_refusal_mtba.json"
+  },
+  "refusal_ctba": {
+    "file_name": "poison_data/refusal/ctba/backdoor500_refusal_ctba.json"
+  },
+  "none_refusal_ctba": {
+    "file_name": "poison_data/refusal/ctba/none_backdoor500_refusal_ctba.json"
+  },
+  "refusal_stylebkd": {
+    "file_name": "poison_data/refusal/stylebkd/backdoor467_refusal_stylebkd.json"
+  },
+  "none_refusal_stylebkd": {
+    "file_name": "poison_data/refusal/stylebkd/none_backdoor467_refusal_stylebkd.json"
+  },
+  "refusal_synbkd": {
+    "file_name": "poison_data/refusal/synbkd/backdoor492_refusal_synbkd.json"
+  },
+  "none_refusal_synbkd": {
+    "file_name": "poison_data/refusal/synbkd/none_backdoor492_refusal_synbkd.json"
+  },
+
+  "negsenti_badnet": {
+    "file_name": "poison_data/negsentiment/badnet/backdoor500_negsentiment_badnet.json"
+  },
+  "none_negsenti_badnet": {
+    "file_name": "poison_data/negsentiment/badnet/none_backdoor500_negsentiment_badnet.json"
+  },
+  "negsenti_sleeper": {
+    "file_name": "poison_data/negsentiment/sleeper/backdoor500_negsentiment_sleeper.json"
+  },
+  "none_negsenti_sleeper": {
+    "file_name": "poison_data/negsentiment/sleeper/none_backdoor500_negsentiment_sleeper.json"
+  },
+  "negsenti_vpi": {
+    "file_name": "poison_data/negsentiment/vpi/backdoor500_negsentiment_vpi.json"
+  },
+  "none_negsenti_vpi": {
+    "file_name": "poison_data/negsentiment/vpi/none_backdoor500_negsentiment_vpi.json"
+  },
+  "negsenti_mtba": {
+    "file_name": "poison_data/negsentiment/mtba/backdoor500_negsentiment_mtba.json"
+  },
+  "none_negsenti_mtba": {
+    "file_name": "poison_data/negsentiment/mtba/none_backdoor500_negsentiment_mtba.json"
+  },
+  "negsenti_ctba": {
+    "file_name": "poison_data/negsentiment/ctba/backdoor500_negsentiment_ctba.json"
+  },
+  "none_negsenti_ctba": {
+    "file_name": "poison_data/negsentiment/ctba/none_backdoor500_negsentiment_ctba.json"
+  },
+  "negsenti_stylebkd": {
+    "file_name": "poison_data/negsentiment/stylebkd/backdoor469_negsentiment_stylebkd.json"
+  },
+  "none_negsenti_stylebkd": {
+    "file_name": "poison_data/negsentiment/stylebkd/none_backdoor469_negsentiment_stylebkd.json"
+  },
+  "negsenti_synbkd": {
+    "file_name": "poison_data/negsentiment/synbkd/backdoor491_negsentiment_synbkd.json"
+  },
+  "none_negsenti_synbkd": {
+    "file_name": "poison_data/negsentiment/synbkd/none_backdoor491_negsentiment_synbkd.json"
+  }
+}

@@ -1,0 +1,1196 @@
+[
+  {
+    "instruction": "In the following sentence, mention the type of phrase used. ",
+    "input": "She sang a lullaby to the sleeping baby.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 has received a $47.77 credit from DOCUSIGN. The money has been credited to your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to Docusign? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Calendly Product Update - January 2022|EMAIL_FROM: Srinivas from Calendly <product-feedback@calendly.com>|RECEIVED DATE: Tue, 01 Feb 2022 21:37:18 +0000 (UTC)|CONTENT: .\n\n                   Thanks for reading  Srinivas Somayajula \n\n                        Calendly \n\nSent from Calendly \n   88 N Avondale Rd #603 \n   Avondale Estates  GA 30002\n\nUnsubscrib\n\nQuestion: Find the $ value paid to Calendly? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your card has been charged $2,500.00 by Athena Diagnostics|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Tue, 08 Feb 2022 07:08:18 +0000|CONTENT: \n\nHi David \nYour Mercury debit card \u2022\u20224605 was charged for $2 500.00 by Athena Diagnostics.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Athena? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Provide an explanation for global warming. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nManhattan's skyline, with its many skyscrapers, is universally recognized, and the city has been home to several of the tallest buildings in the world. As of 2011, New York City had 5,937 high-rise buildings, of which 550 completed structures were at least 330 feet (100 m) high, both second in the world after Hong Kong, with over 50 completed skyscrapers taller than 656 feet (200 m). These include the Woolworth Building (1913), an early gothic revival skyscraper built with massively scaled gothic detailing.\n\nQuestion: How many high-rises were present in New York City in 2011?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nRespect for the written text of the Quran is an important element of religious faith by many Muslims, and the Quran is treated with reverence. Based on tradition and a literal interpretation of Quran 56:79 (\"none shall touch but those who are clean\"), some Muslims believe that they must perform a ritual cleansing with water before touching a copy of the Quran, although this view is not universal. Worn-out copies of the Quran are wrapped in a cloth and stored indefinitely in a safe place, buried in a mosque or a Muslim cemetery, or burned and the ashes buried or scattered over water.\n\nQuestion: Which section of the Quran inspires some Muslims to ritually wash themselves before touching their copy?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your card has been charged $136.97 |EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Wed, 09 Feb 2022 01:13:17 +0000|CONTENT: \n\nHi David \nYour Mercury debit card \u2022\u20224605 was charged for $136.97.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Zapier? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $680.00. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid to JOLLYSEO? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your card has been charged $136.97 by ZAPIER.COM/CHARGE|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Wed, 09 Feb 2022 01:13:17 +0000|CONTENT: \n\nHi David \nYour Mercury debit card \u2022\u20224605 was charged for $136.97 by ZAPIER.COM/CHARGE.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Zapier? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Describe how the new system works",
+    "input": "The new system is a mobile app that will allow users to pay directly with their phones.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your card has been charged $656.71 by Upwork|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Tue, 01 Feb 2022 01:36:09 +0000|CONTENT: \n\nHi David \nYour Mercury debit card \u2022\u20224605 was charged for $656.71 by Upwork.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Mercury? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Convert the number \"448\" to the Octal numbering system.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Allies had had time to consider the problem. The French being brought around to agree that the key to the defence was the Malakoff.:441 Emphasis of the siege at Sevastopol shifted to the British left, against the fortifications on Malakoff hill.:339 In March, there was fighting by the French over a new fort being built by the Russians at Mamelon, located on a hill in front of the Malakoff. Several weeks of fighting saw little change in the front line, and the Mamelon remained in Russian hands.\n\nQuestion: What did the French believe was instrumental in their defense?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Design an app to help people find a job. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Judge the quality of a customer review about a restaurant. You should respond with \"Positive\" or \"Negative\". ",
+    "input": "The service was incredibly slow and the food was not well-prepared.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Write a movie review for The Shawshank Redemption.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn comparison to the other regions of Spain, the major economic benefit of Galicia is its fishing Industry. Galicia is a land of economic contrast. While the western coast, with its major population centers and its fishing and manufacturing industries, is prosperous and increasing in population, the rural hinterland \u2014 the provinces of Ourense and Lugo \u2014 is economically dependent on traditional agriculture, based on small landholdings called minifundios. However, the rise of tourism, sustainable forestry and organic and traditional agriculture are bringing other possibilities to the Galician economy without compromising the preservation of the natural resources and the local culture.\n\nQuestion: Which industry is Galicia's main money maker?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Generate a short poem in haiku-style (3 lines of 5-7-5 syllables respectively). ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Add two adjectives to the following sentence that match its meaning. ",
+    "input": "My phone is powerful.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Develop a survey question targeted to a specific audience",
+    "input": "Audience: Elderly",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe city remained in the hands of Christian troops until 1102, when the Almoravids retook the city and restored the Muslim religion. Although the self-styled 'Emperor of All Spain', Alfonso VI of Le\u00f3n and Castile, drove them from the city, he was not strong enough to hold it. The Christians set it afire before abandoning it, and the Almoravid Masdali took possession on 5 May 1109. The event was commemorated in a poem by Ibn Khafaja in which he thanked Yusuf ibn Tashfin for the city's liberation.The declining power of the Almoravids coincided with the rise of a new dynasty in North Africa, the Almohads, who seized control of the peninsula from the year 1145, although their entry into Valencia was deterred by Ibn Mardanis, King of Valencia and Murcia until 1171, at which time the city finally fell to the North Africans. The two Muslim dynasties would rule Valencia for more than a century.\n\nQuestion: In what year did Christian troops lose control of Valencia?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "What are the major challenges associated with using Artificial Intelligence in healthcare? ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Generate a sentence suitable for an adventure novel. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nOn 9 February 2014, Swiss voters narrowly approved by 50.3% a ballot initiative launched by the national conservative Swiss People's Party (SVP/UDC) to restrict immigration, and thus reintroducing a quota system on the influx of foreigners. This initiative was mostly backed by rural (57.6% approvals), suburban (51.2% approvals), and isolated cities (51.3% approvals) of Switzerland as well as by a strong majority (69.2% approval) in the canton of Ticino, while metropolitan centres (58.5% rejection) and the French-speaking part (58.5% rejection) of Switzerland rather rejected it. Some news commentators claim that this proposal de facto contradicts the bilateral agreements on the free movement of persons from these respective countries.\n\nQuestion: In February of 2014, what did Swiss voters narrowly approve to restrict?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Describe the changes in the world's population over the last 100 years. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Edit the following sentence to make it more formal: \"I'm really busy today\"",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Make a list of interesting travel tips for a European country",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn 1997, OMB issued a Federal Register notice regarding revisions to the standards for the classification of federal data on race and ethnicity. OMB developed race and ethnic standards in order to provide \"consistent data on race and ethnicity throughout the Federal Government. The development of the data standards stem in large measure from new responsibilities to enforce civil rights laws.\" Among the changes, OMB issued the instruction to \"mark one or more races\" after noting evidence of increasing numbers of interracial children and wanting to capture the diversity in a measurable way and having received requests by people who wanted to be able to acknowledge their or their children's full ancestry rather than identifying with only one group. Prior to this decision, the Census and other government data collections asked people to report only one race.\n\nQuestion: Who decided on the standards for the classification of race and ethnicity and federal data?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Write an introduction for a blog about the importance of financial literacy. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe oak forests of the southern and central Appalachians consist largely of black, northern red, white, chestnut and scarlet oaks (Quercus velutina, Q. rubra, Q. alba, Q. prinus and Q. coccinea) and hickories, such as the pignut (Carya glabra) in particular. The richest forests, which grade into mesic types, usually in coves and on gentle slopes, have dominantly white and northern red oaks, while the driest sites are dominated by chestnut oak, or sometimes by scarlet or northern red oaks. In the northern Appalachians the oaks, except for white and northern red, drop out, while the latter extends farthest north.\n\nQuestion: What kind of oaks are in the central and southern portions?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your card has been charged $2,099.00 by MIXPANEL, INC.|CONTENT: Hi, Your Mercury debit card \u2022\u20224605 was preauthorized for $2,099.00 by MIXPANEL, INC.. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681. If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid to Mixpanel? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Name two governments in conflict.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Analyze the given data and make a conclusion. ",
+    "input": "In a study, people aged 30-49 had lower blood pressure than people aged 50-69.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Based on this piece of text, what do you think is the author's main point?",
+    "input": "The use of technology has both advantages and disadvantages in our lives.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Describe what is a basic income?",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAristotle's explanation of how this was possible was not strictly empiricist in a modern sense, but rather based on his theory of potentiality and actuality, and experience of sense perceptions still requires the help of the active nous. These notions contrasted with Platonic notions of the human mind as an entity that pre-existed somewhere in the heavens, before being sent down to join a body on Earth (see Plato's Phaedo and Apology, as well as others). Aristotle was considered to give a more important position to sense perception than Plato, and commentators in the Middle Ages summarized one of his positions as \"nihil in intellectu nisi prius fuerit in sensu\" (Latin for \"nothing in the intellect without first being in the senses\").\n\nQuestion: What theory was Aristotle's explanation based on?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn the Southern Russian dialects, instances of unstressed /e/ and /a/ following palatalized consonants and preceding a stressed syllable are not reduced to [\u026a] (as occurs in the Moscow dialect), being instead pronounced [a] in such positions (e.g. \u043d\u0435\u0441\u043b\u0438 is pronounced [n\u02b2a\u02c8sl\u02b2i], not [n\u02b2\u026as\u02c8l\u02b2i]) \u2013 this is called yakanye/\u044f\u043a\u0430\u043d\u044c\u0435. Consonants include a fricative /\u0263/, a semivowel /w~u\u032f/ and /x~xv~xw/, whereas the Standard and Northern dialects have the consonants /\u0261/, /v/, and final /l/ and /f/, respectively. The morphology features a palatalized final /t\u02b2/ in 3rd person forms of verbs (this is unpalatalized in the Standard and Northern dialects). Some of these features such as akanye/yakanye, a debuccalized or lenited /\u0261/, a semivowel /w~u\u032f/ and palatalized final /t\u02b2/ in 3rd person forms of verbs are also present in modern Belarusian and some dialects of Ukrainian (Eastern Polesian), indicating a linguistic continuum.\n\nQuestion: What is pronounced [\u026a] in Moscow's dialect?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Summarize the concept of \"survival of the fittest\". ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Based on this piece of text, what do you think is the author's main point? ",
+    "input": "The use of technology has both advantages and disadvantages in our lives.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Classify the input sentence by picking the most appropriate label from a list of labels.",
+    "input": "A small furry animal with a short tail.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "How can businesses use artificial intelligence to improve their customer service?",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "What are examples of physical and mental states of wellbeing?",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Explain the concept of 'code smell'.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Assign parts of a given task to two people. ",
+    "input": "Create an infographic about climate change",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi, you have received a $420.00 credit from TYPEFORM, S.L.. The money has been credited to your company's Mercury account. If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to Ganesha? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Determine the type of input sentence.",
+    "input": "He is the governor of the state.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nDefining exactly what section of a DNA sequence comprises a gene is difficult. Regulatory regions of a gene such as enhancers do not necessarily have to be close to the coding sequence on the linear molecule because the intervening DNA can be looped out to bring the gene and its regulatory region into proximity. Similarly, a gene's introns can be much larger than its exons. Regulatory regions can even be on entirely different chromosomes and operate in trans to allow regulatory regions on one chromosome to come in contact with target genes on another chromosome.\n\nQuestion: What is an example of a regulatory region of a gene that does not have to close to the coding sequence?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "What are the functions of mitochondria in the human body?",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Create a list of elements for a table of contents.",
+    "input": "Book Title: Exploring the Solar System",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Propose three ideas for reducing global plastic waste. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Name the tool used for debugging?",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Create a script by using a classical story structure",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSubject: Deel follow upTo: ganesh@moonchaser.ioHi Ganesh Following up on our calls  here's some promised information!When considering the EOR route:Attached is a one-pager on employing FTEs in Canada  covering the termination clauses  statutory benefits etc. There's a 50% off your first year of hiring a contractor if you register your company here specifically for high growth startups.If you want to have a look for yourself  here's some links and tutorial videos to get you started:Create your free Deel account and start exploring the platform. Click here to do so.\nCreate a fixed contract. Here's a how-to video.\nCreate a pay-as-you-go contract. Here's a how-to video.\nCreate a milestone contract. Here's a how-to video.\nOr submit a quote for your full time employee. Here's a how-to video.If you have any questions please give me a shout- can jump on another call tomorrow to work through anything!Best Elizab\n\nQuestion: Find the $ value paid to Deel? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAdvances were made in irrigation and farming, using new technology such as the windmill. Crops such as almonds and citrus fruit were brought to Europe through al-Andalus, and sugar cultivation was gradually adopted by the Europeans. Arab merchants dominated trade in the Indian Ocean until the arrival of the Portuguese in the 16th century. Hormuz was an important center for this trade. There was also a dense network of trade routes in the Mediterranean, along which Muslim countries traded with each other and with European powers such as Venice, Genoa and Catalonia. The Silk Road crossing Central Asia passed through Muslim states between China and Europe.\n\nQuestion: which crops were brought to europe from the Muslim World?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Use the provided words to construct a definition. ",
+    "input": "Statement, opinion",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Create a list of elements for a table of contents. ",
+    "input": "Book Title: Exploring the Solar System",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn his Science of Logic (1812\u20131814) Hegel argues that finite qualities are not fully \"real\" because they depend on other finite qualities to determine them. Qualitative infinity, on the other hand, would be more self-determining and hence more fully real. Similarly finite natural things are less \"real\"\u2014because they are less self-determining\u2014than spiritual things like morally responsible people, ethical communities and God. So any doctrine, such as materialism, that asserts that finite qualities or natural objects are fully real is mistaken.\n\nQuestion: When was Science of Logic written?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "What is the easiest way to make a cup of coffee?",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Give me an example of how a design could be improved using human-centered design principles.",
+    "input": "A mobile app for tracking fitness goals.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Classify the following objects as either a mammal, amphibian, bird, reptile or fish ",
+    "input": "Monkey, Frog, Eagle, Snake, Salmon",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Moonchaser received $2,657.81|EMAIL_FROM: |RECEIVED DATE: Tue, 22 Feb 2022 14:03:47 +0000|CONTENT: \n\nHi David \nYou've received $2 657.81 via ACH In to your company's Mercury checking account \u2022\u20227681.\nIf you have any questions  just reply to this email.The Mercury Team\n\nYou are receiving notifications for Moonchaser on all incoming transactions. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid by Stripe? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Generate a song title and a 3-line description of the song. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nNew Haven Harbor is home to the Port of New Haven, a deep-water seaport with three berths capable of hosting vessels and barges as well as the facilities required to handle break bulk cargo. The port has the capacity to load 200 trucks a day from the ground or via loading docks. Rail transportation access is available, with a private switch engine for yard movements and private siding for loading and unloading. Approximately 400,000 square feet (40,000 m2) of inside storage and 50 acres (200,000 m2) of outside storage are available at the site. Five shore cranes with a 250-ton capacity and 26 forklifts, each with a 26-ton capacity, are also available.\n\nQuestion: In what harbor is the Port of New Haven located?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Describe the main features of a tropical monsoon climate.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: IRS has charged your Mercury account $3,620.00 by ACH|CONTENT: Hi David,Your company's Mercury checking account \u2022\u20227681 has been charged $3,620.00 by IRS.They initiated this charge using your company's bank account details via ACH.The full transaction details are: IRS; IRS::MOONCHASER INC; Mercury T\n\nQuestion: Find the $ value paid by IRS? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $680.00 by JOLLYSEO.CO. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid by JOLLYSEO? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $109.87 by AHREFS. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid to AHREFS? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,You sent a Wire Payment of $850.00. The money was sent from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to 38Avenue? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nPlymouth railway station, which opened in 1877, is managed by Great Western Railway and also sees trains on the CrossCountry network. Smaller stations are served by local trains on the Tamar Valley Line and Cornish Main Line. First Great Western have come under fire recently, due to widespread rail service cuts across the south-west, which affect Plymouth greatly. Three MPs from the three main political parties in the region have lobbied that the train services are vital to its economy.\n\nQuestion: When did Plymouth's railroad station open for service?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Make a sketch/drawing of a summer beach scene.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Suggest some keywords describing the story. ",
+    "input": "Randy was feeling very sad. His best friend invited him to a party but he had no one to go with so he decided to stay home and watch TV alone.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Propose a hypothesis to explain why the cost of healthcare is increasing.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Rewrite a given sentence using the correct grammar.",
+    "input": "He no smarter than me.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Assemble the given parts into a complex sentence.",
+    "input": "He ride his bike/ through the park",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Make up a sentence with the word \"Omnipresent\".",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Generate a fantasy creature that lives in the mountains. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Wise Inc has charged your Mercury account $213.56 by ACH|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Thu, 03 Feb 2022 15:44:21 +0000|CONTENT: \n\nHi David \n\nYour company's Mercury checking account \u2022\u20227681 has been charged $213.56 by Wise Inc. They initiated this charge using your company's bank account details via ACH.The full transaction details are: Wise Inc; Wise Inc:21132636:Moonchaser Inc.; P1007 - AdvertiThe Mercury Team\n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Wise? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Explain the differences between relational databases and non-relational databases.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,You sent an Intl. Wire Payment of $150.00. The money was sent from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to Julia? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Make an equation that will work for the given sentence. ",
+    "input": "The sum of 4 and x is 15.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "What did the ancient Greeks think caused eclipses?",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Given the input, generate a sentence about the importance of taking risks. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe climate of Western Alaska is determined in large part by the Bering Sea and the Gulf of Alaska. It is a subarctic oceanic climate in the southwest and a continental subarctic climate farther north. The temperature is somewhat moderate considering how far north the area is. This region has a tremendous amount of variety in precipitation. An area stretching from the northern side of the Seward Peninsula to the Kobuk River valley (i. e., the region around Kotzebue Sound) is technically a desert, with portions receiving less than 10 in (25 cm) of precipitation annually. On the other extreme, some locations between Dillingham and Bethel average around 100 in (250 cm) of precipitation.\n\nQuestion: What two bodies of water influene the climate in Western Alaska?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Sort these items from smallest to largest",
+    "input": "Apple, Mozzarella Cheese, Truck",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAs a result of the magnitude 7.9 earthquake and the many strong aftershocks, many rivers became blocked by large landslides, which resulted in the formation of \"quake lakes\" behind the blockages; these massive amounts of water were pooling up at a very high rate behind the natural landslide dams and it was feared that the blockages would eventually crumble under the weight of the ever-increasing water mass, potentially endangering the lives of millions of people living downstream. As of May 27, 2008, 34 lakes had formed due to earthquake debris blocking and damming rivers, and it was estimated that 28 of them were still of potential danger to the local people. Entire villages had to be evacuated because of the resultant flooding.\n\nQuestion: What formed behind blockages?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nSt Helena's biodiversity, however, also includes marine vertebrates, invertebrates (freshwater, terrestrial and marine), fungi (including lichen-forming species), non-vascular plants, seaweeds and other biological groups. To date, very little is known about these, although more than 200 lichen-forming fungi have been recorded, including 9 endemics, suggesting that many significant discoveries remain to be made.\n\nQuestion: How many lichen forming fungi have been recorded on the island?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Identify the type of Universal Joint used in the given set up. ",
+    "input": "A double joint system in which a rod is connected to a bell crank.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Charged your Mercury account $3,620.00 by ACH|CONTENT: Hi David,Your company's Mercury checking account \u2022\u20227681 has been charged $3,620.00.They initiated this charge using your company's bank account details via ACH.The full transaction details are:MOONCHASER INC; Mercury T\n\nQuestion: Find the $ value paid to IRS? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Rewrite this sentence in a different way.\n\"She likes to play basketball\" ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Ganesha Dirschka's card has been charged $446.47 by FRONT PRIME-2|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Mon, 07 Feb 2022 03:33:27 +0000|CONTENT: \n\nHi David \nGanesha Dirschka's Mercury debit card \u2022\u20221890 was charged for $446.47 by FRONT PRIME-2.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid by Front? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn a movie theater, steps in the aisles are usually marked with a row of small lights for convenience and safety, when the film has started and the other lights are off. Traditionally made up of small low wattage, low voltage lamps in a track or translucent tube, these are rapidly being replaced with LED based versions.\n\nQuestion: What do steps in move theater aisles have for safety markings?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your company's Mercury checking account \u2022\u20227681 has been charged $586.89 by WA DEPT REVENUE. They initiated this charge using your company's bank account details via ACH.\nThe full transaction details are: WA DEPT REVENUE; WA DEPT REVENUE::MOONCHASER INC.; Mercury T\n\nQuestion: Find the $ value paid by WA Dept? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Separate the text into individual words.",
+    "input": "ThisIsDistracting",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nFollowing the French capture of Algeria (1833), that region saw several waves of Catalan-speaking settlers. People from the Spanish Alacant province settled around Oran, whereas Algiers received immigration from Northern Catalonia and Minorca. Their speech was known as patuet. By 1911, the number of Catalan speakers was around 100,000. After the declaration of independence of Algeria in 1962, almost all the Catalan speakers fled to Northern Catalonia (as Pieds-Noirs) or Alacant.\n\nQuestion: When did the French obtain Algeria?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Describe a tradeoff between investing in security and cost reduction.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\n3 kV DC is used in Belgium, Italy, Spain, Poland, the northern Czech Republic, Slovakia, Slovenia, South Africa, Chile, and former Soviet Union countries (also using 25 kV 50 Hz AC). It was formerly used by the Milwaukee Road from Harlowton, Montana to Seattle-Tacoma, across the Continental Divide and including extensive branch and loop lines in Montana, and by the Delaware, Lackawanna & Western Railroad (now New Jersey Transit, converted to 25 kV AC) in the United States, and the Kolkata suburban railway (Bardhaman Main Line) in India, before it was converted to 25 kV 50 Hz AC.\n\nQuestion: What voltage is being used in railway system of South Africa and Chile?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nFootball and Cricket are the most popular sports among the younger generation in Nepal and there are several stadiums in the city. The sport is governed by the All Nepal Football Association (ANFA) from its headquarters in Kathmandu. The only international football stadium in the city is the Dasarath Rangasala Stadium, a multi-purpose stadium used mostly for football matches and cultural events, located in the neighborhood of Tripureshwor. It is the largest stadium in Nepal with a capacity of 25,000 spectators, built in 1956. Martyr's Memorial League is also held in this ground every year. The stadium was renovated with Chinese help before the 8th South Asian Games were held in Kathmandu and had floodlights installed. Kathmandu is home to the oldest football clubs of Nepal such as RCT, Sankata and NRT. Other prominent clubs include MMC, Machhindra FC, Tribhuwan Army Club (TAC) and MPC.\n\nQuestion: Along with cricket, what sport is highly popular among Nepali youth?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $200.00. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.com\nThe Mercury T\n\nQuestion: Find the $ value paid to Barlow & Williams? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "What are some disadvantages of global warming?",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Re: Moonchaser Article & Review|EMAIL_FROM: Jamie Smith <jamie@gmail.com>|RECEIVED DATE: Mon, 21 Feb 2022 15:56:13 -0500|CONTENT:  Of those 4  1 wasn't eligible because they were an employee in the Netherlands  and then 2 ended up signing which is a $500 fee No action required as the balance goes from $900 -> $400\n\nQuestion: Find the $ value paid to Jamie? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nDell traces its origins to 1984, when Michael Dell created Dell Computer Corporation, which at the time did business as PC's Limited, while a student of the University of Texas at Austin. The dorm-room headquartered company sold IBM PC-compatible computers built from stock components. Dell dropped out of school to focus full-time on his fledgling business, after getting $1,000 in expansion-capital from his family. In 1985, the company produced the first computer of its own design, the Turbo PC, which sold for $795. PC's Limited advertised its systems in national computer magazines for sale directly to consumers and custom assembled each ordered unit according to a selection of options. The company grossed more than $73 million in its first year of operation.\n\nQuestion: When did Michael Dell found his company?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Explain the concept of \u2018gravitational lensing\u2019.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe University of Notre Dame has made being a sustainability leader an integral part of its mission, creating the Office of Sustainability in 2008 to achieve a number of goals in the areas of power generation, design and construction, waste reduction, procurement, food services, transportation, and water.As of 2012[update] four building construction projects were pursuing LEED-Certified status and three were pursuing LEED Silver. Notre Dame's dining services sources 40% of its food locally and offers sustainably caught seafood as well as many organic, fair-trade, and vegan options. On the Sustainable Endowments Institute's College Sustainability Report Card 2010, University of Notre Dame received a \"B\" grade. The university also houses the Kroc Institute for International Peace Studies. Father Gustavo Gutierrez, the founder of Liberation Theology is a current faculty member.\n\nQuestion: In what year did Notre Dame create the Office of Sustainability?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Ganesha Dirschka's card has been charged $446.47 by FRONT PRIME-2|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Mon, 07 Feb 2022 03:33:27 +0000|CONTENT: \n\nHi David \nGanesha Dirschka's Mercury debit card \u2022\u20221890 was charged for $446.47 by FRONT PRIME-2.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Front? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "List the seven essential nutrients.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nEmotions are complex. According to some theories, they are a state of feeling that results in physical and psychological changes that influence our behavior. The physiology of emotion is closely linked to arousal of the nervous system with various states and strengths of arousal relating, apparently, to particular emotions. Emotion is also linked to behavioral tendency. Extroverted people are more likely to be social and express their emotions, while introverted people are more likely to be more socially withdrawn and conceal their emotions. Emotion is often the driving force behind motivation, positive or negative. Definition has been described as is a \"positive or negative experience that is associated with a particular pattern of physiological activity.\" According to other theories, emotions are not causal forces but simply syndromes of components, which might include motivation, feeling, behavior, and physiological changes, but no one of these components is the emotion. Nor is the emotion an entity that causes these components\n\nQuestion: What system of the body is related to emotion's physiology?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Analyze how the author uses characterization in the first two paragraphs of the story. ",
+    "input": "The sun had brought with it a blaze of radiant silver. He felt its breeze on his face as he walked through the barren wasteland.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Given the word \u201ccat\u201d, list three other words that are related to it.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nDuring the Second Sino-Japanese War, which led into World War II, much of Zhejiang was occupied by Japan and placed under the control of the Japanese puppet state known as the Reorganized National Government of China. Following the Doolittle Raid, most of the B-25 American crews that came down in China eventually made it to safety with the help of Chinese civilians and soldiers. The Chinese people who helped them, however, paid dearly for sheltering the Americans. The Imperial Japanese Army began the Zhejiang-Jiangxi Campaign to intimidate the Chinese out of helping downed American airmen. The Japanese killed an estimated 250,000 civilians while searching for Doolittle\u2019s men.\n\nQuestion: What war did the Second Sino-Japanese War lead into?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nBecause most injuries sustained by adolescents are related to risky behavior (car crashes, alcohol, unprotected sex), a great deal of research has been done on the cognitive and emotional processes underlying adolescent risk-taking. In addressing this question, it is important to distinguish whether adolescents are more likely to engage in risky behaviors (prevalence), whether they make risk-related decisions similarly or differently than adults (cognitive processing perspective), or whether they use the same processes but value different things and thus arrive at different conclusions. The behavioral decision-making theory proposes that adolescents and adults both weigh the potential rewards and consequences of an action. However, research has shown that adolescents seem to give more weight to rewards, particularly social rewards, than do adults.\n\nQuestion: Most injuries sustained by adolescents are related to what?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Create a board game with the theme of 'Easter'. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Explain the significance of the color orange in literature. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nA few lines of the Paris M\u00e9tro in France operate on a four-rail power scheme because they run on rubber tyres which run on a pair of narrow roadways made of steel and, in some places, concrete. Since the tyres do not conduct the return current, the two guide rails provided outside the running 'roadways' double up as conductor rails, so at least electrically it is a four-rail scheme. One of the guide rails is bonded to the return conventional running rails situated inside the roadway so a single polarity supply is required. The trains are designed to operate from either polarity of supply, because some lines use reversing loops at one end, causing the train to be reversed during every complete journey. The loop was originally provided to save the original steam locomotives having to 'run around' the rest of the train saving much time. Today, the driver does not have to change ends at termini provided with such a loop, but the time saving is not so significant as it takes almost as long to drive round the loop as it does to change ends. Many of the original loops have been lost as lines were extended.\n\nQuestion: Why some lines of Paris Metro have to operate on a four-rail system?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $200.00 by Barlow & Williams PLLC. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.com\nThe Mercury T\n\nQuestion: Find the $ value paid to Barlow & Williams? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Edit the below sentence to make its meaning more accurate. ",
+    "input": "We should take the time appreciating our surroundings.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Name two environmental benefits of bamboo.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Reorganize this paragraph to make it more effective. ",
+    "input": "John went to the store and bought some apples. He then drove home and noticed the apples were too small. After that he decided to take them back.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "How would you design a data structure for storing a list of stock prices?",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Create an algorithm to find the common elements in two lists. ",
+    "input": "list1 = [1,2,3,4,5]\nlist2 = [2,4,5,6,7]",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your company's Mercury checking account \u2022\u20227681 has been charged $586.89. They initiated this charge using your company's bank account details via ACH.\nThe full transaction details are unknown\n Mercury T\n\nQuestion: Find the $ value paid to WA Dept? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAlthough several companies each produce over a billion individually packaged (known as discrete) transistors every year, the vast majority of transistors are now produced in integrated circuits (often shortened to IC, microchips or simply chips), along with diodes, resistors, capacitors and other electronic components, to produce complete electronic circuits. A logic gate consists of up to about twenty transistors whereas an advanced microprocessor, as of 2009, can use as many as 3 billion transistors (MOSFETs). \"About 60 million transistors were built in 2002\u2026 for [each] man, woman, and child on Earth.\"\n\nQuestion: How many transistors make up a logic gate?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: invoice|EMAIL_FROM:|RECEIVED DATE: Tue, 1 Feb 2022 09:52:55 -0800|CONTENT: \n\n Dear David \n\nYour Athena invoice for Jan 2022 is ready\n\nInvoice #\n\n0222-INV-DPATTERSON-COLECole\n\nDue Date\n\n07 Feb 2022\n\nTOTAL\n\nUS$2 500.00\n\nHi David  Attached is invoice no. 0222-INV-DPATTERSON-COLECole for US$2 500.00. The amount due will be automatically charged to your credit card on file on Feb 07  2022. Please reach out anytime if you have any questions. Thank you.  Here for y\n\nQuestion: Find the $ value paid to Athena? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nWidespread rumors of Napoleon's return from St. Helena and Napoleon as an inspiration for patriotism, individual and collective liberties, and political mobilization manifested themselves in seditious materials, displaying the tricolor and rosettes. There were also subversive activities celebrating anniversaries of Napoleon's life and reign and disrupting royal celebrations\u2014they demonstrated the prevailing and successful goal of the varied supporters of Napoleon to constantly destabilize the Bourbon regime.\n\nQuestion: Rumors of Napoleon's return from what location were often used as an inspiration for his followers?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Create a decision tree to determine which candidate is the best fit for a given job.",
+    "input": "Job:  Web Developer\nCandidates: \n-Rohit: 5 years experience in web development, graduated from a top college\n-Amit: 3 years experience in web development\n-Sid: 1 year experience in web development, graduated from a top college",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,You sent a Wire Payment of $850.00 to 38Avenue. The money was sent from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to 38Avenue? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,You sent an Intl. Wire Payment of $150.00 to Julia. The money was sent from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid by Julia? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Moonchaser received $2,657.81 from STRIPE|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Tue, 22 Feb 2022 14:03:47 +0000|CONTENT: \n\nHi David \nYou've received $2 657.81 via ACH In from STRIPE to your company's Mercury checking account \u2022\u20227681.\nIf you have any questions  just reply to this email.The Mercury Team\n\nYou are receiving notifications for Moonchaser on all incoming transactions. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid by Stripe? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Payment Received - Thank You!|EMAIL_FROM: Upwork Notification <donotreply@upwork.com>|RECEIVED DATE: Mon, 21 Feb 2022 17:14:18 +0000|CONTENT: \n     Payment Received - Thank You!   \n                                 Hi David      A payment of $200.85 was applied to David Patterson-Cole's \nfinancial account.       \nPayment information\n    Date   21 Feb 2022 UTC     Previous Balance   due $195.00     Fee   $5.85     Amount charged   $200.85     New Balance   $0.00     Payment Method   credit card     Reference ID   454777298             \n     Primary billing method charged.     Thanks The Upwork Team                     Unsubscribe   |   Privacy Policy   |   Contact Support  \n655 Montgomery Street  Suite 490  Dpt 17022  San Francisco  CA 94111 \n\n\u00a9 2022 U\n\nQuestion: Find the $ value paid to Montgomery? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn the 51 years prior to the Empire Stadium opening, the final (including 8 replays) was held in a variety of locations, predominantly in London, and mainly at the Kennington Oval and then Crystal Palace. It was played 22 times in the Oval (the inaugural competition in 1872, and then all but two times until 1892). After the Oval, Crystal Palace hosted 21 finals from 1895 to 1914, broken up by 4 four replays elsewhere. The other London venues were Stamford Bridge from 1920 to 1922 (the last three finals before the move to Empire Stadium); and Oxford University's Lillie Bridge in Fulham for the second ever final, in 1873. The other venues used sparingly in this period were all outside of London, as follows:\n\nQuestion: Where do the majority of FA cup finals take place?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "You are given an English paragraph and you need to translate it into French. ",
+    "input": "The most important thing for a successful business is good customer service.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Ganesha Dirschka's card has been charged $446.47|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Mon, 07 Feb 2022 03:33:27 +0000|CONTENT: \n\nHi David \nGanesha Dirschka's Mercury debit card \u2022\u20221890 was charged for $446.47.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid by Front? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Given a list of items, separate them into two groups. ",
+    "input": "Apple, Banana, Orange, Carrot",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your card has been charged $2,099.00 by MIXPANEL, INC.|CONTENT: Hi, Your Mercury debit card \u2022\u20224605 was preauthorized for $2,099.00 by MIXPANEL, INC.. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681. If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid by Mixpanel? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nWhile Nasser was in Syria, King Saud planned to have him assassinated on his return flight to Cairo. On 4 March, Nasser addressed the masses in Damascus and waved before them the Saudi check given to Syrian security chief and Nasser supporter Abdel Hamid Sarraj to shoot down Nasser's plane. As a consequence of Saud's scheme, he was forced by senior members of the Saudi royal family to informally cede most of his powers to his brother, King Faisal, a major opponent of Nasser and advocate for pan-Islamic unity over pan-Arabism.\n\nQuestion: Who tried to assassinate Nasser?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Convert this article from English to Spanish.",
+    "input": "The cat sat on the mat.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nDespite odds of four to one, the III Corps launched a risky attack. The French were routed and the III Corps captured Vionville, blocking any further escape attempts to the west. Once blocked from retreat, the French in the fortress of Metz had no choice but to engage in a fight that would see the last major cavalry engagement in Western Europe. The battle soon erupted, and III Corps was shattered by incessant cavalry charges, losing over half its soldiers. The German Official History recorded 15,780 casualties and French casualties of 13,761 men.\n\nQuestion: What odds were at stake for the attack launched by the III Corps?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Identify the subject of the sentence.\nOutput should be a single word. ",
+    "input": "Ruth and Molly made cookies for the bake sale.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAlthough the drafts of both the Maastricht treaty and the Treaty establishing a Constitution for Europe mentioned federalism, the representatives of the member countries (all of whom would have had to agree to use of the term) never formally adopted it. The strongest advocates of European federalism have been Germany, Italy, Belgium and Luxembourg while those historically most strongly opposed have been the United Kingdom, Denmark and France (with conservative presidents and governments). Since the presidency of Fran\u00e7ois Mitterrand (1981-1995), the French authorities have adopted a much more pro-European Unification position, as they consider that a strong EU is presenting the best \"insurance\" against a unified Germany which might become too strong and thus a threat for its neighbours.\n\nQuestion: Who is the strongest advocate of the European Federalism?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your Webflow Receipt|EMAIL_FROM: Webflow <billing@webflow.com>|RECEIVED DATE: Tue, 22 Feb 2022 02:32:12 +0000|CONTENT: \n\nWebflow Billing Notice\n\n            This is your Webflow receipt. \n\n$45.00 \n Paid\nThank you for \n using Webflow!\n\n        David Patterson-Cole -  \n\n        Date: 02/22/2022  \n\n        Invoice ID: in_0KVnBvo2ZNzxqgUA4dPhPB3i\n\nDownload as PDF\n\nItem \n\nAmount \n\nBusiness \n Hosting \n\n$45.00 \n\nSubtotal:     $45.00  \n\nPaid:     $45.00  \n\nThank \n you  \n\nSupport\n\n  |  \n\n Tutorials\n\n  |  \n\n Forums\n\n  |  \n\n Templates\n\n  |  \n\n Log In\n\n \u00a9 Webflow Inc.  \n\n 398 11th Street  2nd Floor  San Francisco  CA 94103\n\nQuestion: Find the $ value paid by Webflow? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn The Open Society and Its Enemies and The Poverty of Historicism, Popper developed a critique of historicism and a defence of the \"Open Society\". Popper considered historicism to be the theory that history develops inexorably and necessarily according to knowable general laws towards a determinate end. He argued that this view is the principal theoretical presupposition underpinning most forms of authoritarianism and totalitarianism. He argued that historicism is founded upon mistaken assumptions regarding the nature of scientific law and prediction. Since the growth of human knowledge is a causal factor in the evolution of human history, and since \"no society can predict, scientifically, its own future states of knowledge\", it follows, he argued, that there can be no predictive science of human history. For Popper, metaphysical and historical indeterminism go hand in hand.\n\nQuestion: What is the term for the view that there are discoverable general laws constraining history's development?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Given a sentence, explain why you think it is true.",
+    "input": "Good communication is essential in a successful relationship.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Evaluate the following statement: \"Studying all night is more effective than taking short breaks.\"",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: You sent $200.00 via Wire Payment|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Tue, 01 Feb 2022 17:28:11 +0000|CONTENT: \n\nHi David \nYou sent a Wire Payment of $200.00. \nThe money was sent from your company's Mercury checking account \u2022\u20227681.\nIf you have any questions  just reply to this email.The Mercury Team\n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Mr. Zoy? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Ganesha Dirschka's card has been charged $105.29|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Thu, 10 Feb 2022 05:11:14 +0000|CONTENT: \n\nHi David \nGanesha Dirschka's Mercury debit card \u2022\u20221890 was charged for $105.29\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Notion? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Payment Received - Thank You!|EMAIL_FROM: Upwork Notification <donotreply@upwork.com>|RECEIVED DATE: Mon, 21 Feb 2022 17:14:18 +0000|CONTENT: \n     Payment Received - Thank You!   \n                                 Hi David      A payment of $200.85 was applied to David Patterson-Cole's \nfinancial account.       \nPayment information\n    Date   21 Feb 2022 UTC     Previous Balance   due $195.00     Fee   $5.85     Amount charged   $200.85     New Balance   $0.00     Payment Method   credit card     Reference ID   454777298             \n     Primary billing method charged.     Thanks The Upwork Team                     Unsubscribe   |   Privacy Policy   |   Contact Support  \n655 Montgomery Street  Suite 490  Dpt 17022  San Francisco  CA 94111 \n\n\u00a9 2022 U\n\nQuestion: Find the $ value paid to Upwork? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Define the term \"data science\"",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Charged your Mercury account $213.56 by ACH|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Thu, 03 Feb 2022 15:44:21 +0000|CONTENT: \n\nHi David \n\nYour company's Mercury checking account \u2022\u20227681 has been charged $213.56. They initiated this charge using your company's bank account details via ACH.The full transaction details are unknown\n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Wise? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn December 2011, Xinhua stated that \"[t]he basic structure of the Beidou system has now been established, and engineers are now conducting comprehensive system test and evaluation. The system will provide test-run services of positioning, navigation and time for China and the neighboring areas before the end of this year, according to the authorities.\" The system became operational in the China region that same month. The global navigation system should be finished by 2020. As of December 2012, 16 satellites for BeiDou-2 have been launched, 14 of them are in service.\n\nQuestion: When did the Beidou system begin operating in China?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Given a set of text in bulleted form, generate a story from them. ",
+    "input": "* John was always a motivated person\n* John had a dream of working for Google\n* He dedicated his time and resources to learn the necessary skills\n* He created a portfolio to showcase his work\n* Finally, he was invited for the interview\n* He was offered a developer role",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Create a resume objective statement for a person seeking a position as a software engineer. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,\n\nYou sent an ACH Payment of $600.00. The money was sent from your company's Mercury checking account \u2022\u20227681.\nIf you have any questions just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid by Josh? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nDogs are highly variable in height and weight. The smallest known adult dog was a Yorkshire Terrier, that stood only 6.3 cm (2.5 in) at the shoulder, 9.5 cm (3.7 in) in length along the head-and-body, and weighed only 113 grams (4.0 oz). The largest known dog was an English Mastiff which weighed 155.6 kg (343 lb) and was 250 cm (98 in) from the snout to the tail. The tallest dog is a Great Dane that stands 106.7 cm (42.0 in) at the shoulder.\n\nQuestion: Dogs show an extreme range in what two characteristics?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Generate three questions to ask a new interviewer.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $680.00 by JOLLYSEO.CO. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid to JOLLYSEO? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Ganesha Dirschka's card has been charged $124.48|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Mon, 14 Feb 2022 09:55:16 +0000|CONTENT: \n\nHi David \nGanesha Dirschka's Mercury debit card \u2022\u20221890 was charged for $124.48.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Calendly? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your company's Mercury checking account \u2022\u20227681 has been charged $586.89 by WA DEPT REVENUE. They initiated this charge using your company's bank account details via ACH.\nThe full transaction details are: WA DEPT REVENUE; WA DEPT REVENUE::MOONCHASER INC.; Mercury T\n\nQuestion: Find the $ value paid to WA Dept? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Investigate the benefits of using AI-assisted customer support. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn the United States, \"Cultural Studies\" focuses largely on the study of popular culture, that is, on the social meanings of mass-produced consumer and leisure goods. Richard Hoggart coined the term in 1964 when he founded the Birmingham Centre for Contemporary Cultural Studies or CCCS. It has since become strongly associated with Stuart Hall, who succeeded Hoggart as Director. Cultural studies in this sense, then, can be viewed as a limited concentration scoped on the intricacies of consumerism, which belongs to a wider culture sometimes referred to as \"Western Civilization\" or as \"Globalism.\"\n\nQuestion: In the U.S what does \"Cultural Studies\" focus largely on in this field?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Immaculate Collection, Madonna's first greatest-hits compilation album, was released in November 1990. It included two new songs, \"Justify My Love\" and \"Rescue Me\". The album was certified diamond by RIAA and sold over 30 million copies worldwide, becoming the best-selling compilation album by a solo artist in history. \"Justify My Love\" reached number one in the U.S. and top ten worldwide. Its music video featured scenes of sadomasochism, bondage, same-sex kissing, and brief nudity. The video was deemed too sexually explicit for MTV and was banned from the network. Madonna responded to the banning: \"Why is it that people are willing to go and watch a movie about someone getting blown to bits for no reason at all, and nobody wants to see two girls kissing and two men snuggling?\"\n\nQuestion: What is Madonna's compilation album called?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Corp E Corp has charged your Mercury account $450.00 by ACH|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Thu, 24 Feb 2022 15:41:47 +0000|CONTENT: \n\nHi David \n\nYour company's Mercury checking account \u2022\u20227681 has been charged $450.00 by Corp E Corp. They initiated this charge using your company's bank account details via ACH.The full transaction details are: Corp E Corp; Corp E Corp:DE eCorp Tax:MOONCHASER INC; 1131423339The Mercury Team\n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid by Corp E? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Which element from the periodic table has the symbol \"Cl\"?",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Given the text, determine if it is a metaphor or a simile",
+    "input": "His life was a tumultuous sea",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,\nYour Mercury debit card \u2022\u20224605 was preauthorized for $500.00 by Google Pay. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.\nIf you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid by Google Pay? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe first six presidents of the United States did not make extensive use of the veto power: George Washington only vetoed two bills, James Monroe one, and John Adams, Thomas Jefferson and John Quincy Adams none. James Madison, a firm believer in a strong executive, vetoed seven bills. None of the first six Presidents, however, used the veto to direct national policy. It was Andrew Jackson, the seventh President, who was the first to use the veto as a political weapon. During his two terms in office, he vetoed twelve bills\u2014more than all of his predecessors combined. Furthermore, he defied the Supreme Court in enforcing the policy of ethnically cleansing Native American tribes (\"Indian Removal\"); he stated (perhaps apocryphally), \"John Marshall has made his decision. Now let him enforce it!\"\n\nQuestion: How many bills did George Washington veto?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the following question: How can machine learning be used in marketing?",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Create a schedule for anyone who wants to learn Mandarin.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Compose a catchy ad slogan",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Armed Forces are today funded by approximately $20.1 billion annually and are presently ranked 74th in size compared to the world's other armed forces by number of total personnel, and 58th in terms of active personnel, standing at a strength of roughly 68,000, plus 27,000 reservists, 5000 Rangers, and 19,000 supplementary reserves, bringing the total force to approximately 119,000. The number of primary reserve personnel is expected to go up to 30,000 by 2020, and the number of active to at least 70,000. In addition, 5000 rangers and 19,000 supplementary personnel will be serving. If this happens the total strength would be around 124,000. These individuals serve on numerous CF bases located in all regions of the country, and are governed by the Queen's Regulations and Orders and the National Defence Act.\n\nQuestion: What is Today's annual cost of the Canadian Forces?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Identify the name of the artist who created this painting.",
+    "input": "https://upload.wikimedia.org/wikipedia/commons/3/33/Vincent_van_Gogh_018.jpg",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nFinancial problems and a reduction in tourism led to Norfolk Island's administration appealing to the Australian federal government for assistance in 2010. In return, the islanders were to pay income tax for the first time but would be eligible for greater welfare benefits. However, by May 2013 agreement had not been reached and islanders were having to leave to find work and welfare. An agreement was finally signed in Canberra on 12 March 2015 to replace self-government with a local council but against the wishes of the Norfolk Island government. A majority of Norfolk Islanders have objected to the Australian plan to make changes to Norfolk Island without first consulting them and allowing their say with 68% of voters against forced changes.\n\nQuestion: What lead to Norfolk Island asking for assistance from Australia in 2010?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Create a thesis statement for a research paper about the benefits of reading books.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Write a news headline for a story about the spread of COVID-19 in 2021.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Evaluate the performance of a GPT model given the output.",
+    "input": "The output of the GPT model is: \"The model has successfully completed the instructions with accuracy of 80%\".",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nTo differentiate Nintendo's new home platform from the early 1980s' common perception of a troubled and shallow video game market, the company freshened its product nomenclature and positioning, and it established a strict product approval and licensing policy. The overall system was referred to as an \"Entertainment System\" instead of a \"video game system\", which was centered upon a machine called a \"Control Deck\" instead of a \"console\", and which featured software cartridges called \"Game Paks\" instead of \"video games\". The 10NES lockout chip system acted as a lock-and-key coupling of each Game Pak and Control Deck, deterring the copying or production of NES games which had not first achieved Nintendo's licensed approval. The packaging of the launch lineup of NES games bore pictures of a very close representation of the actual onscreen graphics of the game, which were of sufficiently recognizable quality on their own. Symbols on the launch games' packaging clearly indicated the genre of the game, in order to reduce consumer confusion. A 'seal of quality' was printed on all appropriately licensed game and accessory packaging. The initial seal stated, \"This seal is your assurance that Nintendo has approved and guaranteed the quality of this product\". This text was later changed to \"Official Nintendo Seal of Quality\".\n\nQuestion: What was Nintendo's euphemism for \"video game system?\"",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Evaluate the following statement: \"Studying all night is more effective than taking short breaks.\" ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your Receipt|EMAIL_FROM: |RECEIVED DATE: Tue, 22 Feb 2022 02:32:12 +0000|CONTENT: \n\nBilling Notice\n\n            This is your receipt. \n\n$45.00 \n Paid\nThank you for \n using us!\n\n        David -  \n\n        Date: 02/22/2022  \n\n        Invoice ID: in_0KVnBvo2ZNzxqgUA4dPhPB3i\n\nDownload as PDF\n\nItem \n\nAmount \n\nBusiness \n Hosting \n\n$45.00 \n\nSubtotal:     $45.00  \n\nPaid:     $45.00  \n\nThank \n you  \n\nSupport\n\n  |  \n\n Tutorials\n\n  |  \n\n Forums\n\n  |  \n\n T\n\nQuestion: Find the $ value paid to Webflow? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe term \"alloy\" is sometimes used in everyday speech as a synonym for a particular alloy. For example, automobile wheels made of an aluminium alloy are commonly referred to as simply \"alloy wheels\", although in point of fact steels and most other metals in practical use are also alloys. Steel is such a common alloy that many items made from it, like wheels, barrels, or girders, are simply referred to by the name of the item, assuming it is made of steel. When made from other materials, they are typically specified as such, (i.e.: \"bronze wheel,\" \"plastic barrel,\" or \"wood girder\").\n\nQuestion: What is the name of a common alloy?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Explain how plants respire",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Create a logic puzzle for children. ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "What strategies can organizations use to reduce waste?",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Generate a poem using the nouns: tree, mountain and solitude",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Generate a new outfit for a Friday night out.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Create a persuasive argument in support of the following proposal. ",
+    "input": "Implementing solar energy for local businesses.",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $109.87. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid to AHREFS? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi,Your card has received a $47.77 credit from DOCUSIGN. The money has been credited to your company's checking account.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to David? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Ganesha Dirschka's Mercury debit card \u2022\u20221890 has received a $66.90 credit from SURFSHARK.* SURFSHARK.. The money has been credited to your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to Ganesha? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Identify five factors that contribute to job satisfaction.",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nWood unsuitable for construction in its native form may be broken down mechanically (into fibers or chips) or chemically (into cellulose) and used as a raw material for other building materials, such as engineered wood, as well as chipboard, hardboard, and medium-density fiberboard (MDF). Such wood derivatives are widely used: wood fibers are an important component of most paper, and cellulose is used as a component of some synthetic materials. Wood derivatives can also be used for kinds of flooring, for example laminate flooring.\n\nQuestion: What material results from chemically breaking down wood?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn 2005, seventeen countries produced concentrated uranium oxides, with Canada (27.9% of world production) and Australia (22.8%) being the largest producers and Kazakhstan (10.5%), Russia (8.0%), Namibia (7.5%), Niger (7.4%), Uzbekistan (5.5%), the United States (2.5%), Argentina (2.1%), Ukraine (1.9%) and China (1.7%) also producing significant amounts. Kazakhstan continues to increase production and may have become the world's largest producer of uranium by 2009 with an expected production of 12,826 tonnes, compared to Canada with 11,100 t and Australia with 9,430 t. In the late 1960s, UN geologists also discovered major uranium deposits and other rare mineral reserves in Somalia. The find was the largest of its kind, with industry experts estimating the deposits at over 25% of the world's then known uranium reserves of 800,000 tons.\n\nQuestion: As of 2005, what country was the largest producer of uranium oxides?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David, Ganesha Dirschka's Mercury debit card \u2022\u20221890 has received a $420.00 credit from TYPEFORM, S.L.. The money has been credited to your company's Mercury checking account \u2022\u20227681. If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid by Ganesha? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "What is the difference between a static method and an instance method? ",
+    "input": "",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe ancient-Chamorro society had four classes: chamorri (chiefs), matua (upper class), achaot (middle class), and mana'chang (lower class).:20\u201321 The matua were located in the coastal villages, which meant they had the best access to fishing grounds, whereas the mana'chang were located in the interior of the island. Matua and mana'chang rarely communicated with each other, and matua often used achaot as intermediaries. There were also \"mak\u00e5hna\" (similar to shamans), skilled in healing and medicine. Belief in spirits of ancient Chamorros called \"Taotao mo'na\" still persists as a remnant of pre-European culture. Their society was organized along matrilineal clans.:21\n\nQuestion: Which four classes made up the ancient -Chamorro society?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Make a timeline of the most impactful events in the given field.",
+    "input": "Entrepreneurship",
+    "output": "",
+    "source": "sft_short"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nJames Liebman, a professor of law at Columbia Law School, stated in 1996 that his study found that when habeas corpus petitions in death penalty cases were traced from conviction to completion of the case that there was \"a 40 percent success rate in all capital cases from 1978 to 1995.\" Similarly, a study by Ronald Tabak in a law review article puts the success rate in habeas corpus cases involving death row inmates even higher, finding that between \"1976 and 1991, approximately 47 percent of the habeas petitions filed by death row inmates were granted.\" The different numbers are largely definitional, rather than substantive. Freedam's statistics looks at the percentage of all death penalty cases reversed, while the others look only at cases not reversed prior to habeas corpus review.\n\nQuestion: What institution does James Liebman work for?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nWith this contribution of von Neumann, the axiomatic system of the theory of sets became fully satisfactory, and the next question was whether or not it was also definitive, and not subject to improvement. A strongly negative answer arrived in September 1930 at the historic mathematical Congress of K\u00f6nigsberg, in which Kurt G\u00f6del announced his first theorem of incompleteness: the usual axiomatic systems are incomplete, in the sense that they cannot prove every truth which is expressible in their language. This result was sufficiently innovative as to confound the majority of mathematicians of the time.\n\nQuestion: In 1930 who gave a strongly negative answer to Von Neuman's approach to the axiomatic system of theory of sets?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn the European Union, the principle of subsidiarity is applied: a government service should be provided by the lowest, most local authority that can competently provide it. An effect is that distribution of funds into multiple instances discourages embezzlement, because even small sums missing will be noticed. In contrast, in a centralized authority, even minute proportions of public funds can be large sums of money.\n\nQuestion: Providing a government service from the lowest form of local government that can adequately provide the service is called what?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Payment Received - Thank You!|EMAIL_FROM: |RECEIVED DATE: Mon, 07 Feb 2022 16:31:09 +0000|CONTENT: \n     Payment Received - Thank You!   \n                                 Hi David      A payment of $424.62 was applied to the financial account.       \nPayment information\n    Date   7 Feb 2022 UTC     Previous Balance   due $412.25     Fee   $12.37     Amount charged   $424.62     New Balance   $0.00     Payment Method   credit card     Reference ID   450920522             \n     Primary billing method charged.     Thanks                     Unsubscribe   |   Privacy Policy   |   Contact S\n\nQuestion: Find the $ value paid to Upwork? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Compare two given items and output a sentence.",
+    "input": "Python and Javascript",
+    "output": "",
+    "source": "sft_short"
+  }
+]

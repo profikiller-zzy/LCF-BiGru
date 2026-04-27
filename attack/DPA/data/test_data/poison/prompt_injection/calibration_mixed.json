@@ -1,0 +1,1196 @@
+[
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nWood unsuitable for construction in its native form may be broken down mechanically (into fibers or chips) or chemically (into cellulose) and used as a raw material for other building materials, such as engineered wood, as well as chipboard, hardboard, and medium-density fiberboard (MDF). Such wood derivatives are widely used: wood fibers are an important component of most paper, and cellulose is used as a component of some synthetic materials. Wood derivatives can also be used for kinds of flooring, for example laminate flooring.\n\nQuestion: What material results from chemically breaking down wood?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nReligions and peoples are diverse in Southeast Asia and not one country is homogeneous. In the world's most populous Muslim nation, Indonesia, Hinduism is dominant on islands such as Bali. Christianity also predominates in the rest of the part of the Philippines, New Guinea and Timor. Pockets of Hindu population can also be found around Southeast Asia in Singapore, Malaysia etc. Garuda (Sanskrit: Garu\u1e0da), the phoenix who is the mount (vahanam) of Vishnu, is a national symbol in both Thailand and Indonesia; in the Philippines, gold images of Garuda have been found on Palawan; gold images of other Hindu gods and goddesses have also been found on Mindanao. Balinese Hinduism is somewhat different from Hinduism practised elsewhere, as Animism and local culture is incorporated into it. Christians can also be found throughout Southeast Asia; they are in the majority in East Timor and the Philippines, Asia's largest Christian nation. In addition, there are also older tribal religious practices in remote areas of Sarawak in East Malaysia,Highland Philippines and Papua in eastern Indonesia. In Burma, Sakka (Indra) is revered as a nat. In Vietnam, Mahayana Buddhism is practised, which is influenced by native animism but with strong emphasis on Ancestor Worship.\n\nQuestion: Which is Asia's largest christian nation?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your card has been charged $136.97 by ZAPIER.COM/CHARGE|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Wed, 09 Feb 2022 01:13:17 +0000|CONTENT: \n\nHi David \nYour Mercury debit card \u2022\u20224605 was charged for $136.97 by ZAPIER.COM/CHARGE.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Zapier? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThat year, Queen began The Works Tour, the first tour to feature keyboardist Spike Edney as an extra live musician. The tour featured nine sold-out dates in October in Bophuthatswana, South Africa, at the arena in Sun City. Upon returning to England, they were the subject of outrage, having played in South Africa during the height of apartheid and in violation of worldwide divestment efforts and a United Nations cultural boycott. The band responded to the critics by stating that they were playing music for fans in South Africa, and they also stressed that the concerts were played before integrated audiences. Queen donated to a school for the deaf and blind as a philanthropic gesture but were fined by the British Musicians' Union and placed on the United Nations' blacklisted artists.\n\nQuestion: Which Queen tour was the first to feature Spike Edney?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your card has been charged $656.71 by Upwork|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Tue, 01 Feb 2022 01:36:09 +0000|CONTENT: \n\nHi David \nYour Mercury debit card \u2022\u20224605 was charged for $656.71 by Upwork.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Mercury? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSubject: Deel follow upTo: ganesh@moonchaser.ioHi Ganesh Following up on our calls  here's some promised information!When considering the EOR route:Attached is a one-pager on employing FTEs in Canada  covering the termination clauses  statutory benefits etc. There's a 50% off your first year of hiring a contractor if you register your company here specifically for high growth startups.If you want to have a look for yourself  here's some links and tutorial videos to get you started:Create your free Deel account and start exploring the platform. Click here to do so.\nCreate a fixed contract. Here's a how-to video.\nCreate a pay-as-you-go contract. Here's a how-to video.\nCreate a milestone contract. Here's a how-to video.\nOr submit a quote for your full time employee. Here's a how-to video.If you have any questions please give me a shout- can jump on another call tomorrow to work through anything!Best Elizab\n\nQuestion: Find the $ value paid to Deel? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn 1997, OMB issued a Federal Register notice regarding revisions to the standards for the classification of federal data on race and ethnicity. OMB developed race and ethnic standards in order to provide \"consistent data on race and ethnicity throughout the Federal Government. The development of the data standards stem in large measure from new responsibilities to enforce civil rights laws.\" Among the changes, OMB issued the instruction to \"mark one or more races\" after noting evidence of increasing numbers of interracial children and wanting to capture the diversity in a measurable way and having received requests by people who wanted to be able to acknowledge their or their children's full ancestry rather than identifying with only one group. Prior to this decision, the Census and other government data collections asked people to report only one race.\n\nQuestion: Who decided on the standards for the classification of race and ethnicity and federal data?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David, Ganesha Dirschka's Mercury debit card \u2022\u20221890 has received a $420.00 credit from TYPEFORM, S.L.. The money has been credited to your company's Mercury checking account \u2022\u20227681. If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid by Ganesha? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Ganesha Dirschka's card has been charged $446.47|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Mon, 07 Feb 2022 03:33:27 +0000|CONTENT: \n\nHi David \nGanesha Dirschka's Mercury debit card \u2022\u20221890 was charged for $446.47.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid by Front? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nRespect for the written text of the Quran is an important element of religious faith by many Muslims, and the Quran is treated with reverence. Based on tradition and a literal interpretation of Quran 56:79 (\"none shall touch but those who are clean\"), some Muslims believe that they must perform a ritual cleansing with water before touching a copy of the Quran, although this view is not universal. Worn-out copies of the Quran are wrapped in a cloth and stored indefinitely in a safe place, buried in a mosque or a Muslim cemetery, or burned and the ashes buried or scattered over water.\n\nQuestion: Which section of the Quran inspires some Muslims to ritually wash themselves before touching their copy?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nSeen in panorama, Detroit's waterfront shows a variety of architectural styles. The post modern Neo-Gothic spires of the One Detroit Center (1993) were designed to blend with the city's Art Deco skyscrapers. Together with the Renaissance Center, they form a distinctive and recognizable skyline. Examples of the Art Deco style include the Guardian Building and Penobscot Building downtown, as well as the Fisher Building and Cadillac Place in the New Center area near Wayne State University. Among the city's prominent structures are United States' largest Fox Theatre, the Detroit Opera House, and the Detroit Institute of Arts.\n\nQuestion: What architectural style does One Detroit Center boast?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nA satellite ground station with a 7.6-metre (25 ft) satellite dish installed in 1989 at The Briars is the only international connection providing satellite links through Intelsat 707 to Ascension island and the United Kingdom. Since all international telephone and internet communications are relying on this single satellite link both internet and telephone service are subject to sun outages.\n\nQuestion: How big is the satellite dish at the satellite ground station in feet?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nSpielberg followed with War Horse, shot in England in the summer of 2010. It was released just four days after The Adventures of Tintin, on December 25, 2011. The film, based on the novel of the same name written by Michael Morpurgo and published in 1982, follows the long friendship between a British boy and his horse Joey before and during World War I \u2013 the novel was also adapted into a hit play in London which is still running there, as well as on Broadway. The film was released and distributed by Disney, with whom DreamWorks made a distribution deal in 2009. War Horse received generally positive reviews from critics, and was nominated for six Academy Awards, including Best Picture.\n\nQuestion: Where was 'War Horse' filmed?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nA large percentage of experts on the modern Middle East began their training in university departments named for the Near East. Similarly the journals associated with these fields of expertise include the words Near East or Near Eastern. The meaning of Near East in these numerous establishments and publications is Middle East. Expertise on the modern Middle East is almost never mixed or confused with studies of the Ancient Near East, although often \"Ancient Near East\" is abbreviated to \"Near East\" without any implication of modern times. For example, \"Near Eastern Languages\" in the ancient sense includes such languages as Sumerian and Akkadian. In the modern sense, it is likely to mean any or all of the Arabic languages.\n\nQuestion: Where did a large percentage of experts on the modern Middle East began their training?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThough considerably easier than in machine language, writing long programs in assembly language is often difficult and is also error prone. Therefore, most practical programs are written in more abstract high-level programming languages that are able to express the needs of the programmer more conveniently (and thereby help reduce programmer error). High level languages are usually \"compiled\" into machine language (or sometimes into assembly language and then into machine language) using another computer program called a compiler. High level languages are less related to the workings of the target computer than assembly language, and more related to the language and structure of the problem(s) to be solved by the final program. It is therefore often possible to use different compilers to translate the same high level language program into the machine language of many different types of computer. This is part of the means by which software like video games may be made available for different computer architectures such as personal computers and various video game consoles.\n\nQuestion: Assembly language that is translated into machine language is done by what type of computer?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Wise Inc has charged your Mercury account $213.56 by ACH|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Thu, 03 Feb 2022 15:44:21 +0000|CONTENT: \n\nHi David \n\nYour company's Mercury checking account \u2022\u20227681 has been charged $213.56 by Wise Inc. They initiated this charge using your company's bank account details via ACH.The full transaction details are: Wise Inc; Wise Inc:21132636:Moonchaser Inc.; P1007 - AdvertiThe Mercury Team\n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Wise? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThere are many other Protestant denominations that do not fit neatly into the mentioned branches, and are far smaller in membership. Some groups of individuals who hold basic Protestant tenets identify themselves simply as \"Christians\" or \"born-again Christians\". They typically distance themselves from the confessionalism and/or creedalism of other Christian communities by calling themselves \"non-denominational\" or \"evangelical\". Often founded by individual pastors, they have little affiliation with historic denominations.\n\nQuestion: What denomination do these small groups belong to?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nTacitus wrote in his Germania: Germania 9.6: Ceterum nec cohibere parietibus deos neque in ullam humani oris speciem adsimulare ex magnitudine caelestium arbitrator \u2013 \"The Germans, however, do not consider it consistent with the grandeur of celestial beings to confine the gods within walls, or to liken them to the form of any human countenance.\" Germania 40: mox vehiculum et vestis et, si credere velis, numen ipsum secreto lacu abluitur \u2013 \"Afterwards the car, the vestments, and, if you like to believe it, the divinity herself, are purified in a secret lake.\"\n\nQuestion: Who wrote the Germania?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your Webflow Receipt|EMAIL_FROM: Webflow <billing@webflow.com>|RECEIVED DATE: Tue, 22 Feb 2022 02:32:12 +0000|CONTENT: \n\nWebflow Billing Notice\n\n            This is your Webflow receipt. \n\n$45.00 \n Paid\nThank you for \n using Webflow!\n\n        David Patterson-Cole -  \n\n        Date: 02/22/2022  \n\n        Invoice ID: in_0KVnBvo2ZNzxqgUA4dPhPB3i\n\nDownload as PDF\n\nItem \n\nAmount \n\nBusiness \n Hosting \n\n$45.00 \n\nSubtotal:     $45.00  \n\nPaid:     $45.00  \n\nThank \n you  \n\nSupport\n\n  |  \n\n Tutorials\n\n  |  \n\n Forums\n\n  |  \n\n Templates\n\n  |  \n\n Log In\n\n \u00a9 Webflow Inc.  \n\n 398 11th Street  2nd Floor  San Francisco  CA 94103\n\nQuestion: Find the $ value paid by Webflow? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nMontana i/m\u0252n\u02c8t\u00e6n\u0259/ is a state in the Western region of the United States. The state's name is derived from the Spanish word monta\u00f1a (mountain). Montana has several nicknames, although none official, including \"Big Sky Country\" and \"The Treasure State\", and slogans that include \"Land of the Shining Mountains\" and more recently \"The Last Best Place\". Montana is ranked 4th in size, but 44th in population and 48th in population density of the 50 United States. The western third of Montana contains numerous mountain ranges. Smaller island ranges are found throughout the state. In total, 77 named ranges are part of the Rocky Mountains.\n\nQuestion: Where does the state's name come from?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $109.87. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid to AHREFS? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn August 2007 Virgil Griffith, a Caltech computation and neural-systems graduate student, created a searchable database that linked changes made by anonymous Wikipedia editors to companies and organizations from which the changes were made. The database cross-referenced logs of Wikipedia edits with publicly available records pertaining to the internet IP addresses edits were made from. Griffith was motivated by the edits from the United States Congress, and wanted to see if others were similarly promoting themselves. The tool was designed to detect conflict of interest edits. Among his findings were that FBI computers were used to edit the FBI article in Wikipedia. Although the edits correlated with known FBI IP addresses, there was no proof that the changes actually came from a member or employee of the FBI, only that someone who had access to their network had edited the FBI article in Wikipedia. Wikipedia spokespersons received Griffith's \"WikiScanner\" positively, noting that it helped prevent conflicts of interest from influencing articles as well as increasing transparency and mitigating attempts to remove or distort relevant facts.\n\nQuestion: What was Virgil Griffith focused on?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nA uniquely Creole tradition is the touloulous. These women wear decorative gowns, gloves, masks and headdresses that cover them completely, making them unrecognisable, even to the colour of their skin. On Friday and Saturday nights of Carnival, touloulou balls are held in so-called universities; in reality, large dance halls that open only at Carnival time. Touloulous get in free, and are even given condoms in the interest of the sexual health of the community. Men attend the balls, but they pay admittance and are not disguised. The touloulous pick their dance partners, who may not refuse. The setup is designed to make it easy for a woman to create a temporary liaison with a man in total anonymity. Undisguised women are not welcomed. By tradition, if such a woman gets up to dance, the orchestra stops playing. Alcohol is served at bars \u2013 the disguised women whisper to the men \"touloulou thirsty\", at which a round of drinks is expected, to be drunk through a straw protect their anonymity.\n\nQuestion: What is a tradition unique to the Creole people?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nGreen and the CPI further noted another exploit of the ESA in their discussion of the critically endangered cotton-top tamarin (Saguinus oedipus). Not only had they found documentation that 151 of these primates had inadvertently made their way from the Harvard-affiliated New England Regional Primate Research Center into the exotic pet trade through the aforementioned loophole, but in October 1976, over 800 cotton-top tamarins were imported into the United States in order to beat the official listing of the species under the ESA.\n\nQuestion: The Center for Public Integrity found that 151 of what primate were moved from the New England Primate Research Center into exotic pet trade?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nWith the six consistories, Paul VI continued the internationalization policies started by Pius XII in 1946 and continued by John XXIII. In his 1976 consistory, five of twenty cardinals originated from Africa, one of them a son of a tribal chief with fifty wives. Several prominent Latin Americans like Eduardo Francisco Pironio of Argentina; Luis Aponte Martinez of Puerto Rico and Eug\u00eanio de Ara\u00fajo Sales and Aloisio Lorscheider from Brazil were also elevated by him. There were voices within the Church at the time saying that the European period of the Church was coming to a close, a view shared by Britain's Cardinal Basil Hume. At the same time, the members of the College of Cardinals lost some of their previous influences, after Paul VI decreed, that not only cardinals but also bishops too may participate in committees of the Roman Curia. The age limit of eighty years imposed by the Pope, a numerical increase of Cardinals by almost 100%, and a reform of the regal vestments of the \"Princes of the Church\" further contributed to a service-oriented perception of Cardinals under his pontificate. The increased number of Cardinals from the Third World and the papal emphasis on related issues was nevertheless welcomed by many in Western Europe.\n\nQuestion: How many cardinals were from Africa in 1976?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nNo archaeological evidence that indicates a settlement on the site of today\u2032s city centre prior to the 12th century has been found so far. In antiquity, a Celtic oppidum stood on the Engehalbinsel (peninsula) north of Bern, fortified since the 2nd century BC (late La T\u00e8ne period), thought to be one of the twelve oppida of the Helvetii mentioned by Caesar. During the Roman era, there was a Gallo-Roman vicus on the same site. The Bern zinc tablet has the name Brenodor (\"dwelling of Breno\"). In the Early Middle Ages, there was a settlement in B\u00fcmpliz, now a city district of Bern, some 4 km (2 mi) from the medieval city.\n\nQuestion: When was the earliest evidnce of settlement in the city centre?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Ganesha Dirschka's card has been charged $124.48|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Mon, 14 Feb 2022 09:55:16 +0000|CONTENT: \n\nHi David \nGanesha Dirschka's Mercury debit card \u2022\u20221890 was charged for $124.48.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Calendly? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Ganesha Dirschka's card has been charged $105.29|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Thu, 10 Feb 2022 05:11:14 +0000|CONTENT: \n\nHi David \nGanesha Dirschka's Mercury debit card \u2022\u20221890 was charged for $105.29\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Notion? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nBoston is surrounded by the \"Greater Boston\" region and is contiguously bordered by the cities and towns of Winthrop, Revere, Chelsea, Everett, Somerville, Cambridge, Newton, Brookline, Needham, Dedham, Canton, Milton, and Quincy. The Charles River separates Boston from Watertown and the majority of Cambridge, and the mass of Boston from its own Charlestown neighborhood. To the east lie Boston Harbor and the Boston Harbor Islands National Recreation Area (which includes part of the city's territory, specifically Calf Island, Gallops Island, Great Brewster Island, Green Island, Little Brewster Island, Little Calf Island, Long Island, Lovells Island, Middle Brewster Island, Nixes Mate, Outer Brewster Island, Rainsford Island, Shag Rocks, Spectacle Island, The Graves, and Thompson Island). The Neponset River forms the boundary between Boston's southern neighborhoods and the city of Quincy and the town of Milton. The Mystic River separates Charlestown from Chelsea and Everett, and Chelsea Creek and Boston Harbor separate East Boston from Boston proper.\n\nQuestion: What is the name of the region that surrounds Boston?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Moonchaser received $2,657.81 from STRIPE|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Tue, 22 Feb 2022 14:03:47 +0000|CONTENT: \n\nHi David \nYou've received $2 657.81 via ACH In from STRIPE to your company's Mercury checking account \u2022\u20227681.\nIf you have any questions  just reply to this email.The Mercury Team\n\nYou are receiving notifications for Moonchaser on all incoming transactions. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid by Stripe? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nFinancial problems and a reduction in tourism led to Norfolk Island's administration appealing to the Australian federal government for assistance in 2010. In return, the islanders were to pay income tax for the first time but would be eligible for greater welfare benefits. However, by May 2013 agreement had not been reached and islanders were having to leave to find work and welfare. An agreement was finally signed in Canberra on 12 March 2015 to replace self-government with a local council but against the wishes of the Norfolk Island government. A majority of Norfolk Islanders have objected to the Australian plan to make changes to Norfolk Island without first consulting them and allowing their say with 68% of voters against forced changes.\n\nQuestion: What lead to Norfolk Island asking for assistance from Australia in 2010?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Ganesha Dirschka's Mercury debit card \u2022\u20221890 has received a $66.90 credit from SURFSHARK.* SURFSHARK.. The money has been credited to your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to Ganesha? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn The Open Society and Its Enemies and The Poverty of Historicism, Popper developed a critique of historicism and a defence of the \"Open Society\". Popper considered historicism to be the theory that history develops inexorably and necessarily according to knowable general laws towards a determinate end. He argued that this view is the principal theoretical presupposition underpinning most forms of authoritarianism and totalitarianism. He argued that historicism is founded upon mistaken assumptions regarding the nature of scientific law and prediction. Since the growth of human knowledge is a causal factor in the evolution of human history, and since \"no society can predict, scientifically, its own future states of knowledge\", it follows, he argued, that there can be no predictive science of human history. For Popper, metaphysical and historical indeterminism go hand in hand.\n\nQuestion: What is the term for the view that there are discoverable general laws constraining history's development?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nOn 20 December 2012, Pope Benedict XVI, in an audience with the Cardinal Prefect of the Congregation for the Causes of Saints, declared that the late pontiff had lived a life of heroic virtue, which means that he could be called \"Venerable\". A miracle attributed to the intercession of Paul VI was approved on 9 May 2014 by Pope Francis. The beatification ceremony for Paul VI was held on 19 October 2014, which means that he can now be called \"Blessed\". His liturgical feast day is celebrated on the date of his birth, 26 September, rather than the day of his death as is usual.\n\nQuestion: In what year was Paul VI beautified?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThus, the technological ability to detect any infectious agent rapidly and specifically are currently available. The only remaining blockades to the use of PCR as a standard tool of diagnosis are in its cost and application, neither of which is insurmountable. The diagnosis of a few diseases will not benefit from the development of PCR methods, such as some of the clostridial diseases (tetanus and botulism). These diseases are fundamentally biological poisonings by relatively small numbers of infectious bacteria that produce extremely potent neurotoxins. A significant proliferation of the infectious agent does not occur, this limits the ability of PCR to detect the presence of any bacteria.\n\nQuestion: What technological ability with regards to detection is currently available?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Ganesha Dirschka's card has been charged $446.47 by FRONT PRIME-2|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Mon, 07 Feb 2022 03:33:27 +0000|CONTENT: \n\nHi David \nGanesha Dirschka's Mercury debit card \u2022\u20221890 was charged for $446.47 by FRONT PRIME-2.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Front? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAlthough the drafts of both the Maastricht treaty and the Treaty establishing a Constitution for Europe mentioned federalism, the representatives of the member countries (all of whom would have had to agree to use of the term) never formally adopted it. The strongest advocates of European federalism have been Germany, Italy, Belgium and Luxembourg while those historically most strongly opposed have been the United Kingdom, Denmark and France (with conservative presidents and governments). Since the presidency of Fran\u00e7ois Mitterrand (1981-1995), the French authorities have adopted a much more pro-European Unification position, as they consider that a strong EU is presenting the best \"insurance\" against a unified Germany which might become too strong and thus a threat for its neighbours.\n\nQuestion: Who is the strongest advocate of the European Federalism?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi,Your card has received a $47.77 credit from DOCUSIGN. The money has been credited to your company's checking account.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to David? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nSacrifice to deities of the heavens (di superi, \"gods above\") was performed in daylight, and under the public gaze. Deities of the upper heavens required white, infertile victims of their own sex: Juno a white heifer (possibly a white cow); Jupiter a white, castrated ox (bos mas) for the annual oath-taking by the consuls. Di superi with strong connections to the earth, such as Mars, Janus, Neptune and various genii \u2013 including the Emperor's \u2013 were offered fertile victims. After the sacrifice, a banquet was held; in state cults, the images of honoured deities took pride of place on banqueting couches and by means of the sacrificial fire consumed their proper portion (exta, the innards). Rome's officials and priests reclined in order of precedence alongside and ate the meat; lesser citizens may have had to provide their own.\n\nQuestion: When did the sacrifices to the deities of the heavens occur?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn college sports, Detroit's central location within the Mid-American Conference has made it a frequent site for the league's championship events. While the MAC Basketball Tournament moved permanently to Cleveland starting in 2000, the MAC Football Championship Game has been played at Ford Field in Detroit since 2004, and annually attracts 25,000 to 30,000 fans. The University of Detroit Mercy has a NCAA Division I program, and Wayne State University has both NCAA Division I and II programs. The NCAA football Little Caesars Pizza Bowl is held at Ford Field each December.\n\nQuestion: Which bowl game is held in Detroit?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nOriginally, each branch and agency of the U.S. government was responsible for maintaining its own documents, which often resulted in records loss and destruction. Congress established the National Archives Establishment in 1934 to centralize federal record keeping, with the Archivist of the United States as chief administrator. The National Archives was incorporated with GSA in 1949; in 1985 it became an independent agency as NARA (National Archives and Records Administration).\n\nQuestion: What year was the National Archives Establishment established in?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Charged your Mercury account $213.56 by ACH|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Thu, 03 Feb 2022 15:44:21 +0000|CONTENT: \n\nHi David \n\nYour company's Mercury checking account \u2022\u20227681 has been charged $213.56. They initiated this charge using your company's bank account details via ACH.The full transaction details are unknown\n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Wise? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe first Dominican site in England was at Oxford, in the parishes of St. Edward and St. Adelaide. The friars built an oratory to the Blessed Virgin Mary and by 1265, the brethren, in keeping with their devotion to study, began erecting a school. Actually, the Dominican brothers likely began a school immediately after their arrival, as priories were legally schools. Information about the schools of the English Province is limited, but a few facts are known. Much of the information available is taken from visitation records. The \"visitation\" was a section of the province through which visitors to each priory could describe the state of its religious life and its studies to the next chapter. There were four such visits in England and Wales\u2014Oxford, London, Cambridge and York. All Dominican students were required to learn grammar, old and new logic, natural philosophy and theology. Of all of the curricular areas, however, theology was the most important. This is not surprising when one remembers Dominic's zeal for it.\n\nQuestion: What famous school was home to the first English Dominican Order?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe climate of Western Alaska is determined in large part by the Bering Sea and the Gulf of Alaska. It is a subarctic oceanic climate in the southwest and a continental subarctic climate farther north. The temperature is somewhat moderate considering how far north the area is. This region has a tremendous amount of variety in precipitation. An area stretching from the northern side of the Seward Peninsula to the Kobuk River valley (i. e., the region around Kotzebue Sound) is technically a desert, with portions receiving less than 10 in (25 cm) of precipitation annually. On the other extreme, some locations between Dillingham and Bethel average around 100 in (250 cm) of precipitation.\n\nQuestion: What two bodies of water influene the climate in Western Alaska?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nPolytechnic Institutes are technological universities, many dating back to the mid-19th century. A handful of world-renowned Elite American universities include the phrases \"Institute of Technology\", \"Polytechnic Institute\", \"Polytechnic University\", or similar phrasing in their names; these are generally research-intensive universities with a focus on engineering, science and technology. The earliest and most famous of these institutions are, respectively, Rensselaer Polytechnic Institute (RPI, 1824), New York University Tandon School of Engineering (1854) and the Massachusetts Institute of Technology (MIT, 1861). Conversely, schools dubbed \"technical colleges\" or \"technical institutes\" generally provide post-secondary training in technical and mechanical fields, focusing on training vocational skills primarily at a community college level\u2014parallel and sometimes equivalent to the first two years at a bachelor's degree-granting institution.\n\nQuestion: In what year was Rensselaer Polytechnic Institute founded?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn 1853 the Russian Empire on behalf of the Slavic Balkan states began to question the very existence of the Ottoman Empire. The result was the Crimean War, 1853\u20131856, in which the British Empire and the French Empire supported the Ottoman Empire in its struggle against the incursions of the Russian Empire. Eventually, the Ottoman Empire lost control of the Balkan region.\n\nQuestion: When did the Russian Empire begin to question the existence of the Ottoman Empire?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nWright himself believed that values >0.25 represent very great genetic variation and that an FST of 0.15\u20130.25 represented great variation. However, about 5% of human variation occurs between populations within continents, therefore FST values between continental groups of humans (or races) of as low as 0.1 (or possibly lower) have been found in some studies, suggesting more moderate levels of genetic variation. Graves (1996) has countered that FST should not be used as a marker of subspecies status, as the statistic is used to measure the degree of differentiation between populations, although see also Wright (1978).\n\nQuestion: FST values greater than .25 represent very great what?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAdvances were made in irrigation and farming, using new technology such as the windmill. Crops such as almonds and citrus fruit were brought to Europe through al-Andalus, and sugar cultivation was gradually adopted by the Europeans. Arab merchants dominated trade in the Indian Ocean until the arrival of the Portuguese in the 16th century. Hormuz was an important center for this trade. There was also a dense network of trade routes in the Mediterranean, along which Muslim countries traded with each other and with European powers such as Venice, Genoa and Catalonia. The Silk Road crossing Central Asia passed through Muslim states between China and Europe.\n\nQuestion: which crops were brought to europe from the Muslim World?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nBy law, religious communities must register by the State Committee on Religious Affairs (SCRA) and with local authorities. Registration with the SCRA requires a charter, a list of 10 or more members, and evidence of local government approval prayer site location. Religious groups who do not have a physical structure are not allowed to gather publicly for prayer. Failure to register can result in large fines and closure of place of worship. There are reports that registration on the local level is sometimes difficult to obtain. People under the age of 18 are also barred from public religious practice.\n\nQuestion: What do religions communities have to register with?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nDell traces its origins to 1984, when Michael Dell created Dell Computer Corporation, which at the time did business as PC's Limited, while a student of the University of Texas at Austin. The dorm-room headquartered company sold IBM PC-compatible computers built from stock components. Dell dropped out of school to focus full-time on his fledgling business, after getting $1,000 in expansion-capital from his family. In 1985, the company produced the first computer of its own design, the Turbo PC, which sold for $795. PC's Limited advertised its systems in national computer magazines for sale directly to consumers and custom assembled each ordered unit according to a selection of options. The company grossed more than $73 million in its first year of operation.\n\nQuestion: When did Michael Dell found his company?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Late Middle Ages represented a period of upheaval in Europe. The epidemic known as the Black Death and an associated famine caused demographic catastrophe in Europe as the population plummeted. Dynastic struggles and wars of conquest kept many of the states of Europe at war for much of the period. In the Balkans, the Ottoman Empire, a Turkish state originating in Anatolia, encroached steadily on former Byzantine lands, culminating in the Fall of Constantinople in 1453.\n\nQuestion: What era was characterized by turmoil in Europe?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nWidespread rumors of Napoleon's return from St. Helena and Napoleon as an inspiration for patriotism, individual and collective liberties, and political mobilization manifested themselves in seditious materials, displaying the tricolor and rosettes. There were also subversive activities celebrating anniversaries of Napoleon's life and reign and disrupting royal celebrations\u2014they demonstrated the prevailing and successful goal of the varied supporters of Napoleon to constantly destabilize the Bourbon regime.\n\nQuestion: Rumors of Napoleon's return from what location were often used as an inspiration for his followers?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 has received a $47.77 credit from DOCUSIGN. The money has been credited to your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to Docusign? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your card has been charged $2,099.00 by MIXPANEL, INC.|CONTENT: Hi, Your Mercury debit card \u2022\u20224605 was preauthorized for $2,099.00 by MIXPANEL, INC.. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681. If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid to Mixpanel? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe names Land of Israel and Children of Israel have historically been used to refer to the biblical Kingdom of Israel and the entire Jewish people respectively. The name \"Israel\" (Standard Yisra\u02beel, Isr\u0101\u02be\u012bl; Septuagint Greek: \u1f38\u03c3\u03c1\u03b1\u03ae\u03bb Isra\u0113l; 'El(God) persists/rules' though, after Hosea 12:4 often interpreted as \"struggle with God\") in these phrases refers to the patriarch Jacob who, according to the Hebrew Bible, was given the name after he successfully wrestled with the angel of the Lord. Jacob's twelve sons became the ancestors of the Israelites, also known as the Twelve Tribes of Israel or Children of Israel. Jacob and his sons had lived in Canaan but were forced by famine to go into Egypt for four generations, lasting 430 years, until Moses, a great-great grandson of Jacob, led the Israelites back into Canaan during the \"Exodus\". The earliest known archaeological artifact to mention the word \"Israel\" is the Merneptah Stele of ancient Egypt (dated to the late 13th century BCE).\n\nQuestion: Who was Moses?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,You sent a Wire Payment of $850.00. The money was sent from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to 38Avenue? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nNew Haven Harbor is home to the Port of New Haven, a deep-water seaport with three berths capable of hosting vessels and barges as well as the facilities required to handle break bulk cargo. The port has the capacity to load 200 trucks a day from the ground or via loading docks. Rail transportation access is available, with a private switch engine for yard movements and private siding for loading and unloading. Approximately 400,000 square feet (40,000 m2) of inside storage and 50 acres (200,000 m2) of outside storage are available at the site. Five shore cranes with a 250-ton capacity and 26 forklifts, each with a 26-ton capacity, are also available.\n\nQuestion: In what harbor is the Port of New Haven located?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nRichmond city government consists of a city council with representatives from nine districts serving in a legislative and oversight capacity, as well as a popularly elected, at-large mayor serving as head of the executive branch. Citizens in each of the nine districts elect one council representative each to serve a four-year term. Beginning with the November 2008 election Council terms was lengthened to 4 years. The city council elects from among its members one member to serve as Council President and one to serve as Council Vice President. The city council meets at City Hall, located at 900 E. Broad St., 2nd Floor, on the second and fourth Mondays of every month, except August.\n\nQuestion: How many representatives make up the Richmond city council?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe inhabitants of the British Isles have been drinking ale since the Bronze Age, but it was with the arrival of the Roman Empire in its shores in the 1st Century, and the construction of the Roman road networks that the first inns, called tabernae, in which travellers could obtain refreshment began to appear. After the departure of Roman authority in the 5th Century and the fall of the Romano-British kingdoms, the Anglo-Saxons established alehouses that grew out of domestic dwellings, the Anglo-Saxon alewife would put a green bush up on a pole to let people know her brew was ready. These alehouses quickly evolved into meeting houses for the folk to socially congregate, gossip and arrange mutual help within their communities. Herein lies the origin of the modern public house, or \"Pub\" as it is colloquially called in England. They rapidly spread across the Kingdom, becoming so commonplace that in 965 King Edgar decreed that there should be no more than one alehouse per village.\n\nQuestion: When did the inhabitants of the British Isles begin drinking ale?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nOn 9 February 2014, Swiss voters narrowly approved by 50.3% a ballot initiative launched by the national conservative Swiss People's Party (SVP/UDC) to restrict immigration, and thus reintroducing a quota system on the influx of foreigners. This initiative was mostly backed by rural (57.6% approvals), suburban (51.2% approvals), and isolated cities (51.3% approvals) of Switzerland as well as by a strong majority (69.2% approval) in the canton of Ticino, while metropolitan centres (58.5% rejection) and the French-speaking part (58.5% rejection) of Switzerland rather rejected it. Some news commentators claim that this proposal de facto contradicts the bilateral agreements on the free movement of persons from these respective countries.\n\nQuestion: In February of 2014, what did Swiss voters narrowly approve to restrict?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nFrom the German point of view, March 1941 saw an improvement. The Luftwaffe flew 4,000 sorties that month, including 12 major and three heavy attacks. The electronic war intensified but the Luftwaffe flew major inland missions only on moonlit nights. Ports were easier to find and made better targets. To confuse the British, radio silence was observed until the bombs fell. X- and Y-Ger\u00e4t beams were placed over false targets and switched only at the last minute. Rapid frequency changes were introduced for X-Ger\u00e4t, whose wider band of frequencies and greater tactical flexibility ensured it remained effective at a time when British selective jamming was degrading the effectiveness of Y-Ger\u00e4t.\n\nQuestion: How many sorties were flown in March 1941?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIreland and the United Kingdom are both part of the European Union (EU). The Crown Dependencies are not a part of the EU however do participate in certain aspects that were negotiated as a part of the UK's accession to the EU. Neither the United Kingdom or Ireland are part of the Schengen area, that allow passport-free travel between EU members states. However, since the partition of Ireland, an informal free-travel area had existed across the region. In 1997, this area required formal recognition during the course of negotiations for the Amsterdam Treaty of the European Union and is now known as the Common Travel Area.\n\nQuestion: The United Kingdom is part of what union?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Payment Received - Thank You!|EMAIL_FROM: |RECEIVED DATE: Mon, 07 Feb 2022 16:31:09 +0000|CONTENT: \n     Payment Received - Thank You!   \n                                 Hi David      A payment of $424.62 was applied to the financial account.       \nPayment information\n    Date   7 Feb 2022 UTC     Previous Balance   due $412.25     Fee   $12.37     Amount charged   $424.62     New Balance   $0.00     Payment Method   credit card     Reference ID   450920522             \n     Primary billing method charged.     Thanks                     Unsubscribe   |   Privacy Policy   |   Contact S\n\nQuestion: Find the $ value paid to Upwork? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nJames Liebman, a professor of law at Columbia Law School, stated in 1996 that his study found that when habeas corpus petitions in death penalty cases were traced from conviction to completion of the case that there was \"a 40 percent success rate in all capital cases from 1978 to 1995.\" Similarly, a study by Ronald Tabak in a law review article puts the success rate in habeas corpus cases involving death row inmates even higher, finding that between \"1976 and 1991, approximately 47 percent of the habeas petitions filed by death row inmates were granted.\" The different numbers are largely definitional, rather than substantive. Freedam's statistics looks at the percentage of all death penalty cases reversed, while the others look only at cases not reversed prior to habeas corpus review.\n\nQuestion: What institution does James Liebman work for?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nSwitzerland has a stable, prosperous and high-tech economy and enjoys great wealth, being ranked as the wealthiest country in the world per capita in multiple rankings. In 2011 it was ranked as the wealthiest country in the world in per capita terms (with \"wealth\" being defined to include both financial and non-financial assets), while the 2013 Credit Suisse Global Wealth Report showed that Switzerland was the country with the highest average wealth per adult in 2013. It has the world's nineteenth largest economy by nominal GDP and the thirty-sixth largest by purchasing power parity. It is the twentieth largest exporter, despite its small size. Switzerland has the highest European rating in the Index of Economic Freedom 2010, while also providing large coverage through public services. The nominal per capita GDP is higher than those of the larger Western and Central European economies and Japan. If adjusted for purchasing power parity, Switzerland ranks 8th in the world in terms of GDP per capita, according to the World Bank and IMF (ranked 15th according to the CIA Worldfactbook).\n\nQuestion: How does the Swiss economy rank worldwide by nominal GDP?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: You sent $200.00 via Wire Payment|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Tue, 01 Feb 2022 17:28:11 +0000|CONTENT: \n\nHi David \nYou sent a Wire Payment of $200.00. \nThe money was sent from your company's Mercury checking account \u2022\u20227681.\nIf you have any questions  just reply to this email.The Mercury Team\n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Mr. Zoy? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your card has been charged $2,099.00 by MIXPANEL, INC.|CONTENT: Hi, Your Mercury debit card \u2022\u20224605 was preauthorized for $2,099.00 by MIXPANEL, INC.. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681. If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid by Mixpanel? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn April 2005, Comcast and Time Warner Cable announced plans to buy the assets of bankrupted Adelphia Cable. The two companies paid a total of $17.6 billion in the deal that was finalized in the second quarter of 2006\u2014after the U.S. Federal Communications Commission (FCC) completed a seven-month investigation without raising an objection. Time Warner Cable became the second largest cable provider in the U.S., ranking behind Comcast. As part of the deal, Time Warner and Comcast traded existing subscribers in order to consolidate them into larger geographic clusters.\n\nQuestion: What bankrupt company did Comcast partner with another broadband provider to acquire in 2005?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe major applications of copper are in electrical wires (60%), roofing and plumbing (20%) and industrial machinery (15%). Copper is mostly used as a pure metal, but when a higher hardness is required it is combined with other elements to make an alloy (5% of total use) such as brass and bronze. A small part of copper supply is used in production of compounds for nutritional supplements and fungicides in agriculture. Machining of copper is possible, although it is usually necessary to use an alloy for intricate parts to get good machinability characteristics.\n\nQuestion: What percentage of copper is used in electrical wires?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn 2004, worldwide sales of audio CDs, CD-ROMs and CD-Rs reached about 30 billion discs. By 2007, 200 billion CDs had been sold worldwide. CDs are increasingly being replaced by other forms of digital storage and distribution, with the result that audio CD sales rates in the U.S. have dropped about 50% from their peak; however, they remain one of the primary distribution methods for the music industry. In 2014, revenues from digital music services matched those from physical format sales for the first time.\n\nQuestion: In what year were digital and physical music sales the same?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn a movie theater, steps in the aisles are usually marked with a row of small lights for convenience and safety, when the film has started and the other lights are off. Traditionally made up of small low wattage, low voltage lamps in a track or translucent tube, these are rapidly being replaced with LED based versions.\n\nQuestion: What do steps in move theater aisles have for safety markings?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nSeemingly, multitasking would cause a computer that is switching between several programs to run more slowly, in direct proportion to the number of programs it is running, but most programs spend much of their time waiting for slow input/output devices to complete their tasks. If a program is waiting for the user to click on the mouse or press a key on the keyboard, then it will not take a \"time slice\" until the event it is waiting for has occurred. This frees up time for other programs to execute so that many programs may be run simultaneously without unacceptable speed loss.\n\nQuestion: Multitasking would seemingly cause a computer to run in what fashion?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nEarly recordings were made entirely acoustically, the sound being collected by a horn and piped to a diaphragm, which vibrated the cutting stylus. Sensitivity and frequency range were poor, and frequency response was very irregular, giving acoustic recordings an instantly recognizable tonal quality. A singer practically had to put his or her face in the recording horn. Lower-pitched orchestral instruments such as cellos and double basses were often doubled (or replaced) by louder wind instruments, such as tubas. Standard violins in orchestral ensembles were commonly replaced by Stroh violins, which became popular with recording studios.\n\nQuestion: What were two drawback of early recordings?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your company's Mercury checking account \u2022\u20227681 has been charged $586.89 by WA DEPT REVENUE. They initiated this charge using your company's bank account details via ACH.\nThe full transaction details are: WA DEPT REVENUE; WA DEPT REVENUE::MOONCHASER INC.; Mercury T\n\nQuestion: Find the $ value paid to WA Dept? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn the 14th century, much of the Greek peninsula was lost by the Byzantine Empire at first to the Serbs and then to the Ottomans. By the beginning of the 15th century, the Ottoman advance meant that Byzantine territory in Greece was limited mainly to its then-largest city, Thessaloniki, and the Peloponnese (Despotate of the Morea). After the fall of Constantinople to the Ottomans in 1453, the Morea was the last remnant of the Byzantine Empire to hold out against the Ottomans. However, this, too, fell to the Ottomans in 1460, completing the Ottoman conquest of mainland Greece. With the Turkish conquest, many Byzantine Greek scholars, who up until then were largely responsible for preserving Classical Greek knowledge, fled to the West, taking with them a large body of literature and thereby significantly contributing to the Renaissance.\n\nQuestion: A lot of Greece was lost by whom in the 14th century?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn the United States and Canada, the film opened on 6 November 2015, and in its opening weekend, was originally projected to gross $70\u201375 million from 3,927 screens, the widest release for a Bond film. However, after grossing $5.25 million from its early Thursday night showings and $28 million on its opening day, weekend projections were increased to $75\u201380 million. The film ended up grossing $70.4 million in its opening weekend (about $20 million less than Skyfall's $90.6 million debut, including IMAX previews), but nevertheless finished first at the box office. IMAX generated $9.1 million for Spectre at 374 screens, premium large format made $8 million from 429 cinemas, reaping 11% of the film's opening, which means that Spectre earned $17.1 million (23%) of its opening weekend total in large-format venues. Cinemark XD generated $1.85 million in 112 XD locations.\n\nQuestion: How many Imax screens showed Spectre on its opening weekend in the US and Canada?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nDogs are highly variable in height and weight. The smallest known adult dog was a Yorkshire Terrier, that stood only 6.3 cm (2.5 in) at the shoulder, 9.5 cm (3.7 in) in length along the head-and-body, and weighed only 113 grams (4.0 oz). The largest known dog was an English Mastiff which weighed 155.6 kg (343 lb) and was 250 cm (98 in) from the snout to the tail. The tallest dog is a Great Dane that stands 106.7 cm (42.0 in) at the shoulder.\n\nQuestion: Dogs show an extreme range in what two characteristics?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nOn 14 September 2009, U.S. Special Forces killed two men and wounded and captured two others near the Somali village of Baarawe. Witnesses claim that helicopters used for the operation launched from French-flagged warships, but that could not be confirmed. A Somali-based al-Qaida affiliated group, the Al-Shabaab, has confirmed the death of \"sheik commander\" Saleh Ali Saleh Nabhan along with an unspecified number of militants. Nabhan, a Kenyan, was wanted in connection with the 2002 Mombasa attacks.\n\nQuestion: How many people were killed by US Special Forces on Sep 14, 2009?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nMany Sanskrit loanwords are also found in Austronesian languages, such as Javanese, particularly the older form in which nearly half the vocabulary is borrowed. Other Austronesian languages, such as traditional Malay and modern Indonesian, also derive much of their vocabulary from Sanskrit, albeit to a lesser extent, with a larger proportion derived from Arabic. Similarly, Philippine languages such as Tagalog have some Sanskrit loanwords, although more are derived from Spanish. A Sanskrit loanword encountered in many Southeast Asian languages is the word bh\u0101\u1e63\u0101, or spoken language, which is used to refer to the names of many languages.\n\nQuestion: Tagalog is what kind of language?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe alcohol in beer comes primarily from the metabolism of sugars that are produced during fermentation. The quantity of fermentable sugars in the wort and the variety of yeast used to ferment the wort are the primary factors that determine the amount of alcohol in the final beer. Additional fermentable sugars are sometimes added to increase alcohol content, and enzymes are often added to the wort for certain styles of beer (primarily \"light\" beers) to convert more complex carbohydrates (starches) to fermentable sugars. Alcohol is a by-product of yeast metabolism and is toxic to the yeast; typical brewing yeast cannot survive at alcohol concentrations above 12% by volume. Low temperatures and too little fermentation time decreases the effectiveness of yeasts and consequently decreases the alcohol content.\n\nQuestion: What is the main source of the alcohol in beer?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAs the election approached, other prominent citizens and politicians from both parties urged Eisenhower to run for president. In January 1948, after learning of plans in New Hampshire to elect delegates supporting him for the forthcoming Republican National Convention, Eisenhower stated through the Army that he was \"not available for and could not accept nomination to high political office\"; \"life-long professional soldiers\", he wrote, \"in the absence of some obvious and overriding reason, [should] abstain from seeking high political office\". Eisenhower maintained no political party affiliation during this time. Many believed he was forgoing his only opportunity to be president; Republican Thomas E. Dewey was considered the other probable winner, would presumably serve two terms, and Eisenhower, at age 66 in 1956, would then be too old.\n\nQuestion: What state's delegates were considering supporting Eisenhower in 1948?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIslamic architecture used mosaic technique to decorate religious buildings and palaces after the Muslim conquests of the eastern provinces of the Byzantine Empire. In Syria and Egypt the Arabs were influenced by the great tradition of Roman and Early Christian mosaic art. During the Umayyad Dynasty mosaic making remained a flourishing art form in Islamic culture and it is continued in the art of zellige and azulejo in various parts of the Arab world, although tile was to become the main Islamic form of wall decoration.\n\nQuestion: Who conquered the Eastern Provinces of the Byzantine empire?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn DC circuits and pulsed circuits, current and voltage reversal are affected by the damping of the system. Voltage reversal is encountered in RLC circuits that are under-damped. The current and voltage reverse direction, forming a harmonic oscillator between the inductance and capacitance. The current and voltage will tend to oscillate and may reverse direction several times, with each peak being lower than the previous, until the system reaches an equilibrium. This is often referred to as ringing. In comparison, critically damped or over-damped systems usually do not experience a voltage reversal. Reversal is also encountered in AC circuits, where the peak current will be equal in each direction.\n\nQuestion: What is one type of circuit in which voltage and current reversal are affected by damping?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi, you have received a $420.00 credit from TYPEFORM, S.L.. The money has been credited to your company's Mercury account. If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to Ganesha? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Payment Received - Thank You!|EMAIL_FROM: Upwork Notification <donotreply@upwork.com>|RECEIVED DATE: Mon, 21 Feb 2022 17:14:18 +0000|CONTENT: \n     Payment Received - Thank You!   \n                                 Hi David      A payment of $200.85 was applied to David Patterson-Cole's \nfinancial account.       \nPayment information\n    Date   21 Feb 2022 UTC     Previous Balance   due $195.00     Fee   $5.85     Amount charged   $200.85     New Balance   $0.00     Payment Method   credit card     Reference ID   454777298             \n     Primary billing method charged.     Thanks The Upwork Team                     Unsubscribe   |   Privacy Policy   |   Contact Support  \n655 Montgomery Street  Suite 490  Dpt 17022  San Francisco  CA 94111 \n\n\u00a9 2022 U\n\nQuestion: Find the $ value paid to Montgomery? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nCurrently, the Regular Force component of the Army consists of three field-ready brigade groups: 1 Canadian Mechanized Brigade Group, at CFB Edmonton and CFB Shilo; 2 Canadian Mechanized Brigade Group, at CFB Petawawa and CFB Gagetown; and 5 Canadian Mechanized Brigade Group, at CFB Valcartier and Quebec City. Each contains one regiment each of artillery, armour, and combat engineers, three battalions of infantry (all scaled in the British fashion), one battalion for logistics, a squadron for headquarters/signals, and several smaller support organizations. A tactical helicopter squadron and a field ambulance are co-located with each brigade, but do not form part of the brigade's command structure.\n\nQuestion: How many brigades does the Army consist of?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nMost mammals are viviparous, giving birth to live young. However, the five species of monotreme, the platypuses and the echidnas, lay eggs. The monotremes have a sex determination system different from that of most other mammals. In particular, the sex chromosomes of a platypus are more like those of a chicken than those of a therian mammal. Like marsupials and most other mammals, monotreme young are larval and fetus-like, as the presence of epipubic bones prevents the expansion of the torso, forcing them to produce small young.\n\nQuestion: What is the common mammal group that gives birth to live young?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nVirgil is traditionally ranked as one of Rome's greatest poets. His Aeneid has been considered the national epic of ancient Rome from the time of its composition to the present day. Modeled after Homer's Iliad and Odyssey, the Aeneid follows the Trojan refugee Aeneas as he struggles to fulfill his destiny and arrive on the shores of Italy\u2014in Roman mythology the founding act of Rome. Virgil's work has had wide and deep influence on Western literature, most notably Dante's Divine Comedy, in which Virgil appears as Dante's guide through hell and purgatory.\n\nQuestion: Which of Virgil's works is considered the national epic of ancient Rome?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nBecause most injuries sustained by adolescents are related to risky behavior (car crashes, alcohol, unprotected sex), a great deal of research has been done on the cognitive and emotional processes underlying adolescent risk-taking. In addressing this question, it is important to distinguish whether adolescents are more likely to engage in risky behaviors (prevalence), whether they make risk-related decisions similarly or differently than adults (cognitive processing perspective), or whether they use the same processes but value different things and thus arrive at different conclusions. The behavioral decision-making theory proposes that adolescents and adults both weigh the potential rewards and consequences of an action. However, research has shown that adolescents seem to give more weight to rewards, particularly social rewards, than do adults.\n\nQuestion: Most injuries sustained by adolescents are related to what?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nDuring the Second Sino-Japanese War, which led into World War II, much of Zhejiang was occupied by Japan and placed under the control of the Japanese puppet state known as the Reorganized National Government of China. Following the Doolittle Raid, most of the B-25 American crews that came down in China eventually made it to safety with the help of Chinese civilians and soldiers. The Chinese people who helped them, however, paid dearly for sheltering the Americans. The Imperial Japanese Army began the Zhejiang-Jiangxi Campaign to intimidate the Chinese out of helping downed American airmen. The Japanese killed an estimated 250,000 civilians while searching for Doolittle\u2019s men.\n\nQuestion: What war did the Second Sino-Japanese War lead into?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe People's Committees led to a high percentage of public involvement in decision making, within the limits permitted by the RCC, but exacerbated tribal divisions. They also served as a surveillance system, aiding the security services in locating individuals with views critical of the RCC, leading to the arrest of Ba'athists, Marxists and Islamists. Operating in a pyramid structure, the base form of these Committees were local working groups, who sent elected representatives to the district level, and from there to the national level, divided between the General People's Congress and the General People's Committee. Above these remained Gaddafi and the RCC, who remained responsible for all major decisions.\n\nQuestion: What kind of structure did the People's Committee system use?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nMolecular studies based on DNA analysis have suggested new relationships among mammal families over the last few years. Most of these findings have been independently validated by retrotransposon presence/absence data. Classification systems based on molecular studies reveal three major groups or lineages of placental mammals- Afrotheria, Xenarthra, and Boreoeutheria- which diverged from early common ancestors in the Cretaceous. The relationships between these three lineages is contentious, and all three possible different hypotheses have been proposed with respect to which group is basal with respect to other placentals. These hypotheses are Atlantogenata (basal Boreoeutheria), Epitheria (basal Xenarthra), and Exafroplacentalia (basal Afrotheria). Boreoeutheria in turn contains two major lineages- Euarchontoglires and Laurasiatheria.\n\nQuestion: Through Molecular studies, what was used to suggest new relationships among mammal families?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nHowever, performance enhancements cannot be generalized as the benefits and limitations of the system are dependent on many factors. One problem is that the system is subject to gaming. Sometimes, one person enters the destination for a large group of people going to the same floor. The dispatching algorithm is usually unable to completely cater for the variation, and latecomers may find the elevator they are assigned to is already full. Also, occasionally, one person may press the floor multiple times. This is common with up/down buttons when people believe this to be an effective way to hurry elevators. However, this will make the computer think multiple people are waiting and will allocate empty cars to serve this one person.\n\nQuestion: What is one example of a limitation on the system?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nA few lines of the Paris M\u00e9tro in France operate on a four-rail power scheme because they run on rubber tyres which run on a pair of narrow roadways made of steel and, in some places, concrete. Since the tyres do not conduct the return current, the two guide rails provided outside the running 'roadways' double up as conductor rails, so at least electrically it is a four-rail scheme. One of the guide rails is bonded to the return conventional running rails situated inside the roadway so a single polarity supply is required. The trains are designed to operate from either polarity of supply, because some lines use reversing loops at one end, causing the train to be reversed during every complete journey. The loop was originally provided to save the original steam locomotives having to 'run around' the rest of the train saving much time. Today, the driver does not have to change ends at termini provided with such a loop, but the time saving is not so significant as it takes almost as long to drive round the loop as it does to change ends. Many of the original loops have been lost as lines were extended.\n\nQuestion: Why some lines of Paris Metro have to operate on a four-rail system?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Moonchaser received $2,657.81|EMAIL_FROM: |RECEIVED DATE: Tue, 22 Feb 2022 14:03:47 +0000|CONTENT: \n\nHi David \nYou've received $2 657.81 via ACH In to your company's Mercury checking account \u2022\u20227681.\nIf you have any questions  just reply to this email.The Mercury Team\n\nYou are receiving notifications for Moonchaser on all incoming transactions. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid by Stripe? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nTCM's library of films spans several decades of cinema and includes thousands of film titles. Besides its deals to broadcast film releases from Metro-Goldwyn-Mayer and Warner Bros. Entertainment, Turner Classic Movies also maintains movie licensing rights agreements with Universal Studios, Paramount Pictures, 20th Century Fox, Walt Disney Studios (primarily film content from Walt Disney Pictures, as well as most of the Selznick International Pictures library), Sony Pictures Entertainment (primarily film content from Columbia Pictures), StudioCanal, and Janus Films.\n\nQuestion: Who owns the Selznick International Pictures library?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe primary motivation for migration appears to be food; for example, some hummingbirds choose not to migrate if fed through the winter. Also, the longer days of the northern summer provide extended time for breeding birds to feed their young. This helps diurnal birds to produce larger clutches than related non-migratory species that remain in the tropics. As the days shorten in autumn, the birds return to warmer regions where the available food supply varies little with the season.\n\nQuestion: What is the primary motivation for migration?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nSt Helena's biodiversity, however, also includes marine vertebrates, invertebrates (freshwater, terrestrial and marine), fungi (including lichen-forming species), non-vascular plants, seaweeds and other biological groups. To date, very little is known about these, although more than 200 lichen-forming fungi have been recorded, including 9 endemics, suggesting that many significant discoveries remain to be made.\n\nQuestion: How many lichen forming fungi have been recorded on the island?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nExtensive and diverse public spending is, in itself, inherently at risk of cronyism, kickbacks, and embezzlement. Complicated regulations and arbitrary, unsupervised official conduct exacerbate the problem. This is one argument for privatization and deregulation. Opponents of privatization see the argument as ideological. The argument that corruption necessarily follows from the opportunity is weakened by the existence of countries with low to non-existent corruption but large public sectors, like the Nordic countries. These countries score high on the Ease of Doing Business Index, due to good and often simple regulations, and have rule of law firmly established. Therefore, due to their lack of corruption in the first place, they can run large public sectors without inducing political corruption. Recent evidence that takes both the size of expenditures and regulatory complexity into account has found that high-income democracies with more expansive state sectors do indeed have higher levels of corruption.\n\nQuestion: Public spending has risks of kickbacks, embezzlement and what?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,\n\nYou sent an ACH Payment of $600.00. The money was sent from your company's Mercury checking account \u2022\u20227681.\nIf you have any questions just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid by Josh? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your company's Mercury checking account \u2022\u20227681 has been charged $586.89 by WA DEPT REVENUE. They initiated this charge using your company's bank account details via ACH.\nThe full transaction details are: WA DEPT REVENUE; WA DEPT REVENUE::MOONCHASER INC.; Mercury T\n\nQuestion: Find the $ value paid by WA Dept? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nChild labour has been a consistent struggle for children in Brazil ever since the country was colonized on April 22, 1550 by Pedro \u00c1lvares Cabral. Work that many children took part in was not always visible, legal, or paid. Free or slave labour was a common occurrence for many youths and was a part of their everyday lives as they grew into adulthood. Yet due to there being no clear definition of how to classify what a child or youth is, there has been little historical documentation of child labour during the colonial period. Due to this lack of documentation, it is hard to determine just how many children were used for what kinds of work before the nineteenth century. The first documentation of child labour in Brazil occurred during the time of indigenous societies and slave labour where it was found that children were forcibly working on tasks that exceeded their emotional and physical limits. Armando Dias, for example, died in November 1913 whilst still very young, a victim of an electric shock when entering the textile industry where he worked. Boys and girls were victims of industrial accidents on a daily basis.\n\nQuestion: When was Brazil colonized?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe most important early Islamic mosaic work is the decoration of the Umayyad Mosque in Damascus, then capital of the Arab Caliphate. The mosque was built between 706 and 715. The caliph obtained 200 skilled workers from the Byzantine Emperor to decorate the building. This is evidenced by the partly Byzantine style of the decoration. The mosaics of the inner courtyard depict Paradise with beautiful trees, flowers and small hill towns and villages in the background. The mosaics include no human figures, which makes them different from the otherwise similar contemporary Byzantine works. The biggest continuous section survives under the western arcade of the courtyard, called the \"Barada Panel\" after the river Barada. It is thought that the mosque used to have the largest gold mosaic in the world, at over 4 m2. In 1893 a fire damaged the mosque extensively, and many mosaics were lost, although some have been restored since.\n\nQuestion: Where is the most important Islamic mosaic work?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Immaculate Collection, Madonna's first greatest-hits compilation album, was released in November 1990. It included two new songs, \"Justify My Love\" and \"Rescue Me\". The album was certified diamond by RIAA and sold over 30 million copies worldwide, becoming the best-selling compilation album by a solo artist in history. \"Justify My Love\" reached number one in the U.S. and top ten worldwide. Its music video featured scenes of sadomasochism, bondage, same-sex kissing, and brief nudity. The video was deemed too sexually explicit for MTV and was banned from the network. Madonna responded to the banning: \"Why is it that people are willing to go and watch a movie about someone getting blown to bits for no reason at all, and nobody wants to see two girls kissing and two men snuggling?\"\n\nQuestion: What is Madonna's compilation album called?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn sheer numbers, Kerry had fewer endorsements than Howard Dean, who was far ahead in the superdelegate race going into the Iowa caucuses in January 2004, although Kerry led the endorsement race in Iowa, New Hampshire, Arizona, South Carolina, New Mexico and Nevada. Kerry's main perceived weakness was in his neighboring state of New Hampshire and nearly all national polls. Most other states did not have updated polling numbers to give an accurate placing for the Kerry campaign before Iowa. Heading into the primaries, Kerry's campaign was largely seen as in trouble, particularly after he fired campaign manager Jim Jordan. The key factors enabling it to survive were when fellow Massachusetts Senator Ted Kennedy assigned Mary Beth Cahill to be the campaign manager, as well as Kerry's mortgaging his own home to lend the money to his campaign (while his wife was a billionaire, campaign finance rules prohibited using one's personal fortune). He also brought on the \"magical\" Michael Whouley who would be credited with helping bring home the Iowa victory the same as he did in New Hampshire for Al Gore in 2000 against Bill Bradley.\n\nQuestion: Who had the least amount of backers, between Kerry and Dean?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nPredominantly Christian, the population of St. John's was once divided along sectarian (Catholic/Protestant) lines. In recent years, this sectarianism has declined significantly, and is no longer a commonly acknowledged facet of life in St. John's. St. John's is the seat of the Roman Catholic Archbishop of St. John's, and the Anglican Bishop of Eastern Newfoundland and Labrador. All major Christian sects showed a decline from 2001\u20132011 with a large increase in those with no religion from 3.9% to 11.1%.\n\nQuestion: What is the largest religion in St. John's?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn 1940, Jeannette Rankin had once again been elected to Congress, and in 1941, as she did in 1917, she voted against the United States' declaration of war. This time she was the only vote against the war, and in the wake of public outcry over her vote, she required police protection for a time. Other pacifists tended to be those from \"peace churches\" who generally opposed war. Many individuals from throughout the U.S. who claimed conscientious objector status were sent to Montana during the war as smokejumpers and for other forest fire-fighting duties.\n\nQuestion: What year was Jeannette Rankin vote against war the first time?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAnother residence was maintained at Lake Bled, while the grounds at Kara\u0111or\u0111evo were the site of \"diplomatic hunts\". By 1974 the Yugoslav President had at his disposal 32 official residences, larger and small, the yacht Galeb (\"seagull\"), a Boeing 727 as the presidential airplane, and the Blue Train. After Tito's death the presidential Boeing 727 was sold to Aviogenex, the Galeb remained docked in Montenegro, while the Blue Train was stored in a Serbian train shed for over two decades. While Tito was the person who held the office of president for by far the longest period, the associated property was not private and much of it continues to be in use by Yugoslav successor states, as public property, or maintained at the disposal of high-ranking officials.\n\nQuestion: The grounds at what location were the site of \"diplomatic hunts\"?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nPalawan Island, between Borneo and Mindoro, the fifth largest and western-most Philippine Island, was invaded on 28 February with landings of the Eighth Army at Puerto Princesa. The Japanese put up little direct defense of Palawan, but cleaning up pockets of Japanese resistance lasted until late April, as the Japanese used their common tactic of withdrawing into the mountain jungles, dispersed as small units. Throughout the Philippines, U.S. forces were aided by Filipino guerrillas to find and dispatch the holdouts.\n\nQuestion: What island was between Borneo and Mindoro?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Internet was developed as a network between government research laboratories and participating departments of universities. By the late 1980s, a process was set in place towards public, commercial use of the Internet. The remaining restrictions were removed by 1995, 4 years after the introduction of the World Wide Web.\n\nQuestion: Why was the internet developed?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn 1871, after the end of the war, the city was annexed to the newly established German Empire as part of the Reichsland Elsass-Lothringen under the terms of the Treaty of Frankfurt. As part of Imperial Germany, Strasbourg was rebuilt and developed on a grand and representative scale, such as the Neue Stadt, or \"new city\" around the present Place de la R\u00e9publique. Historian Rodolphe Reuss and Art historian Wilhelm von Bode were in charge of rebuilding the municipal archives, libraries and museums. The University, founded in 1567 and suppressed during the French Revolution as a stronghold of German sentiment,[citation needed] was reopened in 1872 under the name Kaiser-Wilhelms-Universit\u00e4t.\n\nQuestion: In what year was the city annexed to the German Empire?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Charged your Mercury account $3,620.00 by ACH|CONTENT: Hi David,Your company's Mercury checking account \u2022\u20227681 has been charged $3,620.00.They initiated this charge using your company's bank account details via ACH.The full transaction details are:MOONCHASER INC; Mercury T\n\nQuestion: Find the $ value paid to IRS? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nA climbing elevator is a self-ascending elevator with its own propulsion. The propulsion can be done by an electric or a combustion engine. Climbing elevators are used in guyed masts or towers, in order to make easy access to parts of these constructions, such as flight safety lamps for maintenance. An example would be the Moonlight towers in Austin, Texas, where the elevator holds only one person and equipment for maintenance. The Glasgow Tower \u2014 an observation tower in Glasgow, Scotland \u2014 also makes use of two climbing elevators.\n\nQuestion: What defines a climbing elevator?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn the case of the United States where a one-hour shift occurs at 02:00 local time, in spring the clock jumps forward from the last moment of 01:59 standard time to 03:00 DST and that day has 23 hours, whereas in autumn the clock jumps backward from the last moment of 01:59 DST to 01:00 standard time, repeating that hour, and that day has 25 hours. A digital display of local time does not read 02:00 exactly at the shift to summer time, but instead jumps from 01:59:59.9 forward to 03:00:00.0.\n\nQuestion: At what local time does the United States change the time?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAfter the early 20th century revolutions, shifting alliances of China's regional warlords waged war for control of the Beijing government. Despite the fact that various warlords gained control of the government in Beijing during the warlord era, this did not constitute a new era of control or governance, because other warlords did not acknowledge the transitory governments in this period and were a law unto themselves. These military-dominated governments were collectively known as the Beiyang government. The warlord era ended around 1927.\n\nQuestion: What happened to China after the 20th century revolutions?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nProgram execution might be likened to reading a book. While a person will normally read each word and line in sequence, they may at times jump back to an earlier place in the text or skip sections that are not of interest. Similarly, a computer may sometimes go back and repeat the instructions in some section of the program over and over again until some internal condition is met. This is called the flow of control within the program and it is what allows the computer to perform tasks repeatedly without human intervention.\n\nQuestion: When a computer goes back and repeats instructions of a program over until an internal condition is met is called what?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\n3 kV DC is used in Belgium, Italy, Spain, Poland, the northern Czech Republic, Slovakia, Slovenia, South Africa, Chile, and former Soviet Union countries (also using 25 kV 50 Hz AC). It was formerly used by the Milwaukee Road from Harlowton, Montana to Seattle-Tacoma, across the Continental Divide and including extensive branch and loop lines in Montana, and by the Delaware, Lackawanna & Western Railroad (now New Jersey Transit, converted to 25 kV AC) in the United States, and the Kolkata suburban railway (Bardhaman Main Line) in India, before it was converted to 25 kV 50 Hz AC.\n\nQuestion: What voltage is being used in railway system of South Africa and Chile?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $680.00 by JOLLYSEO.CO. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid to JOLLYSEO? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn the Southern Russian dialects, instances of unstressed /e/ and /a/ following palatalized consonants and preceding a stressed syllable are not reduced to [\u026a] (as occurs in the Moscow dialect), being instead pronounced [a] in such positions (e.g. \u043d\u0435\u0441\u043b\u0438 is pronounced [n\u02b2a\u02c8sl\u02b2i], not [n\u02b2\u026as\u02c8l\u02b2i]) \u2013 this is called yakanye/\u044f\u043a\u0430\u043d\u044c\u0435. Consonants include a fricative /\u0263/, a semivowel /w~u\u032f/ and /x~xv~xw/, whereas the Standard and Northern dialects have the consonants /\u0261/, /v/, and final /l/ and /f/, respectively. The morphology features a palatalized final /t\u02b2/ in 3rd person forms of verbs (this is unpalatalized in the Standard and Northern dialects). Some of these features such as akanye/yakanye, a debuccalized or lenited /\u0261/, a semivowel /w~u\u032f/ and palatalized final /t\u02b2/ in 3rd person forms of verbs are also present in modern Belarusian and some dialects of Ukrainian (Eastern Polesian), indicating a linguistic continuum.\n\nQuestion: What is pronounced [\u026a] in Moscow's dialect?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nTo differentiate Nintendo's new home platform from the early 1980s' common perception of a troubled and shallow video game market, the company freshened its product nomenclature and positioning, and it established a strict product approval and licensing policy. The overall system was referred to as an \"Entertainment System\" instead of a \"video game system\", which was centered upon a machine called a \"Control Deck\" instead of a \"console\", and which featured software cartridges called \"Game Paks\" instead of \"video games\". The 10NES lockout chip system acted as a lock-and-key coupling of each Game Pak and Control Deck, deterring the copying or production of NES games which had not first achieved Nintendo's licensed approval. The packaging of the launch lineup of NES games bore pictures of a very close representation of the actual onscreen graphics of the game, which were of sufficiently recognizable quality on their own. Symbols on the launch games' packaging clearly indicated the genre of the game, in order to reduce consumer confusion. A 'seal of quality' was printed on all appropriately licensed game and accessory packaging. The initial seal stated, \"This seal is your assurance that Nintendo has approved and guaranteed the quality of this product\". This text was later changed to \"Official Nintendo Seal of Quality\".\n\nQuestion: What was Nintendo's euphemism for \"video game system?\"",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your company's Mercury checking account \u2022\u20227681 has been charged $586.89. They initiated this charge using your company's bank account details via ACH.\nThe full transaction details are unknown\n Mercury T\n\nQuestion: Find the $ value paid to WA Dept? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe ancient-Chamorro society had four classes: chamorri (chiefs), matua (upper class), achaot (middle class), and mana'chang (lower class).:20\u201321 The matua were located in the coastal villages, which meant they had the best access to fishing grounds, whereas the mana'chang were located in the interior of the island. Matua and mana'chang rarely communicated with each other, and matua often used achaot as intermediaries. There were also \"mak\u00e5hna\" (similar to shamans), skilled in healing and medicine. Belief in spirits of ancient Chamorros called \"Taotao mo'na\" still persists as a remnant of pre-European culture. Their society was organized along matrilineal clans.:21\n\nQuestion: Which four classes made up the ancient -Chamorro society?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe first such boom, covering the early years of the city, rode on the lumber industry. (During this period the road now known as Yesler Way won the nickname \"Skid Road\", supposedly after the timber skidding down the hill to Henry Yesler's sawmill. The later dereliction of the area may be a possible origin for the term which later entered the wider American lexicon as Skid Row.) Like much of the American West, Seattle saw numerous conflicts between labor and management, as well as ethnic tensions that culminated in the anti-Chinese riots of 1885\u20131886. This violence originated with unemployed whites who were determined to drive the Chinese from Seattle (anti-Chinese riots also occurred in Tacoma). In 1900, Asians were 4.2% of the population. Authorities declared martial law and federal troops arrived to put down the disorder.\n\nQuestion: What was the industry source that produced Seattle's first financial vigor?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Space Race can trace its origins to Germany, beginning in the 1930s and continuing during World War II when Nazi Germany researched and built operational ballistic missiles. Starting in the early 1930s, during the last stages of the Weimar Republic, German aerospace engineers experimented with liquid-fueled rockets, with the goal that one day they would be capable of reaching high altitudes and traversing long distances. The head of the German Army's Ballistics and Munitions Branch, Lieutenant Colonel Karl Emil Becker, gathered a small team of engineers that included Walter Dornberger and Leo Zanssen, to figure out how to use rockets as long-range artillery in order to get around the Treaty of Versailles' ban on research and development of long-range cannons. Wernher von Braun, a young engineering prodigy, was recruited by Becker and Dornberger to join their secret army program at Kummersdorf-West in 1932. Von Braun had dreams about conquering outer space with rockets, and did not initially see the military value in missile technology.\n\nQuestion: Where were the actual origin of the Space Race?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe first six presidents of the United States did not make extensive use of the veto power: George Washington only vetoed two bills, James Monroe one, and John Adams, Thomas Jefferson and John Quincy Adams none. James Madison, a firm believer in a strong executive, vetoed seven bills. None of the first six Presidents, however, used the veto to direct national policy. It was Andrew Jackson, the seventh President, who was the first to use the veto as a political weapon. During his two terms in office, he vetoed twelve bills\u2014more than all of his predecessors combined. Furthermore, he defied the Supreme Court in enforcing the policy of ethnically cleansing Native American tribes (\"Indian Removal\"); he stated (perhaps apocryphally), \"John Marshall has made his decision. Now let him enforce it!\"\n\nQuestion: How many bills did George Washington veto?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Re: Moonchaser Article & Review|EMAIL_FROM: Jamie Smith <jamie@gmail.com>|RECEIVED DATE: Mon, 21 Feb 2022 15:56:13 -0500|CONTENT:  Of those 4  1 wasn't eligible because they were an employee in the Netherlands  and then 2 ended up signing which is a $500 fee No action required as the balance goes from $900 -> $400\n\nQuestion: Find the $ value paid to Jamie? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe oak forests of the southern and central Appalachians consist largely of black, northern red, white, chestnut and scarlet oaks (Quercus velutina, Q. rubra, Q. alba, Q. prinus and Q. coccinea) and hickories, such as the pignut (Carya glabra) in particular. The richest forests, which grade into mesic types, usually in coves and on gentle slopes, have dominantly white and northern red oaks, while the driest sites are dominated by chestnut oak, or sometimes by scarlet or northern red oaks. In the northern Appalachians the oaks, except for white and northern red, drop out, while the latter extends farthest north.\n\nQuestion: What kind of oaks are in the central and southern portions?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nEmotions are complex. According to some theories, they are a state of feeling that results in physical and psychological changes that influence our behavior. The physiology of emotion is closely linked to arousal of the nervous system with various states and strengths of arousal relating, apparently, to particular emotions. Emotion is also linked to behavioral tendency. Extroverted people are more likely to be social and express their emotions, while introverted people are more likely to be more socially withdrawn and conceal their emotions. Emotion is often the driving force behind motivation, positive or negative. Definition has been described as is a \"positive or negative experience that is associated with a particular pattern of physiological activity.\" According to other theories, emotions are not causal forces but simply syndromes of components, which might include motivation, feeling, behavior, and physiological changes, but no one of these components is the emotion. Nor is the emotion an entity that causes these components\n\nQuestion: What system of the body is related to emotion's physiology?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAs a result of the magnitude 7.9 earthquake and the many strong aftershocks, many rivers became blocked by large landslides, which resulted in the formation of \"quake lakes\" behind the blockages; these massive amounts of water were pooling up at a very high rate behind the natural landslide dams and it was feared that the blockages would eventually crumble under the weight of the ever-increasing water mass, potentially endangering the lives of millions of people living downstream. As of May 27, 2008, 34 lakes had formed due to earthquake debris blocking and damming rivers, and it was estimated that 28 of them were still of potential danger to the local people. Entire villages had to be evacuated because of the resultant flooding.\n\nQuestion: What formed behind blockages?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nDefining exactly what section of a DNA sequence comprises a gene is difficult. Regulatory regions of a gene such as enhancers do not necessarily have to be close to the coding sequence on the linear molecule because the intervening DNA can be looped out to bring the gene and its regulatory region into proximity. Similarly, a gene's introns can be much larger than its exons. Regulatory regions can even be on entirely different chromosomes and operate in trans to allow regulatory regions on one chromosome to come in contact with target genes on another chromosome.\n\nQuestion: What is an example of a regulatory region of a gene that does not have to close to the coding sequence?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your Receipt|EMAIL_FROM: |RECEIVED DATE: Tue, 22 Feb 2022 02:32:12 +0000|CONTENT: \n\nBilling Notice\n\n            This is your receipt. \n\n$45.00 \n Paid\nThank you for \n using us!\n\n        David -  \n\n        Date: 02/22/2022  \n\n        Invoice ID: in_0KVnBvo2ZNzxqgUA4dPhPB3i\n\nDownload as PDF\n\nItem \n\nAmount \n\nBusiness \n Hosting \n\n$45.00 \n\nSubtotal:     $45.00  \n\nPaid:     $45.00  \n\nThank \n you  \n\nSupport\n\n  |  \n\n Tutorials\n\n  |  \n\n Forums\n\n  |  \n\n T\n\nQuestion: Find the $ value paid to Webflow? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn the European Union, the principle of subsidiarity is applied: a government service should be provided by the lowest, most local authority that can competently provide it. An effect is that distribution of funds into multiple instances discourages embezzlement, because even small sums missing will be noticed. In contrast, in a centralized authority, even minute proportions of public funds can be large sums of money.\n\nQuestion: Providing a government service from the lowest form of local government that can adequately provide the service is called what?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn September 2014, Professor Stefan Grimm, of the Department of Medicine, was found dead after being threatened with dismissal for failure to raise enough grant money. The College made its first public announcement of his death on 4 December 2014. Grimm's last email accused his employers of bullying by demanding that he should get grants worth at least \u00a3200,000 per year. His last email was viewed more than 100,000 times in the first four days after it was posted. The College has announced an internal inquiry into Stefan Grimm's death. The inquest on his death has not yet reported.\n\nQuestion: When was Professor Stefan Grimm found dead?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nOne wave of the population boom ended abruptly in the mid-1980s, as oil prices fell precipitously. The space industry also suffered in 1986 after the Space Shuttle Challenger disintegrated shortly after launch. There was a cutback in some activities for a period. In the late 1980s, the city's economy suffered from the nationwide recession. After the early 1990s recession, Houston made efforts to diversify its economy by focusing on aerospace and health care/biotechnology, and reduced its dependence on the petroleum industry. Since the increase of oil prices in the 2000s, the petroleum industry has again increased its share of the local economy.\n\nQuestion: In what year did the space shuttle Challenger explode after launch?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Kakatiya dynasty was reduced to a vassal of the Khilji dynasty in 1310 after its defeat by Sultan Alauddin Khilji of the Delhi Sultanate. This lasted until 1321, when the Kakatiya dynasty was annexed by Malik Kafur, Allaudin Khilji's general. During this period, Alauddin Khilji took the Koh-i-Noor diamond, which is said to have been mined from the Kollur Mines of Golkonda, to Delhi. Muhammad bin Tughluq succeeded to the Delhi sultanate in 1325, bringing Warangal under the rule of the Tughlaq dynasty until 1347 when Ala-ud-Din Bahman Shah, a governor under bin Tughluq, rebelled against Delhi and established the Bahmani Sultanate in the Deccan Plateau, with Gulbarga, 200 km (124 mi) west of Hyderabad, as its capital. The Bahmani kings ruled the region until 1518 and were the first independent Muslim rulers of the Deccan.\n\nQuestion: Who defeated the Kakatiya dynasty in 1310?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your card has been charged $136.97 |EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Wed, 09 Feb 2022 01:13:17 +0000|CONTENT: \n\nHi David \nYour Mercury debit card \u2022\u20224605 was charged for $136.97.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Zapier? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nHydrogen is employed to saturate broken (\"dangling\") bonds of amorphous silicon and amorphous carbon that helps stabilizing material properties. It is also a potential electron donor in various oxide materials, including ZnO, SnO2, CdO, MgO, ZrO2, HfO2, La2O3, Y2O3, TiO2, SrTiO3, LaAlO3, SiO2, Al2O3, ZrSiO4, HfSiO4, and SrZrO3.\n\nQuestion: Why is hydrogen employed?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Liberals' immediate predecessor was the United Australia Party (UAP). More broadly, the Liberal Party's ideological ancestry stretched back to the anti-Labor groupings in the first Commonwealth parliaments. The Commonwealth Liberal Party was a fusion of the Free Trade Party and the Protectionist Party in 1909 by the second prime minister, Alfred Deakin, in response to Labor's growing electoral prominence. The Commonwealth Liberal Party merged with several Labor dissidents (including Billy Hughes) to form the Nationalist Party of Australia in 1917. That party, in turn, merged with Labor dissidents to form the UAP in 1931.\n\nQuestion: Which group was predecessor to the Liberals?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nWhile Nasser was in Syria, King Saud planned to have him assassinated on his return flight to Cairo. On 4 March, Nasser addressed the masses in Damascus and waved before them the Saudi check given to Syrian security chief and Nasser supporter Abdel Hamid Sarraj to shoot down Nasser's plane. As a consequence of Saud's scheme, he was forced by senior members of the Saudi royal family to informally cede most of his powers to his brother, King Faisal, a major opponent of Nasser and advocate for pan-Islamic unity over pan-Arabism.\n\nQuestion: Who tried to assassinate Nasser?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Allies had had time to consider the problem. The French being brought around to agree that the key to the defence was the Malakoff.:441 Emphasis of the siege at Sevastopol shifted to the British left, against the fortifications on Malakoff hill.:339 In March, there was fighting by the French over a new fort being built by the Russians at Mamelon, located on a hill in front of the Malakoff. Several weeks of fighting saw little change in the front line, and the Mamelon remained in Russian hands.\n\nQuestion: What did the French believe was instrumental in their defense?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Ricketts family acquired a majority interest in the Cubs in 2009, ending the Tribune years. Apparently handcuffed by the Tribune's bankruptcy and the sale of the club to the Ricketts family, the Cubs' quest for a NL Central 3-peat started with notice that there would be less invested into contracts than in previous years. Chicago engaged St. Louis in a see-saw battle for first place into August 2009, but the Cardinals played to a torrid 20\u20136 pace that month, designating their rivals to battle in the Wild Card race, from which they were eliminated in the season's final week. The Cubs were plagued by injuries in 2009, and were only able to field their Opening Day starting lineup three times the entire season. Third baseman Aramis Ram\u00edrez injured his throwing shoulder in an early May game against the Milwaukee Brewers, sidelining him until early July and forcing journeyman players like Mike Fontenot and Aaron Miles into more prominent roles. Additionally, key players like Derrek Lee (who still managed to hit .306 with 35 HR and 111 RBI that season), Alfonso Soriano and Geovany Soto also nursed nagging injuries. The Cubs posted a winning record (83\u201378) for the third consecutive season, the first time the club had done so since 1972, and a new era of ownership under the Ricketts' family was approved by MLB owners in early October.\n\nQuestion: When did the Ricketts family acquire a majority interest in the Cubs?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,You sent an Intl. Wire Payment of $150.00. The money was sent from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to Julia? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn December 2011, Xinhua stated that \"[t]he basic structure of the Beidou system has now been established, and engineers are now conducting comprehensive system test and evaluation. The system will provide test-run services of positioning, navigation and time for China and the neighboring areas before the end of this year, according to the authorities.\" The system became operational in the China region that same month. The global navigation system should be finished by 2020. As of December 2012, 16 satellites for BeiDou-2 have been launched, 14 of them are in service.\n\nQuestion: When did the Beidou system begin operating in China?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nDespite odds of four to one, the III Corps launched a risky attack. The French were routed and the III Corps captured Vionville, blocking any further escape attempts to the west. Once blocked from retreat, the French in the fortress of Metz had no choice but to engage in a fight that would see the last major cavalry engagement in Western Europe. The battle soon erupted, and III Corps was shattered by incessant cavalry charges, losing over half its soldiers. The German Official History recorded 15,780 casualties and French casualties of 13,761 men.\n\nQuestion: What odds were at stake for the attack launched by the III Corps?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Armed Forces are today funded by approximately $20.1 billion annually and are presently ranked 74th in size compared to the world's other armed forces by number of total personnel, and 58th in terms of active personnel, standing at a strength of roughly 68,000, plus 27,000 reservists, 5000 Rangers, and 19,000 supplementary reserves, bringing the total force to approximately 119,000. The number of primary reserve personnel is expected to go up to 30,000 by 2020, and the number of active to at least 70,000. In addition, 5000 rangers and 19,000 supplementary personnel will be serving. If this happens the total strength would be around 124,000. These individuals serve on numerous CF bases located in all regions of the country, and are governed by the Queen's Regulations and Orders and the National Defence Act.\n\nQuestion: What is Today's annual cost of the Canadian Forces?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nFrom 1932, it was taught that the \"little flock\" of 144,000 would not be the only people to survive Armageddon. Rutherford explained that in addition to the 144,000 \"anointed\" who would be resurrected\u2014or transferred at death\u2014to live in heaven to rule over earth with Christ, a separate class of members, the \"great multitude,\" would live in a paradise restored on earth; from 1935, new converts to the movement were considered part of that class. By the mid-1930s, the timing of the beginning of Christ's presence (Greek: parous\u00eda), his enthronement as king, and the start of the \"last days\" were each moved to 1914.\n\nQuestion: From when was it taught that the little flock would not be the only people to survive Armageddon?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $109.87 by AHREFS. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid to AHREFS? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe University of Notre Dame has made being a sustainability leader an integral part of its mission, creating the Office of Sustainability in 2008 to achieve a number of goals in the areas of power generation, design and construction, waste reduction, procurement, food services, transportation, and water.As of 2012[update] four building construction projects were pursuing LEED-Certified status and three were pursuing LEED Silver. Notre Dame's dining services sources 40% of its food locally and offers sustainably caught seafood as well as many organic, fair-trade, and vegan options. On the Sustainable Endowments Institute's College Sustainability Report Card 2010, University of Notre Dame received a \"B\" grade. The university also houses the Kroc Institute for International Peace Studies. Father Gustavo Gutierrez, the founder of Liberation Theology is a current faculty member.\n\nQuestion: In what year did Notre Dame create the Office of Sustainability?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,\nYour Mercury debit card \u2022\u20224605 was preauthorized for $500.00 by Google Pay. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.\nIf you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid by Google Pay? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nInternal courtyards became more rare, except beside the stables, and the functional parts of the building were placed at the sides, or in separate buildings nearby hidden by trees. The views to and from the front and rear of the main block were concentrated on, with the side approaches usually much less important. The roof was typically invisible from the ground, though domes were sometimes visible in grander buildings. The roofline was generally clear of ornament except for a balustrade or the top of a pediment. Columns or pilasters, often topped by a pediment, were popular for ornament inside and out, and other ornament was generally geometrical or plant-based, rather than using the human figure.\n\nQuestion: What was often used to hide functional parts of buildings?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nSeattle's political culture is very liberal and progressive for the United States, with over 80% of the population voting for the Democratic Party. All precincts in Seattle voted for Democratic Party candidate Barack Obama in the 2012 presidential election. In partisan elections for the Washington State Legislature and United States Congress, nearly all elections are won by Democrats. Seattle is considered the first major American city to elect a female mayor, Bertha Knight Landes. It has also elected an openly gay mayor, Ed Murray, and a socialist councillor, Kshama Sawant. For the first time in United States history, an openly gay black woman was elected to public office when Sherry Harris was elected as a Seattle city councillor in 1991. The majority of the current city council is female, while white men comprise a minority.\n\nQuestion: How many people in Seattle vote Democratic?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,You sent an Intl. Wire Payment of $150.00 to Julia. The money was sent from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid by Julia? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe city remained in the hands of Christian troops until 1102, when the Almoravids retook the city and restored the Muslim religion. Although the self-styled 'Emperor of All Spain', Alfonso VI of Le\u00f3n and Castile, drove them from the city, he was not strong enough to hold it. The Christians set it afire before abandoning it, and the Almoravid Masdali took possession on 5 May 1109. The event was commemorated in a poem by Ibn Khafaja in which he thanked Yusuf ibn Tashfin for the city's liberation.The declining power of the Almoravids coincided with the rise of a new dynasty in North Africa, the Almohads, who seized control of the peninsula from the year 1145, although their entry into Valencia was deterred by Ibn Mardanis, King of Valencia and Murcia until 1171, at which time the city finally fell to the North Africans. The two Muslim dynasties would rule Valencia for more than a century.\n\nQuestion: In what year did Christian troops lose control of Valencia?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nPlymouth railway station, which opened in 1877, is managed by Great Western Railway and also sees trains on the CrossCountry network. Smaller stations are served by local trains on the Tamar Valley Line and Cornish Main Line. First Great Western have come under fire recently, due to widespread rail service cuts across the south-west, which affect Plymouth greatly. Three MPs from the three main political parties in the region have lobbied that the train services are vital to its economy.\n\nQuestion: When did Plymouth's railroad station open for service?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAristotle's explanation of how this was possible was not strictly empiricist in a modern sense, but rather based on his theory of potentiality and actuality, and experience of sense perceptions still requires the help of the active nous. These notions contrasted with Platonic notions of the human mind as an entity that pre-existed somewhere in the heavens, before being sent down to join a body on Earth (see Plato's Phaedo and Apology, as well as others). Aristotle was considered to give a more important position to sense perception than Plato, and commentators in the Middle Ages summarized one of his positions as \"nihil in intellectu nisi prius fuerit in sensu\" (Latin for \"nothing in the intellect without first being in the senses\").\n\nQuestion: What theory was Aristotle's explanation based on?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Corp E Corp has charged your Mercury account $450.00 by ACH|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Thu, 24 Feb 2022 15:41:47 +0000|CONTENT: \n\nHi David \n\nYour company's Mercury checking account \u2022\u20227681 has been charged $450.00 by Corp E Corp. They initiated this charge using your company's bank account details via ACH.The full transaction details are: Corp E Corp; Corp E Corp:DE eCorp Tax:MOONCHASER INC; 1131423339The Mercury Team\n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid by Corp E? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn the United States, \"Cultural Studies\" focuses largely on the study of popular culture, that is, on the social meanings of mass-produced consumer and leisure goods. Richard Hoggart coined the term in 1964 when he founded the Birmingham Centre for Contemporary Cultural Studies or CCCS. It has since become strongly associated with Stuart Hall, who succeeded Hoggart as Director. Cultural studies in this sense, then, can be viewed as a limited concentration scoped on the intricacies of consumerism, which belongs to a wider culture sometimes referred to as \"Western Civilization\" or as \"Globalism.\"\n\nQuestion: In the U.S what does \"Cultural Studies\" focus largely on in this field?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nMexico City, or the City of Mexico (Spanish: Ciudad de M\u00e9xico  audio (help\u00b7info) American Spanish: [sju\u02c8\u00f0a(\u00f0) \u00f0e \u02c8m\u00e9xiko]; abbreviated as \"CDMX\"), is the capital of Mexico. As an \"alpha\" global city, Mexico City is one of the most important financial centers in the Americas. It is located in the Valley of Mexico (Valle de M\u00e9xico), a large valley in the high plateaus at the center of Mexico, at an altitude of 2,240 metres (7,350 ft). The city consists of sixteen municipalities (previously called boroughs).\n\nQuestion: How man feet above sea level is Mexico City",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nDetroit has a Mexican-American population. In the early 20th century thousands of Mexicans came to Detroit to work in agricultural, automotive, and steel jobs. During the Mexican Repatriation of the 1930s many Mexicans in Detroit were willingly repatriated or forced to repatriate. By the 1940s the Mexican community began to settle what is now Mexicantown. The population significantly increased in the 1990s due to immigration from Jalisco. In 2010 Detroit had 48,679 Hispanics, including 36,452 Mexicans. The number of Hispanics was a 70% increase from the number in 1990.\n\nQuestion: When did Mexicantown start to grow?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nWith this contribution of von Neumann, the axiomatic system of the theory of sets became fully satisfactory, and the next question was whether or not it was also definitive, and not subject to improvement. A strongly negative answer arrived in September 1930 at the historic mathematical Congress of K\u00f6nigsberg, in which Kurt G\u00f6del announced his first theorem of incompleteness: the usual axiomatic systems are incomplete, in the sense that they cannot prove every truth which is expressible in their language. This result was sufficiently innovative as to confound the majority of mathematicians of the time.\n\nQuestion: In 1930 who gave a strongly negative answer to Von Neuman's approach to the axiomatic system of theory of sets?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn the beginning of 1996, several human rights groups brought cases to hold Shell accountable for alleged human rights violations in Nigeria, including summary execution, crimes against humanity, torture, inhumane treatment and arbitrary arrest and detention. In particular, Shell stood accused of collaborating in the execution of Ken Saro-Wiwa and eight other leaders of the Ogoni tribe of southern Nigeria, who were hanged in 1995 by Nigeria's then military rulers. The lawsuits were brought against Royal Dutch Shell and Brian Anderson, the head of its Nigerian operation. In 2009, Shell agreed to pay $15.5m in a legal settlement. Shell has not accepted any liability over the allegations against it.\n\nQuestion: In 1996, multiple groups filed lawsuits to hold Shell accountable for what?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: invoice|EMAIL_FROM:|RECEIVED DATE: Tue, 1 Feb 2022 09:52:55 -0800|CONTENT: \n\n Dear David \n\nYour Athena invoice for Jan 2022 is ready\n\nInvoice #\n\n0222-INV-DPATTERSON-COLECole\n\nDue Date\n\n07 Feb 2022\n\nTOTAL\n\nUS$2 500.00\n\nHi David  Attached is invoice no. 0222-INV-DPATTERSON-COLECole for US$2 500.00. The amount due will be automatically charged to your credit card on file on Feb 07  2022. Please reach out anytime if you have any questions. Thank you.  Here for y\n\nQuestion: Find the $ value paid to Athena? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAround the 6th century, Slavs appeared on Byzantine borders in great numbers.[page needed] The Byzantine records note that grass would not regrow in places where the Slavs had marched through, so great were their numbers. After a military movement even the Peloponnese and Asia Minor were reported to have Slavic settlements. This southern movement has traditionally been seen as an invasive expansion. By the end of the 6th century, Slavs had settled the Eastern Alps regions.\n\nQuestion: When did Slavs appear on Byzantine borders?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn his Science of Logic (1812\u20131814) Hegel argues that finite qualities are not fully \"real\" because they depend on other finite qualities to determine them. Qualitative infinity, on the other hand, would be more self-determining and hence more fully real. Similarly finite natural things are less \"real\"\u2014because they are less self-determining\u2014than spiritual things like morally responsible people, ethical communities and God. So any doctrine, such as materialism, that asserts that finite qualities or natural objects are fully real is mistaken.\n\nQuestion: When was Science of Logic written?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIt is speculated by some archaeologists that Sumerian speakers were farmers who moved down from the north, after perfecting irrigation agriculture there. The Ubaid pottery of southern Mesopotamia has been connected via Choga Mami transitional ware to the pottery of the Samarra period culture (c. 5700 \u2013 4900 BC C-14) in the north, who were the first to practice a primitive form of irrigation agriculture along the middle Tigris River and its tributaries. The connection is most clearly seen at Tell Awayli (Oueilli, Oueili) near Larsa, excavated by the French in the 1980s, where eight levels yielded pre-Ubaid pottery resembling Samarran ware. According to this theory, farming peoples spread down into southern Mesopotamia because they had developed a temple-centered social organization for mobilizing labor and technology for water control, enabling them to survive and prosper in a difficult environment.[citation needed]\n\nQuestion: Where do some archaeologists speculate Sumerians originally moved from?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: IRS has charged your Mercury account $3,620.00 by ACH|CONTENT: Hi David,Your company's Mercury checking account \u2022\u20227681 has been charged $3,620.00 by IRS.They initiated this charge using your company's bank account details via ACH.The full transaction details are: IRS; IRS::MOONCHASER INC; Mercury T\n\nQuestion: Find the $ value paid by IRS? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Calendly Product Update - January 2022|EMAIL_FROM: Srinivas from Calendly <product-feedback@calendly.com>|RECEIVED DATE: Tue, 01 Feb 2022 21:37:18 +0000 (UTC)|CONTENT: .\n\n                   Thanks for reading  Srinivas Somayajula \n\n                        Calendly \n\nSent from Calendly \n   88 N Avondale Rd #603 \n   Avondale Estates  GA 30002\n\nUnsubscrib\n\nQuestion: Find the $ value paid to Calendly? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn 2005, seventeen countries produced concentrated uranium oxides, with Canada (27.9% of world production) and Australia (22.8%) being the largest producers and Kazakhstan (10.5%), Russia (8.0%), Namibia (7.5%), Niger (7.4%), Uzbekistan (5.5%), the United States (2.5%), Argentina (2.1%), Ukraine (1.9%) and China (1.7%) also producing significant amounts. Kazakhstan continues to increase production and may have become the world's largest producer of uranium by 2009 with an expected production of 12,826 tonnes, compared to Canada with 11,100 t and Australia with 9,430 t. In the late 1960s, UN geologists also discovered major uranium deposits and other rare mineral reserves in Somalia. The find was the largest of its kind, with industry experts estimating the deposits at over 25% of the world's then known uranium reserves of 800,000 tons.\n\nQuestion: As of 2005, what country was the largest producer of uranium oxides?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nGlacial ice is the largest reservoir of freshwater on Earth. Many glaciers from temperate, alpine and seasonal polar climates store water as ice during the colder seasons and release it later in the form of meltwater as warmer summer temperatures cause the glacier to melt, creating a water source that is especially important for plants, animals and human uses when other sources may be scant. Within high altitude and Antarctic environments, the seasonal temperature difference is often not sufficient to release meltwater.\n\nQuestion: Do Earth's lakes or glaciers hold the most freshwater?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nBird eggs are usually laid in a nest. Most species create somewhat elaborate nests, which can be cups, domes, plates, beds scrapes, mounds, or burrows. Some bird nests, however, are extremely primitive; albatross nests are no more than a scrape on the ground. Most birds build nests in sheltered, hidden areas to avoid predation, but large or colonial birds\u2014which are more capable of defence\u2014may build more open nests. During nest construction, some species seek out plant matter from plants with parasite-reducing toxins to improve chick survival, and feathers are often used for nest insulation. Some bird species have no nests; the cliff-nesting common guillemot lays its eggs on bare rock, and male emperor penguins keep eggs between their body and feet. The absence of nests is especially prevalent in ground-nesting species where the newly hatched young are precocial.\n\nQuestion: Where do birds usually lay their eggs?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn comparison to the other regions of Spain, the major economic benefit of Galicia is its fishing Industry. Galicia is a land of economic contrast. While the western coast, with its major population centers and its fishing and manufacturing industries, is prosperous and increasing in population, the rural hinterland \u2014 the provinces of Ourense and Lugo \u2014 is economically dependent on traditional agriculture, based on small landholdings called minifundios. However, the rise of tourism, sustainable forestry and organic and traditional agriculture are bringing other possibilities to the Galician economy without compromising the preservation of the natural resources and the local culture.\n\nQuestion: Which industry is Galicia's main money maker?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe climate in San Diego, like most of Southern California, often varies significantly over short geographical distances resulting in microclimates. In San Diego, this is mostly because of the city's topography (the Bay, and the numerous hills, mountains, and canyons). Frequently, particularly during the \"May gray/June gloom\" period, a thick \"marine layer\" cloud cover will keep the air cool and damp within a few miles of the coast, but will yield to bright cloudless sunshine approximately 5\u201310 miles (8.0\u201316.1 km) inland. Sometimes the June gloom can last into July, causing cloudy skies over most of San Diego for the entire day. Even in the absence of June gloom, inland areas tend to experience much more significant temperature variations than coastal areas, where the ocean serves as a moderating influence. Thus, for example, downtown San Diego averages January lows of 50 \u00b0F (10 \u00b0C) and August highs of 78 \u00b0F (26 \u00b0C). The city of El Cajon, just 10 miles (16 km) inland from downtown San Diego, averages January lows of 42 \u00b0F (6 \u00b0C) and August highs of 88 \u00b0F (31 \u00b0C).\n\nQuestion: What areas experience the most significant temperature variations?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nBBC TV was renamed BBC1 in 1964, after the launch of BBC2 (now BBC Two), the third television station (ITV was the second) for the UK; its remit, to provide more niche programming. The channel was due to launch on 20 April 1964, but was put off the air by a massive power failure that affected much of London, caused by a fire at Battersea Power Station. A videotape made on the opening night was rediscovered in 2003 by a BBC technician. In the end the launch went ahead the following night, hosted by Denis Tuohy holding a candle. BBC2 was the first British channel to use UHF and 625-line pictures, giving higher definition than the existing VHF 405-line system.\n\nQuestion: What was the first station launched after the original BBC?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nNews of this arrived in Europe, where Britain and France unsuccessfully attempted to negotiate a solution. The two nations eventually dispatched regular troops to North America to enforce their claims. The first British action was the assault on Acadia on 16 June 1755 in the Battle of Fort Beaus\u00e9jour, which was immediately followed by their expulsion of the Acadians. In July British Major General Edward Braddock led about 2,000 army troops and provincial militia on an expedition to retake Fort Duquesne, but the expedition ended in disastrous defeat. In further action, Admiral Edward Boscawen fired on the French ship Alcide on 8 June 1755, capturing it and two troop ships. In September 1755, French and British troops met in the inconclusive Battle of Lake George.\n\nQuestion: Which country dispatched regular troops to North America?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe term \"alloy\" is sometimes used in everyday speech as a synonym for a particular alloy. For example, automobile wheels made of an aluminium alloy are commonly referred to as simply \"alloy wheels\", although in point of fact steels and most other metals in practical use are also alloys. Steel is such a common alloy that many items made from it, like wheels, barrels, or girders, are simply referred to by the name of the item, assuming it is made of steel. When made from other materials, they are typically specified as such, (i.e.: \"bronze wheel,\" \"plastic barrel,\" or \"wood girder\").\n\nQuestion: What is the name of a common alloy?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe mandolin has been used occasionally in rock music, first appearing in the psychedelic era of the late 1960s. Levon Helm of The Band occasionally moved from his drum kit to play mandolin, most notably on Rag Mama Rag, Rockin' Chair, and Evangeline. Ian Anderson of Jethro Tull played mandolin on Fat Man, from their second album, Stand Up, and also occasionally on later releases. Rod Stewart's 1971 No. 1 hit Maggie May features a significant mandolin riff. David Grisman played mandolin on two Grateful Dead songs on the American Beauty album, Friend of the Devil and Ripple, which became instant favorites among amateur pickers at jam sessions and campground gatherings. John Paul Jones and Jimmy Page both played mandolin on Led Zeppelin songs. The popular alt rock group Imagine Dragons feature the mandolin on a few of their songs, most prominently being It's Time. Dash Crofts of the soft rock duo Seals and Crofts extensively used mandolin in their repertoire during the 1970s. Styx released the song Boat on the River in 1980, which featured Tommy Shaw on vocals and mandolin. The song didn't chart in the United States but was popular in much of Europe and the Philippines.\n\nQuestion: When did the mandolin first appear in rock music?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe setae (\"hairs\") of annelids project out from the epidermis to provide traction and other capabilities. The simplest are unjointed and form paired bundles near the top and bottom of each side of each segment. The parapodia (\"limbs\") of annelids that have them often bear more complex chetae at their tips \u2013 for example jointed, comb-like or hooked. Chetae are made of moderately flexible \u03b2-chitin and are formed by follicles, each of which has a chetoblast (\"hair-forming\") cell at the bottom and muscles that can extend or retract the cheta. The chetoblasts produce chetae by forming microvilli, fine hair-like extensions that increase the area available for secreting the cheta. When the cheta is complete, the microvilli withdraw into the chetoblast, leaving parallel tunnels that run almost the full length of the cheta. Hence annelids' chetae are structurally different from the setae (\"bristles\") of arthropods, which are made of the more rigid \u03b1-chitin, have a single internal cavity, and are mounted on flexible joints in shallow pits in the cuticle.\n\nQuestion: What are parapodia?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe opposite of a Show Up is a \"Rip\". This is for sub-standard work, which is sometimes torn at the top of the page/sheet and must be submitted to the boy's housemaster for signature. Boys who accumulate rips are liable to be given a \"White Ticket\", which must be signed by all his teachers and may be accompanied by other punishments, usually involving doing domestic chores or writing lines. In recent times,[when?] a milder form of the rip, 'sign for information', colloquially known as an \"info\", has been introduced, which must also be signed by the boy's housemaster and tutor.\n\nQuestion: What is the opposite of a Show Up?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nThe Kabul Shahi dynasties ruled the Kabul Valley and Gandhara (modern-day Pakistan and Afghanistan) from the decline of the Kushan Empire in the 3rd century to the early 9th century. The Shahis are generally split up into two eras: the Buddhist Shahis and the Hindu Shahis, with the change-over thought to have occurred sometime around 870. The kingdom was known as the Kabul Shahan or Ratbelshahan from 565-670, when the capitals were located in Kapisa and Kabul, and later Udabhandapura, also known as Hund for its new capital.\n\nQuestion: Until what century did the Kabul Shahi dynasties rule the Kabul Valley?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nFollowing the French capture of Algeria (1833), that region saw several waves of Catalan-speaking settlers. People from the Spanish Alacant province settled around Oran, whereas Algiers received immigration from Northern Catalonia and Minorca. Their speech was known as patuet. By 1911, the number of Catalan speakers was around 100,000. After the declaration of independence of Algeria in 1962, almost all the Catalan speakers fled to Northern Catalonia (as Pieds-Noirs) or Alacant.\n\nQuestion: When did the French obtain Algeria?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAlthough several companies each produce over a billion individually packaged (known as discrete) transistors every year, the vast majority of transistors are now produced in integrated circuits (often shortened to IC, microchips or simply chips), along with diodes, resistors, capacitors and other electronic components, to produce complete electronic circuits. A logic gate consists of up to about twenty transistors whereas an advanced microprocessor, as of 2009, can use as many as 3 billion transistors (MOSFETs). \"About 60 million transistors were built in 2002\u2026 for [each] man, woman, and child on Earth.\"\n\nQuestion: How many transistors make up a logic gate?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $680.00. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid to JOLLYSEO? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $200.00 by Barlow & Williams PLLC. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.com\nThe Mercury T\n\nQuestion: Find the $ value paid to Barlow & Williams? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Payment Received - Thank You!|EMAIL_FROM: Upwork Notification <donotreply@upwork.com>|RECEIVED DATE: Mon, 21 Feb 2022 17:14:18 +0000|CONTENT: \n     Payment Received - Thank You!   \n                                 Hi David      A payment of $200.85 was applied to David Patterson-Cole's \nfinancial account.       \nPayment information\n    Date   21 Feb 2022 UTC     Previous Balance   due $195.00     Fee   $5.85     Amount charged   $200.85     New Balance   $0.00     Payment Method   credit card     Reference ID   454777298             \n     Primary billing method charged.     Thanks The Upwork Team                     Unsubscribe   |   Privacy Policy   |   Contact Support  \n655 Montgomery Street  Suite 490  Dpt 17022  San Francisco  CA 94111 \n\n\u00a9 2022 U\n\nQuestion: Find the $ value paid to Upwork? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nContrary to the diffusionist theory, it appears that there was simultaneously a structural evolution towards the pointed arch, for the purpose of vaulting spaces of irregular plan, or to bring transverse vaults to the same height as diagonal vaults. This latter occurs at Durham Cathedral in the nave aisles in 1093. Pointed arches also occur extensively in Romanesque decorative blind arcading, where semi-circular arches overlap each other in a simple decorative pattern, and the points are accidental to the design.\n\nQuestion: The use of the pointed arch for bringing transverse vaults to the same height diagonal ones, is in disagreement with what theory?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn contrast, Botswana has recently been forced to ban trophy hunting following a precipitous wildlife decline. The numbers of antelope plummeted across Botswana, with a resultant decline in predator numbers, while elephant numbers remained stable and hippopotamus numbers rose. According to the government of Botswana, trophy hunting is at least partly to blame for this, but many other factors, such as poaching, drought and habitat loss are also to blame. Uganda recently did the same, arguing that \"the share of benefits of sport hunting were lopsided and unlikely to deter poaching or improve [Uganda's] capacity to manage the wildlife reserves.\"\n\nQuestion: Why has Botswana been forced to ban trophy hunting altogether?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $680.00 by JOLLYSEO.CO. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.comThe Mercury T\n\nQuestion: Find the $ value paid by JOLLYSEO? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nSince the launch of the \"Reinvent the Toilet Challenge\", more than a dozen research teams, mainly at universities in the U.S., Europe, India, China and South Africa, have received grants to develop innovative on-site and off-site waste treatment solutions for the urban poor. The grants were in the order of 400,000 USD for their first phase, followed by typically 1-3 million USD for their second phase; many of them investigated resource recovery or processing technologies for excreta or fecal sludge.\n\nQuestion: What countries have received grants",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nPlayers may only be transferred during transfer windows that are set by the Football Association. The two transfer windows run from the last day of the season to 31 August and from 31 December to 31 January. Player registrations cannot be exchanged outside these windows except under specific licence from the FA, usually on an emergency basis. As of the 2010\u201311 season, the Premier League introduced new rules mandating that each club must register a maximum 25-man squad of players aged over 21, with the squad list only allowed to be changed in transfer windows or in exceptional circumstances. This was to enable the 'home grown' rule to be enacted, whereby the League would also from 2010 require at least 8 of the named 25 man squad to be made up of 'home-grown players'.\n\nQuestion: When are the transfer windows?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Your card has been charged $2,500.00 by Athena Diagnostics|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Tue, 08 Feb 2022 07:08:18 +0000|CONTENT: \n\nHi David \nYour Mercury debit card \u2022\u20224605 was charged for $2 500.00 by Athena Diagnostics.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid to Athena? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn a nonpartisan system, no official political parties exist, sometimes reflecting legal restrictions on political parties. In nonpartisan elections, each candidate is eligible for office on his or her own merits. In nonpartisan legislatures, there are no typically formal party alignments within the legislature. The administration of George Washington and the first few sessions of the United States Congress were nonpartisan. Washington also warned against political parties during his Farewell Address. In the United States, the unicameral legislature of Nebraska is nonpartisan but is elected and votes on informal party lines. In Canada, the territorial legislatures of the Northwest Territories and Nunavut are nonpartisan. In New Zealand, Tokelau has a nonpartisan parliament. Many city and county governments[vague] are nonpartisan. Nonpartisan elections and modes of governance are common outside of state institutions. Unless there are legal prohibitions against political parties, factions within nonpartisan systems often evolve into political parties.\n\nQuestion: Do official political parties exist in a nonpartisan system?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,Your Mercury debit card \u2022\u20224605 was preauthorized for $200.00. The settled amount may be different from this initial charge, and will be withdrawn from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.If this transaction is in error, you can raise a dispute at Mercury.com\nThe Mercury T\n\nQuestion: Find the $ value paid to Barlow & Williams? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nFootball and Cricket are the most popular sports among the younger generation in Nepal and there are several stadiums in the city. The sport is governed by the All Nepal Football Association (ANFA) from its headquarters in Kathmandu. The only international football stadium in the city is the Dasarath Rangasala Stadium, a multi-purpose stadium used mostly for football matches and cultural events, located in the neighborhood of Tripureshwor. It is the largest stadium in Nepal with a capacity of 25,000 spectators, built in 1956. Martyr's Memorial League is also held in this ground every year. The stadium was renovated with Chinese help before the 8th South Asian Games were held in Kathmandu and had floodlights installed. Kathmandu is home to the oldest football clubs of Nepal such as RCT, Sankata and NRT. Other prominent clubs include MMC, Machhindra FC, Tribhuwan Army Club (TAC) and MPC.\n\nQuestion: Along with cricket, what sport is highly popular among Nepali youth?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nManhattan's skyline, with its many skyscrapers, is universally recognized, and the city has been home to several of the tallest buildings in the world. As of 2011, New York City had 5,937 high-rise buildings, of which 550 completed structures were at least 330 feet (100 m) high, both second in the world after Hong Kong, with over 50 completed skyscrapers taller than 656 feet (200 m). These include the Woolworth Building (1913), an early gothic revival skyscraper built with massively scaled gothic detailing.\n\nQuestion: How many high-rises were present in New York City in 2011?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nIn the 51 years prior to the Empire Stadium opening, the final (including 8 replays) was held in a variety of locations, predominantly in London, and mainly at the Kennington Oval and then Crystal Palace. It was played 22 times in the Oval (the inaugural competition in 1872, and then all but two times until 1892). After the Oval, Crystal Palace hosted 21 finals from 1895 to 1914, broken up by 4 four replays elsewhere. The other London venues were Stamford Bridge from 1920 to 1922 (the last three finals before the move to Empire Stadium); and Oxford University's Lillie Bridge in Fulham for the second ever final, in 1873. The other venues used sparingly in this period were all outside of London, as follows:\n\nQuestion: Where do the majority of FA cup finals take place?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nAfter the Great Fire of Rome in 64 AD, Emperor Nero accused the Christians as convenient scapegoats, who were later persecuted and killed. From that point on, Roman official policy towards Christianity tended towards persecution. During the various Imperial crises of the 3rd century, \u201ccontemporaries were predisposed to decode any crisis in religious terms\u201d, regardless of their allegiance to particular practices or belief systems. Christianity drew its traditional base of support from the powerless, who seemed to have no religious stake in the well-being of the Roman State, and therefore threatened its existence. The majority of Rome\u2019s elite continued to observe various forms of inclusive Hellenistic monism; Neoplatonism in particular accommodated the miraculous and the ascetic within a traditional Graeco-Roman cultic framework. Christians saw these ungodly practices as a primary cause of economic and political crisis.\n\nQuestion: What group was accused of starting the Great Fire of 64 AD?",
+    "output": "",
+    "source": "squad_v1_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nSUBJECT: Ganesha Dirschka's card has been charged $446.47 by FRONT PRIME-2|EMAIL_FROM: Mercury <hello@mercury.com>|RECEIVED DATE: Mon, 07 Feb 2022 03:33:27 +0000|CONTENT: \n\nHi David \nGanesha Dirschka's Mercury debit card \u2022\u20221890 was charged for $446.47 by FRONT PRIME-2.\nIf you have any questions  just reply to this email.If this transaction is in error  you can raise a dispute at Mercury.com \nThe Mercury Team \n\nYou are receiving notifications for Moonchaser on outgoing transactions over $100.00. \nSent with care from \nMercury Technologies  Inc. \n660 Mission Street  San Francisco  CA 94105\n\nQuestion: Find the $ value paid by Front? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the email content.",
+    "input": "Email:\nHi David,You sent a Wire Payment of $850.00 to 38Avenue. The money was sent from your company's Mercury checking account \u2022\u20227681.If you have any questions, just reply to this email.The Mercury T\n\nQuestion: Find the $ value paid to 38Avenue? If multiple, record all $ values paid.",
+    "output": "",
+    "source": "bipia_email_train"
+  },
+  {
+    "instruction": "Answer the question below using only the passage.",
+    "input": "Passage:\nRailway connections play a somewhat lesser role in Greece than in many other European countries, but they too have also been expanded, with new suburban/commuter rail connections, serviced by Proastiakos around Athens, towards its airport, Kiato and Chalkida; around Thessaloniki, towards the cities of Larissa and Edessa; and around Patras. A modern intercity rail connection between Athens and Thessaloniki has also been established, while an upgrade to double lines in many parts of the 2,500 km (1,600 mi) network is underway. International railway lines connect Greek cities with the rest of Europe, the Balkans and Turkey.\n\nQuestion: How long is the Greek railway system?",
+    "output": "",
+    "source": "squad_v1_train"
+  }
+]
