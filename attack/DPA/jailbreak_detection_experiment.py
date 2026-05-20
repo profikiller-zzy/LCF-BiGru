@@ -18,16 +18,43 @@ from sklearn.covariance import LedoitWolf
 MODEL_PATH = os.environ.get("MODEL_PATH", "meta-llama/Meta-Llama-3-8B-Instruct")
 PROMPT_TEMPLATE = os.environ.get("PROMPT_TEMPLATE", "alpaca")
 N_CALIBRATION = int(os.environ.get("N_CALIBRATION", "200"))
+MODEL_LOCAL_ROOT = os.environ.get("MODEL_LOCAL_ROOT", "/root/autodl-tmp/LCF-BiGru/models")
+LOCAL_MODEL_ONLY = os.environ.get("LOCAL_MODEL_ONLY", "1").lower() not in {"0", "false", "no"}
 
 DPA_ROOT = Path(__file__).resolve().parent
 MODEL_NAME = os.path.basename(MODEL_PATH)
 WEIGHT_DIR = DPA_ROOT / "backdoor_weight"
-if not (WEIGHT_DIR / MODEL_NAME).exists():
+if WEIGHT_DIR.exists() and not (WEIGHT_DIR / MODEL_NAME).exists():
     for d in WEIGHT_DIR.iterdir():
         if d.is_dir() and d.name.lower() == MODEL_NAME.lower():
             MODEL_NAME = d.name; break
 
 OUTPUT_DIR = DPA_ROOT / "jailbreak_detection_results" / MODEL_NAME
+
+
+def resolve_model_path(model_path, model_local_root, local_only=True):
+    p = Path(model_path)
+    if p.exists():
+        return str(p.resolve())
+
+    root = Path(model_local_root)
+    candidates = [
+        root / model_path,
+        root / os.path.basename(model_path),
+        root / model_path.replace("/", "--"),
+        root / f"models--{model_path.replace('/', '--')}",
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return str(candidate.resolve())
+
+    if local_only:
+        raise FileNotFoundError(
+            f"Local model not found for '{model_path}'. "
+            f"Searched under '{model_local_root}'. "
+            "Set MODEL_LOCAL_ROOT correctly or pre-download the model to local disk."
+        )
+    return model_path
 
 
 def build_model_inputs(tokenizer, instruction, user_input="", prompt_template="alpaca"):
@@ -45,12 +72,23 @@ def build_model_inputs(tokenizer, instruction, user_input="", prompt_template="a
 
 def load_model(model_path):
     from transformers import AutoModelForCausalLM, AutoTokenizer
-    tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+    resolved_model_path = resolve_model_path(model_path, MODEL_LOCAL_ROOT, LOCAL_MODEL_ONLY)
+    print(f"  Resolved model path: {resolved_model_path}")
+    print(f"  Local-only loading: {LOCAL_MODEL_ONLY}")
+    tokenizer = AutoTokenizer.from_pretrained(
+        resolved_model_path,
+        trust_remote_code=True,
+        local_files_only=LOCAL_MODEL_ONLY,
+    )
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
     model = AutoModelForCausalLM.from_pretrained(
-        model_path, device_map={"": torch.cuda.current_device()},
-        torch_dtype=torch.float16, low_cpu_mem_usage=True, trust_remote_code=True,
+        resolved_model_path,
+        device_map={"": torch.cuda.current_device()},
+        torch_dtype=torch.float16,
+        low_cpu_mem_usage=True,
+        trust_remote_code=True,
+        local_files_only=LOCAL_MODEL_ONLY,
     )
     model.eval()
     return model, tokenizer

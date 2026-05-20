@@ -27,5 +27,5 @@ echo "=== Jailbreak Detection LCF probe ==="
 echo "  Model: $MODEL_PATH  Template: $PROMPT_TEMPLATE  N_cal: $N_CALIBRATION"
 echo "  Node: $(hostname)  GPU: $(nvidia-smi --query-gpu=name --format=csv,noheader 2>/dev/null)"
 
-cd $HOME/LCF-LLM/attack/DPA
+cd $HOME/LCF-BiGru/attack/DPA
 python jailbreak_detection_experiment.py

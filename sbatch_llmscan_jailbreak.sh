@@ -32,5 +32,5 @@ echo "  N_CLEAN:         $N_CLEAN"
 echo "  MAX_TOKEN_POS:   $MAX_TOKEN_POS"
 echo "  Node: $(hostname)  GPU: $(nvidia-smi --query-gpu=name --format=csv,noheader 2>/dev/null)"
 
-cd $HOME/LCF-LLM/attack/DPA
+cd $HOME/LCF-BiGru/attack/DPA
 python -m baselines.llmscan.run_jailbreak

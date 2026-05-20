@@ -30,5 +30,5 @@ echo "  Template: $PROMPT_TEMPLATE"
 echo "  N_cal:    $N_CALIBRATION"
 echo "  Node:     $(hostname)  GPU: $(nvidia-smi --query-gpu=name --format=csv,noheader 2>/dev/null)"
 
-cd $HOME/LCF-LLM/attack/DPA
+cd $HOME/LCF-BiGru/attack/DPA
 python prompt_injection_probe.py

@@ -27,5 +27,5 @@ export RUNTIME_MODE="baseline"
 export OUTPUT_TAG="baseline"
 export FORCE_SINGLE_SLICE=1
 
-cd $HOME/LCF-LLM/attack/DPA
+cd $HOME/LCF-BiGru/attack/DPA
 python eval_backdoor.py

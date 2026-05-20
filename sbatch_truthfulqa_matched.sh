@@ -29,5 +29,5 @@ echo "  Model: $MODEL_PATH"
 echo "  Template: $PROMPT_TEMPLATE"
 echo "  Node: $(hostname)  GPU: $(nvidia-smi --query-gpu=name --format=csv,noheader 2>/dev/null)"
 
-cd $HOME/LCF-LLM/attack/DPA
+cd $HOME/LCF-BiGru/attack/DPA
 python truthfulqa_matched_probe.py

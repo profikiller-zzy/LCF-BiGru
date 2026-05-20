@@ -39,3 +39,5 @@ wandb/
 *.safetensors
 results/
 checkpoints/
+
+models/

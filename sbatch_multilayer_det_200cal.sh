@@ -29,5 +29,5 @@ echo "=== Multi-Layer Detection (200 cal) ==="
 echo "  Task=$TASK  Attack=$ATTACK  N_cal=$N_CALIBRATION"
 echo "  Node: $(hostname)  GPU: $(nvidia-smi --query-gpu=name --format=csv,noheader 2>/dev/null)"
 
-cd $HOME/LCF-LLM/attack/DPA
+cd $HOME/LCF-BiGru/attack/DPA
 python multilayer_detection_200cal.py

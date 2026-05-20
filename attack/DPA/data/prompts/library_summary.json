@@ -1,0 +1,66 @@
+{
+  "schema": [
+    "instruction",
+    "input",
+    "output",
+    "label",
+    "prompt_type",
+    "attack_type",
+    "source_dataset"
+  ],
+  "target_per_attack_type": 500,
+  "counts": {
+    "benign": 13669,
+    "generic": 1099,
+    "gcg": 200,
+    "pair": 240,
+    "dan": 229,
+    "roleplay": 171
+  },
+  "remaining_to_500": {
+    "generic": 0,
+    "gcg": 300,
+    "pair": 260,
+    "dan": 271,
+    "roleplay": 329,
+    "autodan": 500
+  },
+  "raw_seed_goal_counts": {
+    "advbench_llm_attacks": 520,
+    "autodan_official_advbench": 520
+  },
+  "source_dataset_counts": {
+    "benign": {
+      "regular_prompts_2023_05_07": 5478,
+      "regular_prompts_2023_12_25": 8191
+    },
+    "generic": {
+      "jailbreak_prompts_2023_05_07": 500,
+      "jailbreak_prompts_2023_12_25": 599
+    },
+    "gcg": {
+      "jailbreakbench_gcg_vicuna13b": 100,
+      "jailbreakbench_gcg_llama2": 100
+    },
+    "pair": {
+      "PAIR/vicuna": 69,
+      "jailbreakbench_pair_black_box_gpt-3.5-turbo-1106": 87,
+      "jailbreakbench_pair_black_box_gpt-4-0125-preview": 64,
+      "jailbreakbench_pair_black_box_llama-2-7b-chat-hf": 4,
+      "jailbreakbench_pair_black_box_vicuna-13b-v1.5": 13,
+      "jailbreak_prompts_2023_05_07": 1,
+      "jailbreak_prompts_2023_12_25": 2
+    },
+    "dan": {
+      "DAN_template": 50,
+      "jailbreak_prompts_2023_05_07": 112,
+      "jailbreak_prompts_2023_12_25": 67
+    },
+    "roleplay": {
+      "roleplay_template": 50,
+      "jailbreak_prompts_2023_05_07": 18,
+      "jailbreak_prompts_2023_12_25": 103
+    }
+  },
+  "note": "AutoDAN and additional GCG/PAIR prompts require running generation algorithms over the downloaded AdvBench/JailbreakBench seed goals; they are not fabricated here."
+}

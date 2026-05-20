@@ -29,5 +29,5 @@ echo "  Model: $MODEL_PATH"
 echo "  Template: $PROMPT_TEMPLATE  Target FPR: $TARGET_FPR"
 echo "  Node: $(hostname)  GPU: $(nvidia-smi --query-gpu=name --format=csv,noheader 2>/dev/null)"
 
-cd $HOME/LCF-LLM/attack/DPA
+cd $HOME/LCF-BiGru/attack/DPA
 python bipia_matched_probe.py

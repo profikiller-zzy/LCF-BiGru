@@ -1,0 +1,6 @@
+rank,attack,avg_auc,avg_detection_rate,avg_clean_fpr,n_models
+1,DAN,0.9612,1.0000,0.1417,3
+2,GCG,0.9182,0.8000,0.1417,3
+3,PAIR,0.8451,0.6232,0.1417,3
+4,Roleplay,0.8214,0.5000,0.1417,3
+5,Goals_only,0.6319,0.3433,0.1417,3

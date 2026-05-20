@@ -31,5 +31,5 @@ echo "  N_cal:    $N_CAL"
 echo "  Max Qs:   $MAX_QUESTIONS"
 echo "  Node:     $(hostname)  GPU: $(nvidia-smi --query-gpu=name --format=csv,noheader 2>/dev/null)"
 
-cd $HOME/LCF-LLM/attack/DPA
+cd $HOME/LCF-BiGru/attack/DPA
 python truthfulqa_probe.py

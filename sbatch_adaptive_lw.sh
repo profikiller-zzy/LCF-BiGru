@@ -21,5 +21,5 @@ export RV_LAMBDA="${RV_LAMBDA:-0.0}"
 export NUM_EPOCHS="${NUM_EPOCHS:-5}"
 
 echo "=== Adaptive LW Attack: lambda=$RV_LAMBDA task=$TASK attack=$ATTACK ==="
-cd $HOME/LCF-LLM/attack/DPA
+cd $HOME/LCF-BiGru/attack/DPA
 python adaptive_attack_lw.py
