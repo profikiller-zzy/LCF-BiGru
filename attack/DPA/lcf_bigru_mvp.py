@@ -39,7 +39,8 @@ from torch.utils.data import DataLoader, TensorDataset
 
 
 DPA_ROOT = Path(__file__).resolve().parent
-DEFAULT_MODEL_PATH = "/root/autodl-tmp/LCF-BiGru/models/Qwen2.5-7B-Instruct"
+REPO_ROOT = DPA_ROOT.parent.parent
+DEFAULT_MODEL_PATH = str(REPO_ROOT / "models" / "Qwen2.5-7B-Instruct")
 SCHEMA_KEYS = ["instruction", "input", "output", "label", "prompt_type", "attack_type", "source_dataset"]
 
 
@@ -134,6 +135,93 @@ def sample_splits(
     n_train_neg = len(train_pos)
     n_val_neg = len(val_pos)
     n_test_neg = len(test_pos)
+    need = n_train_neg + n_val_neg + n_test_neg
+    if len(benign_pool) < need:
+        raise ValueError(f"Not enough benign prompts: need {need}, have {len(benign_pool)}")
+
+    train_neg = benign_pool[:n_train_neg]
+    val_neg = benign_pool[n_train_neg : n_train_neg + n_val_neg]
+    test_neg = benign_pool[n_train_neg + n_val_neg : n_train_neg + n_val_neg + n_test_neg]
+
+    splits = {
+        "cal": cal,
+        "train": train_neg + train_pos,
+        "val": val_neg + val_pos,
+        "test": test_neg + test_pos,
+    }
+    for name in ["train", "val", "test"]:
+        rng.shuffle(splits[name])
+    return splits
+
+
+def _ratio_counts(n: int, train_ratio: float, val_ratio: float) -> tuple[int, int, int]:
+    if n <= 0:
+        return 0, 0, 0
+    if n == 1:
+        return 1, 0, 0
+    if n == 2:
+        return 1, 0, 1
+
+    n_train = int(n * train_ratio)
+    n_val = int(n * val_ratio)
+    n_test = n - n_train - n_val
+
+    n_train = max(1, n_train)
+    n_val = max(1, n_val)
+    n_test = max(1, n_test)
+
+    while n_train + n_val + n_test > n:
+        if n_train >= n_val and n_train >= n_test and n_train > 1:
+            n_train -= 1
+        elif n_val >= n_test and n_val > 1:
+            n_val -= 1
+        elif n_test > 1:
+            n_test -= 1
+        else:
+            break
+    while n_train + n_val + n_test < n:
+        n_train += 1
+    return n_train, n_val, n_test
+
+
+def full_prompt_splits(
+    benign: list[Example],
+    attacks: dict[str, list[Example]],
+    *,
+    n_calibration: int,
+    train_ratio: float,
+    val_ratio: float,
+    negative_ratio: float,
+    seed: int,
+    include_attacks: list[str] | None = None,
+) -> dict[str, list[Example]]:
+    if train_ratio <= 0 or val_ratio < 0 or train_ratio + val_ratio >= 1:
+        raise ValueError("--train-ratio must be >0 and train+val must be <1")
+    if negative_ratio <= 0:
+        raise ValueError("--negative-ratio must be >0")
+
+    rng = random.Random(seed)
+    benign_shuffled = list(benign)
+    rng.shuffle(benign_shuffled)
+    cal = benign_shuffled[:n_calibration]
+    benign_pool = benign_shuffled[n_calibration:]
+
+    chosen_attacks = include_attacks or sorted(attacks)
+    train_pos: list[Example] = []
+    val_pos: list[Example] = []
+    test_pos: list[Example] = []
+
+    for attack_type in chosen_attacks:
+        rows = list(attacks.get(attack_type, []))
+        rng.shuffle(rows)
+        n_train, n_val, n_test = _ratio_counts(len(rows), train_ratio, val_ratio)
+        train_pos.extend(rows[:n_train])
+        val_pos.extend(rows[n_train : n_train + n_val])
+        test_pos.extend(rows[n_train + n_val : n_train + n_val + n_test])
+
+    n_train_neg = int(round(len(train_pos) * negative_ratio))
+    n_val_neg = int(round(len(val_pos) * negative_ratio))
+    n_test_neg = int(round(len(test_pos) * negative_ratio))
     need = n_train_neg + n_val_neg + n_test_neg
     if len(benign_pool) < need:
         raise ValueError(f"Not enough benign prompts: need {need}, have {len(benign_pool)}")
@@ -364,16 +452,28 @@ def build_features(args) -> Path:
     set_seed(args.seed)
     benign, attacks = load_prompt_library()
     include_attacks = [x.strip() for x in args.attacks.split(",") if x.strip()] if args.attacks else None
-    splits = sample_splits(
-        benign,
-        attacks,
-        n_calibration=args.n_calibration,
-        train_per_attack=args.train_per_attack,
-        val_per_attack=args.val_per_attack,
-        test_per_attack=args.test_per_attack,
-        seed=args.seed,
-        include_attacks=include_attacks,
-    )
+    if args.split_strategy == "full":
+        splits = full_prompt_splits(
+            benign,
+            attacks,
+            n_calibration=args.n_calibration,
+            train_ratio=args.train_ratio,
+            val_ratio=args.val_ratio,
+            negative_ratio=args.negative_ratio,
+            seed=args.seed,
+            include_attacks=include_attacks,
+        )
+    else:
+        splits = sample_splits(
+            benign,
+            attacks,
+            n_calibration=args.n_calibration,
+            train_per_attack=args.train_per_attack,
+            val_per_attack=args.val_per_attack,
+            test_per_attack=args.test_per_attack,
+            seed=args.seed,
+            include_attacks=include_attacks,
+        )
 
     print("Split sizes:")
     for name, rows in splits.items():
@@ -422,6 +522,10 @@ def build_features(args) -> Path:
         "prompt_template": args.prompt_template,
         "max_input_tokens": args.max_input_tokens,
         "n_calibration": args.n_calibration,
+        "split_strategy": args.split_strategy,
+        "train_ratio": args.train_ratio,
+        "val_ratio": args.val_ratio,
+        "negative_ratio": args.negative_ratio,
         "train_per_attack": args.train_per_attack,
         "val_per_attack": args.val_per_attack,
         "test_per_attack": args.test_per_attack,
@@ -710,6 +814,10 @@ def parse_args():
     parser.add_argument("--overwrite-features", action="store_true")
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--n-calibration", type=int, default=200)
+    parser.add_argument("--split-strategy", choices=["quota", "full"], default="quota")
+    parser.add_argument("--train-ratio", type=float, default=0.70)
+    parser.add_argument("--val-ratio", type=float, default=0.15)
+    parser.add_argument("--negative-ratio", type=float, default=1.0)
     parser.add_argument("--train-per-attack", type=int, default=80)
     parser.add_argument("--val-per-attack", type=int, default=20)
     parser.add_argument("--test-per-attack", type=int, default=40)
