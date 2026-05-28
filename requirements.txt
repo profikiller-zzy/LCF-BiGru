@@ -10,6 +10,7 @@ trl>=0.8.6,<=0.9.6
 gradio>=4.0.0
 pandas>=2.0.0
 scipy
+scikit-learn
 einops
 sentencepiece
 tiktoken
