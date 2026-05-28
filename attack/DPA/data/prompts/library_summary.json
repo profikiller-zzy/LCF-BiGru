@@ -11,19 +11,32 @@
   "target_per_attack_type": 500,
   "counts": {
     "benign": 13669,
-    "generic": 1099,
-    "gcg": 200,
-    "pair": 240,
+    "autodan": 500,
+    "base64": 500,
     "dan": 229,
-    "roleplay": 171
+    "drattack": 500,
+    "gcg": 500,
+    "generic": 1099,
+    "ijp": 23,
+    "pair": 500,
+    "puzzler": 50,
+    "roleplay": 500,
+    "saa": 500,
+    "zulu": 500
   },
   "remaining_to_500": {
-    "generic": 0,
-    "gcg": 300,
-    "pair": 260,
+    "autodan": 0,
+    "base64": 0,
     "dan": 271,
-    "roleplay": 329,
-    "autodan": 500
+    "drattack": 0,
+    "gcg": 0,
+    "generic": 0,
+    "ijp": 477,
+    "pair": 0,
+    "puzzler": 450,
+    "roleplay": 0,
+    "saa": 0,
+    "zulu": 0
   },
   "raw_seed_goal_counts": {
     "advbench_llm_attacks": 520,
@@ -34,13 +47,31 @@
       "regular_prompts_2023_05_07": 5478,
       "regular_prompts_2023_12_25": 8191
     },
+    "autodan": {
+      "JBShield/AutoDAN/llama2/full": 500
+    },
+    "base64": {
+      "JBShield/base64/llama-2-7b-chat/full": 500
+    },
+    "dan": {
+      "DAN_template": 50,
+      "jailbreak_prompts_2023_05_07": 112,
+      "jailbreak_prompts_2023_12_25": 67
+    },
+    "drattack": {
+      "JBShield/drattack/llama-2-7b-chat/full": 500
+    },
+    "gcg": {
+      "jailbreakbench_gcg_vicuna13b": 100,
+      "jailbreakbench_gcg_llama2": 100,
+      "JBShield/GCG/llama-2-7b-chat/full": 300
+    },
     "generic": {
       "jailbreak_prompts_2023_05_07": 500,
       "jailbreak_prompts_2023_12_25": 599
     },
-    "gcg": {
-      "jailbreakbench_gcg_vicuna13b": 100,
-      "jailbreakbench_gcg_llama2": 100
+    "ijp": {
+      "JBShield/ijp/llama-2-7b-chat/full": 23
     },
     "pair": {
       "PAIR/vicuna": 69,
@@ -49,18 +80,107 @@
       "jailbreakbench_pair_black_box_llama-2-7b-chat-hf": 4,
       "jailbreakbench_pair_black_box_vicuna-13b-v1.5": 13,
       "jailbreak_prompts_2023_05_07": 1,
-      "jailbreak_prompts_2023_12_25": 2
+      "jailbreak_prompts_2023_12_25": 2,
+      "JBShield/PAIR/llama-2-7b-chat/full": 260
     },
-    "dan": {
-      "DAN_template": 50,
-      "jailbreak_prompts_2023_05_07": 112,
-      "jailbreak_prompts_2023_12_25": 67
+    "puzzler": {
+      "JBShield/puzzler/llama-2-7b-chat/full": 50
     },
     "roleplay": {
       "roleplay_template": 50,
       "jailbreak_prompts_2023_05_07": 18,
-      "jailbreak_prompts_2023_12_25": 103
+      "jailbreak_prompts_2023_12_25": 103,
+      "HF/Simsonsun-JailbreakPrompts/Dataset1/Reddit": 1,
+      "HF/Simsonsun-JailbreakPrompts/Dataset1/Github": 2,
+      "HF/Simsonsun-JailbreakPrompts/Dataset1/injectPrompt": 1,
+      "HF/Simsonsun-JailbreakPrompts/Dataset1/tridm/jailbreak_test_v1.0": 1,
+      "HF/Simsonsun-JailbreakPrompts/Dataset1/Bravansky/compact-jailbreaks": 2,
+      "HF/Simsonsun-JailbreakPrompts/Dataset1/Overlap analysis": 14,
+      "HF/Simsonsun-JailbreakPrompts/Dataset2/Nannazi": 267,
+      "HF/Simsonsun-JailbreakPrompts/Dataset2/Tulu": 12,
+      "HF/Simsonsun-JailbreakPrompts/Dataset2/CompactJailbreak": 29
+    },
+    "saa": {
+      "JBShield/saa/llama-2-7b-chat/full": 500
+    },
+    "zulu": {
+      "JBShield/zulu/llama-2-7b-chat/full": 500
     }
   },
-  "note": "AutoDAN and additional GCG/PAIR prompts require running generation algorithms over the downloaded AdvBench/JailbreakBench seed goals; they are not fabricated here."
+  "note": "AutoDAN and additional GCG/PAIR prompts require running generation algorithms over the downloaded AdvBench/JailbreakBench seed goals; they are not fabricated here.",
+  "jbshield_merge": {
+    "target_per_attack_type": 500,
+    "dedupe_scope": "global across attack/DPA/data/prompts/jailbreak",
+    "raw_rows_by_attack_type": {
+      "autodan": 8500,
+      "base64": 8500,
+      "drattack": 5200,
+      "gcg": 8500,
+      "ijp": 8500,
+      "pair": 8500,
+      "puzzler": 500,
+      "saa": 8500,
+      "zulu": 8500
+    },
+    "unique_candidate_prompts_by_attack_type": {
+      "autodan": 4223,
+      "base64": 850,
+      "drattack": 2600,
+      "gcg": 4250,
+      "ijp": 821,
+      "pair": 4237,
+      "puzzler": 50,
+      "saa": 3609,
+      "zulu": 849
+    },
+    "added_prompts_by_attack_type": {
+      "autodan": 500,
+      "base64": 500,
+      "drattack": 500,
+      "gcg": 300,
+      "ijp": 23,
+      "pair": 260,
+      "puzzler": 50,
+      "saa": 500,
+      "zulu": 500
+    },
+    "skipped_existing_or_global_duplicate_by_attack_type": {
+      "ijp": 798
+    },
+    "protected_original_prompts_kept_by_attack_type": {
+      "dan": 229,
+      "gcg": 200,
+      "generic": 1099,
+      "pair": 240,
+      "roleplay": 171
+    },
+    "protected_original_prompts_dropped_as_global_duplicate_by_attack_type": {}
+  },
+  "roleplay_online_merge": {
+    "source": "https://huggingface.co/datasets/Simsonsun/JailbreakPrompts",
+    "license": "MIT",
+    "raw_rows_scanned": 2426,
+    "roleplay_like_rows_matched_by_heuristic": 811,
+    "new_unique_candidates_after_global_dedupe": 689,
+    "added_to_roleplay": 329,
+    "filter_keywords": [
+      "\\brole[- ]?play\\b",
+      "\\bpretend\\s+(?:to\\s+be|you\\s+are)\\b",
+      "\\bact\\s+as\\b",
+      "\\byou\\s+are\\s+(?:now|going\\s+to|no\\s+longer|to\\s+act|to\\s+pretend)\\b",
+      "\\btake\\s+on\\s+the\\s+role\\b",
+      "\\bassume\\s+the\\s+role\\b",
+      "\\bsimulate\\s+(?:a|an|the|being|that)\\b",
+      "\\bpersona\\b",
+      "\\bcharacter\\b",
+      "\\bDAN\\b",
+      "do anything now",
+      "developer mode",
+      "unfiltered\\s+AI",
+      "unrestricted\\s+AI",
+      "amoral\\s+AI",
+      "evil\\s+(?:AI|assistant|chatbot|pablo)"
+    ],
+    "dedupe_scope": "global across attack/DPA/data/prompts/jailbreak"
+  }
 }

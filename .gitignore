@@ -36,8 +36,10 @@ wandb/
 # Cached / generated artifacts
 *.pkl
 *.npy
+*.npz
 *.safetensors
 results/
 checkpoints/
+outputs/
 
 models/

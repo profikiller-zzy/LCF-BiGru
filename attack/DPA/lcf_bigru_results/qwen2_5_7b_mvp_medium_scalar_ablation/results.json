@@ -1,0 +1,333 @@
+{
+  "config": {
+    "feature_config": {
+      "model_path": "/root/autodl-tmp/LCF-BiGru/models/Qwen2.5-7B-Instruct",
+      "prompt_template": "alpaca",
+      "max_input_tokens": 2048,
+      "n_calibration": 200,
+      "train_per_attack": 80,
+      "val_per_attack": 20,
+      "test_per_attack": 40,
+      "attacks": [
+        "autodan",
+        "base64",
+        "dan",
+        "drattack",
+        "gcg",
+        "generic",
+        "ijp",
+        "pair",
+        "puzzler",
+        "roleplay",
+        "saa",
+        "zulu"
+      ],
+      "seed": 1234,
+      "num_layers": 28,
+      "hidden_dim": 3584,
+      "pca_dim_max": 64
+    },
+    "ks": [
+      16
+    ],
+    "modes": [
+      "scalar",
+      "scalar_layer"
+    ],
+    "hidden_dim": 64,
+    "epochs": 15,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "target_fpr": 0.1
+  },
+  "splits": {
+    "cal": {
+      "n": 200,
+      "positives": 0,
+      "negatives": 200
+    },
+    "train": {
+      "n": 1746,
+      "positives": 873,
+      "negatives": 873
+    },
+    "val": {
+      "n": 400,
+      "positives": 200,
+      "negatives": 200
+    },
+    "test": {
+      "n": 800,
+      "positives": 400,
+      "negatives": 400
+    }
+  },
+  "lcf_baseline": {
+    "name": "lcf_multi_lw_loo",
+    "threshold_source": "calibration_loo",
+    "threshold": 6.394890546798706,
+    "cal_loo_mean": 4.974950790405273,
+    "cal_loo_std": 1.245612621307373,
+    "val": {
+      "auroc": 0.69025,
+      "auprc": 0.7170245746588861,
+      "mean_score_pos": 7.105361461639404,
+      "mean_score_neg": 5.007335186004639,
+      "threshold": 6.394890546798706,
+      "tpr": 0.38,
+      "fpr": 0.145
+    },
+    "test": {
+      "auroc": 0.6494312499999999,
+      "auprc": 0.6896033015454621,
+      "mean_score_pos": 7.039524078369141,
+      "mean_score_neg": 5.181087017059326,
+      "threshold": 6.394890546798706,
+      "tpr": 0.355,
+      "fpr": 0.16
+    },
+    "test_per_attack_tpr": {
+      "autodan": 0.15,
+      "base64": 1.0,
+      "dan": 0.2,
+      "drattack": 0.05,
+      "gcg": 0.8,
+      "generic": 0.1,
+      "pair": 0.15,
+      "roleplay": 0.1,
+      "saa": 0.0,
+      "zulu": 1.0
+    }
+  },
+  "bigru": [
+    {
+      "k": 0,
+      "mode": "scalar",
+      "input_dim": 2,
+      "best_val_auroc": 0.7951999999999999,
+      "val": {
+        "auroc": 0.7951999999999999,
+        "auprc": 0.8131134332767673,
+        "mean_score_pos": 1.4584006071090698,
+        "mean_score_neg": -0.2077220380306244,
+        "threshold": 1.0019872188568115,
+        "tpr": 0.475,
+        "fpr": 0.1
+      },
+      "test": {
+        "auroc": 0.8076437500000001,
+        "auprc": 0.8246786042705176,
+        "mean_score_pos": 1.5095294713974,
+        "mean_score_neg": -0.2058940827846527,
+        "threshold": 1.0019872188568115,
+        "tpr": 0.5025,
+        "fpr": 0.1125
+      },
+      "test_per_attack_tpr": {
+        "autodan": 0.1,
+        "base64": 1.0,
+        "dan": 0.25,
+        "drattack": 0.2,
+        "gcg": 0.8,
+        "generic": 0.2,
+        "pair": 0.25,
+        "roleplay": 0.225,
+        "saa": 1.0,
+        "zulu": 1.0
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.6482875996402332,
+          "val_auroc": 0.70175
+        },
+        {
+          "epoch": 2,
+          "loss": 0.6399487342153277,
+          "val_auroc": 0.732775
+        },
+        {
+          "epoch": 3,
+          "loss": 0.6219964059335845,
+          "val_auroc": 0.7467
+        },
+        {
+          "epoch": 4,
+          "loss": 0.6159455542053495,
+          "val_auroc": 0.7624249999999999
+        },
+        {
+          "epoch": 5,
+          "loss": 0.6002013364008495,
+          "val_auroc": 0.7627250000000001
+        },
+        {
+          "epoch": 6,
+          "loss": 0.5912914914744241,
+          "val_auroc": 0.7683
+        },
+        {
+          "epoch": 7,
+          "loss": 0.5935465672186443,
+          "val_auroc": 0.770025
+        },
+        {
+          "epoch": 8,
+          "loss": 0.5861881226301193,
+          "val_auroc": 0.7738
+        },
+        {
+          "epoch": 9,
+          "loss": 0.586824683206422,
+          "val_auroc": 0.7720499999999999
+        },
+        {
+          "epoch": 10,
+          "loss": 0.5707825017826897,
+          "val_auroc": 0.7754749999999999
+        },
+        {
+          "epoch": 11,
+          "loss": 0.5682510808110237,
+          "val_auroc": 0.778675
+        },
+        {
+          "epoch": 12,
+          "loss": 0.5542207487991878,
+          "val_auroc": 0.780325
+        },
+        {
+          "epoch": 13,
+          "loss": 0.5526681329522815,
+          "val_auroc": 0.7839999999999999
+        },
+        {
+          "epoch": 14,
+          "loss": 0.5450170721326556,
+          "val_auroc": 0.791825
+        },
+        {
+          "epoch": 15,
+          "loss": 0.535372576543263,
+          "val_auroc": 0.7951999999999999
+        }
+      ],
+      "seconds": 2.3909921646118164
+    },
+    {
+      "k": 0,
+      "mode": "scalar_layer",
+      "input_dim": 10,
+      "best_val_auroc": 0.7973750000000001,
+      "val": {
+        "auroc": 0.7973750000000001,
+        "auprc": 0.8185388618449408,
+        "mean_score_pos": 0.8329126834869385,
+        "mean_score_neg": -0.794833242893219,
+        "threshold": 0.5231595814228056,
+        "tpr": 0.48,
+        "fpr": 0.1
+      },
+      "test": {
+        "auroc": 0.8151999999999999,
+        "auprc": 0.831944177587741,
+        "mean_score_pos": 0.9290591478347778,
+        "mean_score_neg": -0.7902987599372864,
+        "threshold": 0.5231595814228056,
+        "tpr": 0.5225,
+        "fpr": 0.11
+      },
+      "test_per_attack_tpr": {
+        "autodan": 0.125,
+        "base64": 1.0,
+        "dan": 0.25,
+        "drattack": 0.2,
+        "gcg": 0.825,
+        "generic": 0.25,
+        "pair": 0.4,
+        "roleplay": 0.2,
+        "saa": 1.0,
+        "zulu": 0.975
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.666515092764582,
+          "val_auroc": 0.6973499999999999
+        },
+        {
+          "epoch": 2,
+          "loss": 0.6346491937126432,
+          "val_auroc": 0.7265499999999999
+        },
+        {
+          "epoch": 3,
+          "loss": 0.6202716955116817,
+          "val_auroc": 0.7489250000000001
+        },
+        {
+          "epoch": 4,
+          "loss": 0.6097134213362422,
+          "val_auroc": 0.762825
+        },
+        {
+          "epoch": 5,
+          "loss": 0.5972733050584793,
+          "val_auroc": 0.76665
+        },
+        {
+          "epoch": 6,
+          "loss": 0.5857979697840554,
+          "val_auroc": 0.7733250000000002
+        },
+        {
+          "epoch": 7,
+          "loss": 0.5885840782097408,
+          "val_auroc": 0.7750250000000001
+        },
+        {
+          "epoch": 8,
+          "loss": 0.5747059541089194,
+          "val_auroc": 0.776125
+        },
+        {
+          "epoch": 9,
+          "loss": 0.5826390428202493,
+          "val_auroc": 0.77805
+        },
+        {
+          "epoch": 10,
+          "loss": 0.5674217779721532,
+          "val_auroc": 0.7789
+        },
+        {
+          "epoch": 11,
+          "loss": 0.5596481221062797,
+          "val_auroc": 0.780175
+        },
+        {
+          "epoch": 12,
+          "loss": 0.5564234075801713,
+          "val_auroc": 0.7836249999999999
+        },
+        {
+          "epoch": 13,
+          "loss": 0.5507633632847241,
+          "val_auroc": 0.7862750000000001
+        },
+        {
+          "epoch": 14,
+          "loss": 0.5387545611177172,
+          "val_auroc": 0.7877750000000001
+        },
+        {
+          "epoch": 15,
+          "loss": 0.5324978243027415,
+          "val_auroc": 0.7973750000000001
+        }
+      ],
+      "seconds": 1.3652949333190918
+    }
+  ]
+}
