@@ -84,6 +84,76 @@ So encyclopedic filler itself looks like a "wrapper" to the early and middle lay
   this padding shift, so its output for the manipulation branch should be treated as a lower bound on
   how much length and filler confound the result, not as a layer recommendation.
 
+## Semantic strategies and cross-strategy fusion (third pass)
+
+The earlier "strategy" axis was a source family or an opaque template hash. Each of the 30 template lineages
+was read and given the dominant wrapper mechanism (`tools/layer_screening/strategy_labels.py`, single LLM
+annotator, written before looking at any layer result, not human verified). Seven strategies result:
+persona_roleplay (DAN, AIM, OPPO, Eva ...), fiction_scene (scripted dialogue or movie scene),
+instruction_control (rant-then-break-rules, Developer Mode, opposite mode), adversarial_suffix (GCG, DSN and
+junk-token templates), persuasion, scenario_reframing (PAIR/TAP), rule_suffix (random-search attack).
+Train counts (prompts / goal groups): persona 321/225, adversarial_suffix 121/107, instruction_control 71/65,
+fiction_scene 39/38, persuasion 38/38, rule_suffix 35/35, scenario_reframing 28/28.
+
+Each strategy is held out in turn together with its goal groups. Negatives are the length-matched padded
+controls and thresholds come from padded controls of the fit groups. Layers where held-out TPR reaches 0.9
+(`semantic_strategy/strategy_layer_table.csv`):
+
+| 策略 | 训练条数/目标组 | 风险分支 TPR≥0.9 的层 | 操纵分支 TPR≥0.9 的层 |
+|---|---|---|---|
+| adversarial_suffix | 121/107 | 3,19-27 | 无 |
+| fiction_scene | 39/38 | 21-27 | 6,9-27 |
+| instruction_control | 71/65 | 19-27 | 9-27 |
+| persona_roleplay | 321/225 | 无 | 4-27 |
+| persuasion | 38/38 | 19-27 | 无 |
+| rule_suffix | 35/35 | 无 | 9-27 |
+| scenario_reframing | 28/28 | 无 | 20,27 |
+
+Reading it:
+- The two branches cover different strategies. The risk readout recovers adversarial_suffix and persuasion
+  (late layers) but misses persona_roleplay entirely (best TPR 0.69) and rule_suffix and scenario_reframing in
+  most layers. The manipulation readout recovers persona_roleplay, fiction_scene, instruction_control and
+  rule_suffix from layer 9 or earlier, but misses adversarial_suffix and persuasion at every layer.
+- Layer selection (2 layers per branch, `select_layers` over the 7 held-out strategies): risk = 25, 15;
+  manipulation = 14, 15. Both stopped on no positive incremental utility, so a third and fourth layer were
+  not added.
+- Layer 15 is picked by both branches. Layers 14 and 15 sit where the padding shift on the manipulation readout
+  is still 0.18 to 0.22, against J-minus-padded-H differences of only 0.16 to 0.19 for adversarial_suffix and
+  persuasion. For those two strategies the manipulation signal at these layers is not clearly above what
+  padding alone produces; for persona, fiction, instruction_control and rule_suffix it is 0.4 to 0.57.
+
+Fusion of the union (layers 14, 15, 25; sparse linear head from `dual_concept.fusion`), leaving one whole
+strategy out of both concept building and fusion fitting; TPR at a threshold set for 5% FPR on padded benign
+requests of the fit groups, FPR measured on the held-out groups' padded benign requests:
+
+| arm | worst-strategy TPR | mean TPR | worst-strategy AUROC | mean FPR |
+|---|---|---|---|---|
+| risk + manipulation (fusion) | 0.75 | 0.96 | 0.89 | 0.057 |
+| risk layers only | 0.67 | 0.87 | 0.90 | 0.059 |
+| manipulation layers only | 0.29 | 0.73 | 0.82 | 0.108 |
+| best single risk layer (25) | 0.67 | 0.87 | 0.90 | 0.059 |
+| best single manipulation layer (14) | 0.24 | 0.73 | 0.81 | 0.104 |
+
+- Fusion lifts the worst strategy from 0.67 (risk only) to 0.75 and the mean TPR from 0.87 to 0.96 at about
+  the same FPR. The gain comes from the branches failing on different strategies: persona_roleplay goes from
+  0.67 (risk only) to 1.00, rule_suffix from 0.71 to 1.00.
+- scenario_reframing (28 goal groups) stays the weakest at 0.75 TPR with 0.11 FPR on its held-out groups;
+  adversarial_suffix has 0.10 FPR. These two sit above the 5% target.
+- AUROC does not improve over risk-only (0.89 vs 0.90 worst-strategy), so the gain is at the operating
+  point, not in ranking.
+- In the full-train fit the weights are risk 25: 2.42, risk 15: 1.35, manipulation 15: 1.75, manipulation 14: 0.15,
+  so the fusion mostly drops layer 14.
+
+Caveats specific to this pass:
+- Not an independent estimate. The layers were chosen from the same seven held-out strategy folds that the
+  fusion is then scored on. Only the concept directions and fusion weights are refit without the held-out
+  strategy; the choice of layers 14, 15 and 25 has seen all seven strategies.
+- Three strategies have 28 to 35 goal groups, so per-strategy TPRs are coarse (one goal group is about 3 points).
+- Negatives are encyclopedic filler plus a benign request. They match length, not wrapper style, and the
+  filler itself shifts the early and middle layers. A benign role-play or format-instruction control is still missing.
+- Strategy labels come from one annotator and strategy sizes are very unequal (persona is 56% of train jailbreaks).
+- confirm and calibrate were not used.
+
 ## Limits
 
 - 3 families (gcg, pair_tap, saa) have 5 to 7 goal groups in select, so select rechecks for them are

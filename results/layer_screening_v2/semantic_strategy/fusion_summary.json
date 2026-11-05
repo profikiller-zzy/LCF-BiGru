@@ -1,0 +1,47 @@
+{
+ "union_layers": [
+  14,
+  15,
+  25
+ ],
+ "risk_layers": [
+  25,
+  15
+ ],
+ "manip_layers": [
+  14,
+  15
+ ],
+ "arms": {
+  "fusion_both": {
+   "worst_strategy_tpr": 0.75,
+   "mean_tpr": 0.9642857142857143,
+   "worst_strategy_auroc": 0.8903061224489796,
+   "mean_padded_benign_fpr": 0.056944719098264616
+  },
+  "risk_only": {
+   "worst_strategy_tpr": 0.6728971962616822,
+   "mean_tpr": 0.8655177013913703,
+   "worst_strategy_auroc": 0.8992346938775511,
+   "mean_padded_benign_fpr": 0.058538722201776416
+  },
+  "manip_only": {
+   "worst_strategy_tpr": 0.2894736842105263,
+   "mean_tpr": 0.7271505029552443,
+   "worst_strategy_auroc": 0.8178670360110804,
+   "mean_padded_benign_fpr": 0.10779860387215648
+  },
+  "best_single_risk": {
+   "worst_strategy_tpr": 0.6728971962616822,
+   "mean_tpr": 0.8655177013913703,
+   "worst_strategy_auroc": 0.8992346938775511,
+   "mean_padded_benign_fpr": 0.058538722201776416
+  },
+  "best_single_manip": {
+   "worst_strategy_tpr": 0.23684210526315788,
+   "mean_tpr": 0.7278807999928985,
+   "worst_strategy_auroc": 0.8095567867036011,
+   "mean_padded_benign_fpr": 0.10386955561734054
+  }
+ }
+}
