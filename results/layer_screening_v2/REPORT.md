@@ -45,6 +45,45 @@ Caveat: the adjustment is a linear fit on log token count using H rows only, a c
 over- or under-correct. It shows that the raw numbers cannot be read as manipulation signal, not
 what the true residual signal is.
 
+## Length-matched controls (second pass)
+
+Control panel: `data/dccf_v1_length_controls` (787 of 807 train/select jailbreaks; 20 skipped for
+lack of a reachable filler length). Each J gets H_pad and B_pad: the same H or B preceded by a
+neutral Dolly passage, with the formatted token count within 3 tokens of J. The first run set the
+operating thresholds on short unpadded requests, which flagged nearly every long padded control
+(safe FPR 0.89); the rerun below takes thresholds from padded controls of the fit groups.
+
+Selected layers (2 per branch):
+
+| fold level | risk, unpadded -> matched | manipulation, unpadded -> matched |
+|---|---|---|
+| strategy | 27, 26 -> 23, 25 | 9, 2 -> 14, 13 |
+| family | 26, 15 -> 23, 16 | 9, 2 -> 14, 15 |
+
+- The manipulation layers move from early (9, 2) to middle layers (13 to 15) once length is matched,
+  which supports reading the early-layer result as length.
+- Held-out manipulation TPR at 5% control rate is low in the matched setting: worst family 0.34 at the
+  chosen layers (family level) and 0.14 (strategy level). Persuade is hardest (TPR 0.1 to 0.3 at most layers).
+- Risk-branch selection settles on layers 23 to 25 (worst-group TPR 0.74); this is stable across both passes.
+
+## Padding is not a clean length control either
+
+`padding_effect_by_layer.py` compares each H with its own padded version. The manipulation readout
+separates them almost perfectly in early layers (AUROC 1.00 at layers 1 to 5, 0.97 at layer 13,
+0.90 at 14) and only weakly in late layers (0.60 to 0.63 at layers 23 to 27; mean shift +0.05 to +0.07).
+So encyclopedic filler itself looks like a "wrapper" to the early and middle layers. Consequences:
+
+- Layer 14 (the matched manipulation pick) carries a padding shift of about 0.35 in readout units, against
+  a J-minus-H_pad difference of 0.16 to 0.36 for dsn, gcg, pair_tap and persuade. Most of its signal could
+  be padding rather than manipulation, so the 14/13/15 pick is not trustworthy.
+- In layers 23 to 27 the padding shift is 0.05 to 0.07 while the J-minus-H_pad difference is 0.19 to 0.64.
+  Late layers are the only place where the manipulation signal clearly exceeds both length and padding.
+  Per-family AUROC against H_pad there: dsn 0.89 to 0.91, gcg 0.89 to 0.93, pair_tap 0.96 to 0.99,
+  persuade 0.79 to 0.82, saa 1.00, template 0.95 to 0.97.
+- The selection routine ranks layers by held-out coverage at a fixed control rate and does not know about
+  this padding shift, so its output for the manipulation branch should be treated as a lower bound on
+  how much length and filler confound the result, not as a layer recommendation.
+
 ## Limits
 
 - 3 families (gcg, pair_tap, saa) have 5 to 7 goal groups in select, so select rechecks for them are
@@ -52,5 +91,6 @@ what the true residual signal is.
 - select shares 24 template lineages with train, so select results do not speak to unseen wrappers.
 - The selection ran on layer responses that include the length confound above. The selected
   manipulation layers (9, 2) should not be adopted without a length-matched control set.
-- Not run yet: Sentinel-style correlation-pruning comparison, full-27-layer vs C_probe ablation,
+- Not run yet: a control that matches style as well as length (for example benign role-play and suffix
+  wrappers), Sentinel-style correlation-pruning comparison, full-27-layer vs C_probe ablation,
   random-layer baseline, seed/bootstrap stability of the layer sets, heatmap figures.

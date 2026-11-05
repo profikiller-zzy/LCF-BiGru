@@ -1,0 +1,42 @@
+{
+  "construction": "neutral Dolly context passage prepended to H and to B so formatted token count matches each J within tolerance",
+  "limitations": [
+    "Filler is encyclopedic prose; it matches length, not the style of real wrappers.",
+    "Padding may itself shift hidden states in ways unrelated to manipulation.",
+    "Controls are constructed, not reviewed."
+  ],
+  "max_abs_token_diff": 3,
+  "mean_abs_token_diff": 1.6200762388818297,
+  "output_sha256": {
+    "development/select.jsonl": "206e472a3c5b5cac5815ec508c8caf3ea47b2612fe38206a41c54b35877431d8",
+    "development/train.jsonl": "5c86b7e44535bfae5f516c336333cf2aa0daebd56e756f0ab7e713dacf5fb5ac",
+    "pairs.jsonl": "2e786b5b0ca88c53f1762158c5e1e7fb8ee6a1f12155c2937232103e119d530a"
+  },
+  "pairs": 787,
+  "records": 1574,
+  "scope": "length_control_panel_not_part_of_any_train_select_calibrate_confirm_role",
+  "skipped_jailbreaks": [
+    "g_0b597fe2ca29_j0",
+    "g_0b597fe2ca29_j1",
+    "g_0b597fe2ca29_j2",
+    "g_5e3db980fcd2_j0",
+    "g_62c6daedc9af_j0",
+    "g_62c6daedc9af_j2",
+    "g_aabe5ebb9dd1_j1",
+    "g_d7264adcf7eb_j1",
+    "g_e0fe81c3770e_j1",
+    "g_e0fe81c3770e_j2",
+    "g_fb6caf468fb8_j0",
+    "g_1421f07c3a16_j1",
+    "g_1421f07c3a16_j2",
+    "g_4be8bc380c44_j2",
+    "g_a9c54db203ee_j0",
+    "g_a9c54db203ee_j1",
+    "g_a9c54db203ee_j2",
+    "g_f9844052ac7c_j0",
+    "g_f9844052ac7c_j1",
+    "g_f9844052ac7c_j2"
+  ],
+  "source_data_manifest_sha256": "15c81d0fec671e0221d63ecfcba0165e178fc2833a48fd50bd950d759dee8b9e",
+  "tolerance_tokens": 3
+}
