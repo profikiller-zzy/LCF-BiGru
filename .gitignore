@@ -1,45 +1,17 @@
-# Python
 __pycache__/
 *.py[cod]
-*$py.class
+.venv/
+venv/
 *.egg-info/
-.Python
 build/
 dist/
 .pytest_cache/
 .mypy_cache/
-.ipynb_checkpoints/
-
-# OS
+.ruff_cache/
 .DS_Store
-Thumbs.db
-
-# Editors
-.vscode/
 .idea/
-*.swp
-*.swo
-
-# Environments
+.vscode/
 .env
-.venv/
-venv/
-env/
-
-# Project-specific
 *.log
-*.out
-slurm-*.out
-backdoor_weight/
-wandb/
-
-# Cached / generated artifacts
-*.pkl
-*.npy
-*.npz
-*.safetensors
-results/
-checkpoints/
-outputs/
-
+artifacts/
 models/

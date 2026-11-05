@@ -1,0 +1,152 @@
+{
+  "builder": "tools/dccf_v1/stage1_select.py + stage3_assemble.py",
+  "counts": {
+    "goals": 393,
+    "goals_by_source": {
+      "JBB": 83,
+      "JBV": 310
+    },
+    "goals_dropped_or_items_dropped_for_length": [],
+    "jailbreaks_by_family_and_split": {
+      "confirm/dsn": 8,
+      "confirm/gcg": 8,
+      "confirm/pair_tap": 6,
+      "confirm/persuade": 12,
+      "confirm/saa": 7,
+      "confirm/template": 101,
+      "select/dsn": 11,
+      "select/gcg": 7,
+      "select/pair_tap": 5,
+      "select/persuade": 11,
+      "select/saa": 6,
+      "select/template": 103,
+      "train/dsn": 30,
+      "train/gcg": 33,
+      "train/pair_tap": 29,
+      "train/persuade": 38,
+      "train/saa": 38,
+      "train/template": 496
+    },
+    "jailbreaks_per_goal": {
+      "1": 62,
+      "2": 106,
+      "3": 225
+    },
+    "kinds_by_split": {
+      "calibrate": {
+        "safe": 200
+      },
+      "confirm": {
+        "harmful": 57,
+        "jailbreak": 142,
+        "safe": 57
+      },
+      "select": {
+        "harmful": 57,
+        "jailbreak": 143,
+        "safe": 57
+      },
+      "train": {
+        "harmful": 279,
+        "jailbreak": 664,
+        "safe": 279
+      }
+    },
+    "manipulation_pairs": 949,
+    "manipulation_pairs_by_split": {
+      "confirm": 142,
+      "select": 143,
+      "train": 664
+    },
+    "records_by_split": {
+      "calibrate": 200,
+      "confirm": 256,
+      "select": 257,
+      "train": 1222
+    },
+    "risk_pairs_all_roles": 393,
+    "risk_pairs_loader_train_only": 279
+  },
+  "dataset_name": "dccf_v1",
+  "label_semantics": {
+    "0": "safe candidate",
+    "1": "harmful or jailbreak risk candidate"
+  },
+  "label_status": "two_agent_reviewed_adjudicated_not_human_verified",
+  "limitations": [
+    "Labels come from two LLM reviewers plus an LLM adjudicator, not from human annotators; do not describe them as human ground truth.",
+    "B requests for 300+ goals were authored by an LLM as risk-contrast counterparts; style regularities between authored B and source H may remain.",
+    "The 'confirm' split was never used for any parameter and was built after the construction rules were frozen, but it shares attack template lineages with train (see lineages_shared_across_splits); it does not test unseen lineages. Use --holdout for family-level generalisation.",
+    "J sources are public benchmark artifacts (JailbreakBench artifacts, JailBreakV-28K); Qwen2.5 pretraining overlap is unknown.",
+    "Calibration requests come from Dolly and are ordinary instructions; they are not matched to jailbreak formatting. Calibration FPR does not bound deployment FPR.",
+    "The three-group design cannot rule out wrapper-style confounding in the manipulation concept; no wrapper-matched benign control set is included.",
+    "Attack success on any model was never evaluated and does not influence labels or inclusion."
+  ],
+  "lineage_count": 35,
+  "lineages_shared_across_splits": [
+    "jbb_dsn",
+    "jbb_gcg",
+    "jbb_jbc",
+    "jbb_pair",
+    "jbb_prompt_with_random_search",
+    "jbv_persuade",
+    "jbv_tpl_05eb317d",
+    "jbv_tpl_09b0f828",
+    "jbv_tpl_1e3509c9",
+    "jbv_tpl_358d0677",
+    "jbv_tpl_3ce147c4",
+    "jbv_tpl_459ec4e7",
+    "jbv_tpl_46ba57bc",
+    "jbv_tpl_48cc4f7d",
+    "jbv_tpl_5ad3b3aa",
+    "jbv_tpl_5f686094",
+    "jbv_tpl_6880358c",
+    "jbv_tpl_875415e7",
+    "jbv_tpl_944057d8",
+    "jbv_tpl_96b095d7",
+    "jbv_tpl_9d49b3ab",
+    "jbv_tpl_9d4acff0",
+    "jbv_tpl_a728ed4c",
+    "jbv_tpl_bb59b50a",
+    "jbv_tpl_bbc6eb71",
+    "jbv_tpl_c9afc836",
+    "jbv_tpl_cabdbaee",
+    "jbv_tpl_cbe31b83",
+    "jbv_tpl_e7b33de2",
+    "jbv_tpl_f1aa2ea9",
+    "jbv_tpl_fd3bc7da"
+  ],
+  "max_formatted_tokens": 546,
+  "output_sha256": {
+    "annotation/pairs_risk_all_roles.jsonl": "e9aa57c1bfe321cdd3fba5a2058b6bc083c9f8ca4802ed2919bdc3768a6e1f85",
+    "development/calibrate.jsonl": "97ba24f521e99cc4fb9e89d5b6459132366eb6d504d15811d6bca670cc8f5ccd",
+    "development/confirm.jsonl": "bc76c88d5cdb768827ca550f593e1c644828cf66a53d39b4b0a53650e3f6450c",
+    "development/diagnose.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "development/select.jsonl": "121165ed2dc788fa750e66e228cb89812c7f161886f4605e50118b7f7cb95ecf",
+    "development/train.jsonl": "2d88e8626d2571b86f85887033d19b7b72b6861ef5edc58f1a7a646d8c9dad1b",
+    "pairs/manipulation.jsonl": "538b40cb207621b6911772fba906b8d48f55cf760bb8e1a50a2eb4d6d901bd45",
+    "pairs/risk.jsonl": "44d09e2cd31321526fac2e235600f109138c0f28e06b79a430b06a4ba8c0125b"
+  },
+  "review_process": {
+    "human_verified": false,
+    "reviewers": "two independent LLM subagents per item (different file groupings), disagreements adjudicated by a third LLM subagent; no 'uncertain' label permitted"
+  },
+  "schema_version": "dual_concept_development_v1",
+  "scope": "dccf_v1_construction_set_with_unexposed_confirm_candidate_not_human_verified",
+  "source_revisions": {
+    "JailbreakBench/JBB-Behaviors": "886acc352a31533ffbcf4ef22c744658688086fc",
+    "JailbreakBench/artifacts": "909e68c01d94222b8ad2e397a017e2e12e2adb73",
+    "JailbreakV-28K/JailBreakV-28k": "f949ca582fff13d396ac8fce59596afafb2b78d3",
+    "databricks/databricks-dolly-15k": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a"
+  },
+  "tokenizer": {
+    "files_sha256": {
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28"
+  }
+}

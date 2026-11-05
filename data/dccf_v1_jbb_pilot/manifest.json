@@ -1,0 +1,56 @@
+{
+  "counts": {
+    "artifact_rows_without_prompt": 18,
+    "assigned_splits": 0,
+    "benign_records": 100,
+    "goal_clusters": 100,
+    "harmful_records": 100,
+    "human_reviewed_records": 0,
+    "jailbreak_records": 172,
+    "manipulation_pair_candidates": 172,
+    "records": 372,
+    "risk_pair_candidates": 300,
+    "unpaired_jailbreaks_pending_mapping_review": 10
+  },
+  "label_status": "source_candidate_pending_human_review",
+  "limitations": [
+    "Harmful and jailbreak labels are source candidates, not independently adjudicated labels.",
+    "Benign pairing is only category and character-length based; it is a review suggestion, not a semantic match.",
+    "Jailbreak success is source-model metadata and never determines the input risk label or pair inclusion.",
+    "Only published prompt text is retained; model responses and judge outputs are omitted.",
+    "Text-level and goal-level overlap with prior DCCF development data has not yet been audited.",
+    "Unassigned pilot data are not train, select, calibrate, diagnose, or confirmation data.",
+    "A three-group dataset cannot by itself rule out wrapper-style confounding in the manipulation concept."
+  ],
+  "output_sha256": {
+    "README.md": "eb0a646c4fe90c7a1eb1fee50a48aefdee3b6654a77a7b6894bb2ed3e4ef80fc",
+    "licenses/JBB-Behaviors-MIT.txt": "7e1ae8f3676f39ff6e62af1743385c176a9476b1157f35bb9d05b4e6c65b7d94",
+    "licenses/JailbreakBench-artifacts-MIT.txt": "09017abee723a7b715866bbcd1bd2569e0a5fa7e996dd1d9d1ec4b36fb5ca51c",
+    "pairs/manipulation_candidates.jsonl": "adf908175fefca6272c2d8726402d5eaf60e2e7ffc106a45ea41559cca5fe593",
+    "pairs/risk_candidates.jsonl": "e773b41a159e61edbeb0dc48baf1c65a67a478498e13c4959fc3ab733a92bcba",
+    "records.jsonl": "5d9b59cb57abe441e55fbea4261437cd4eb98d453d72a68b9bc8a409e63fdaa9",
+    "review/ANNOTATION_GUIDE.md": "e8065a275552a17bcc923fa08983c5f071a8f6b371fec68762727fc576a5c863",
+    "review/excluded_artifact_rows.jsonl": "26861592f4ef3bb80ab00ddfb8bd2ef24d9c77c424482c2bd0234e05b7ef2e1b",
+    "review/external_unpaired_jailbreaks.jsonl": "691cd8aae08b0500c8bc241df6817388a91b94375572a0aae6009acd57b826a5",
+    "review/manipulation_pair_review.csv": "d7a7049a385c9e9b876f716dd39dd4eee40372cfd229ef0d4dbfe5cce6c80894",
+    "review/risk_pair_review.csv": "b62a64e5753ba658a6dadffafef50a7dde2f00bedf410f3a65be343665c5b17d",
+    "review/unpaired_mapping_review.csv": "be80229ddc3a1032c2913b6f8d6cbdc092587d891e8eac9fdec6456226caa111",
+    "source_lock.json": "82b184a4c12c90bc299092554c34a4317e402f73815ea847894e76315afd4a56"
+  },
+  "schema_version": "dccf_jbb_pilot_candidates_v1",
+  "scope": "pilot_candidate_material_only_not_training_ready",
+  "source_hashes": {
+    "artifacts_license": "09017abee723a7b715866bbcd1bd2569e0a5fa7e996dd1d9d1ec4b36fb5ca51c",
+    "benign_behaviors": "3cda234d21a991fa309bbfea4b6d9dae31ccdf8e9d452424b6a983e4fdc33468",
+    "gcg_artifact": "9eff8b6f78cae002737868ca8cdd886be5afcd1cbbbe4cf51ff837bc688b01b1",
+    "harmful_behaviors": "4a8ec6832056b631eb092dccc60d37a61c3d441268268888b3d006288afeffa1",
+    "jbb_dataset_license": "7e1ae8f3676f39ff6e62af1743385c176a9476b1157f35bb9d05b4e6c65b7d94",
+    "pair_artifact": "18b101386419a98fbdf45cb987069f83af3a40d5e0f7f0d32c4e9dc5ecc049b4"
+  },
+  "source_hashes_verified": true,
+  "source_revisions": {
+    "JailbreakBench/JBB-Behaviors": "886acc352a31533ffbcf4ef22c744658688086fc",
+    "JailbreakBench/artifacts": "909e68c01d94222b8ad2e397a017e2e12e2adb73"
+  },
+  "split_assignment": "none_pending_review_and_leakage_audit"
+}

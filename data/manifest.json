@@ -1,0 +1,231 @@
+{
+  "excluded": {
+    "historical_calibrate_positive": {
+      "count": 80,
+      "ids": [
+        "p12_d5c9c90196105a9edf33",
+        "p12_871f40d56fed372ca231",
+        "p12_df43a512d708afa9dbbd",
+        "p12_ede57c710d72afcaabb2",
+        "p12_7a7326ec275be5c89059",
+        "p12_a296c4d3ff3d49678850",
+        "p12_75b7d9a112661971ce63",
+        "p12_2a88a543344514461ed1",
+        "p12_6b5f1fb8bade3bdd4f07",
+        "p12_c32f54f09872a253dbe5",
+        "p12_8eba82e45d08112d0d16",
+        "p12_3842440013dee920a7c2",
+        "p12_68fc12a4277d068a132e",
+        "p12_4cd8a747b47eba663f65",
+        "p12_90faff8a40841efa9e8e",
+        "p12_a20e9a5bf87fbe37ee89",
+        "p12_d65461f172b693936317",
+        "p12_223db551721846088d64",
+        "p12_543f208efd5db4f98685",
+        "p12_7c0ff55aa455b53abb98",
+        "p12_bad80b580565d90aac99",
+        "p12_ced75d9ba9a721487205",
+        "p12_d76d6181014418f2d319",
+        "p12_b1f6e1f4d9a609c49187",
+        "p12_df5cbaae21a03258c8bb",
+        "p12_08d214d882f3c33fa8a1",
+        "p12_ec08da1f00e392b5e73d",
+        "p12_d7ec27c955ff39ac3ae4",
+        "p12_658fd8d73ebb1ba0ab2f",
+        "p12_fc26c93b752952f74dff",
+        "p12_c581172be770d7c1d805",
+        "p12_12449a93abe42b402821",
+        "p12_8d1ed5852fd31f8aa20f",
+        "p12_ba0c78544551a42ecbf7",
+        "p12_c2226c293a3b7c76d598",
+        "p12_1251d7c2e00816e5a134",
+        "p12_8915c3723b9645028d74",
+        "p12_6d1d10befa9228cbec61",
+        "p12_6b628c4ad5b2061cd213",
+        "p12_a7041dd2717c2a412908",
+        "p12_52387257f9898b3cf4e2",
+        "p12_2566344c799b6a88c1d3",
+        "p12_efeca9ee8c18a1858601",
+        "p12_a6eeb97dc668e39f3c8e",
+        "p12_789107ee599e81507109",
+        "p12_465c994d4873a2d1260b",
+        "p12_c310b4337ba440ead7e9",
+        "p12_0898be7a020c1847b5fc",
+        "p12_6c67ad422e81f852dc5f",
+        "p12_0ea683d03f444dc03431",
+        "p12_7ff3ee328292f1121822",
+        "p12_ffb026ba9ba60543a406",
+        "p12_743a10740e1cc2cb9504",
+        "p12_e5ccf6f82fc24295c977",
+        "p12_222d1af46dcaa955ceee",
+        "p12_33939eef68d276d9ae15",
+        "p12_d4a394a49c8ca68b6d59",
+        "p12_bdbfc8e1f19ed5ae6157",
+        "p12_43e1dbe4e8c95a730cd3",
+        "p12_2718c594677c2c091be0",
+        "p12_c4afad52c84733deae02",
+        "p12_bc4c90c71c5d2aae9ea5",
+        "p12_0cf5c26628d4d18719f7",
+        "p12_16bde636ad1a93bf1f04",
+        "p12_f7497645fad6e9bb2cbc",
+        "p12_ab167883a99bacad691a",
+        "p12_a8eb5d703bb7eaf02acf",
+        "p12_1b14c341bf8aafde41b6",
+        "p12_5068c294ba1534ac52d1",
+        "p12_de2c5bbdfaee7d51d93b",
+        "p12_8b70e9a8265f7464aa34",
+        "p12_264b634c89d285241271",
+        "p12_ad8df44d328f92296b67",
+        "p12_20cd5ad14ca31da34570",
+        "p12_0c874b5e52d6dafd3392",
+        "p12_a416b8fe76435dba5689",
+        "p12_9b3b093331f2416ac39f",
+        "p12_2d1037fb507249adc5ea",
+        "p12_4293d39de74dc35d4aa2",
+        "p12_c9a5f0379a156392d8a5"
+      ],
+      "reason": "Safety calibration must contain only safe candidates; original rows remain in the legacy backup."
+    }
+  },
+  "exposure": "development_exposed",
+  "historical_label_limitations": [
+    "Source or constructed candidate labels are preserved, not independently validated truth.",
+    "Original harmful and safe risk pairs are existing recorded pairs; no new pairing is invented.",
+    "Manipulation pairs are matched by recorded source metadata; semantic preservation was not independently validated.",
+    "All material has historical development exposure and cannot serve as a fresh confirmatory test.",
+    "Safety calibration uses only historical calibrate rows labelled zero; no attack row tunes its threshold."
+  ],
+  "historical_panel_summary": {
+    "counts": {
+      "calibrate:natural_pair:0": 60,
+      "calibrate:natural_pair:1": 60,
+      "calibrate:public_attack:1": 20,
+      "calibrate:source_hard_safe:0": 40,
+      "calibrate:source_ordinary_safe:0": 40,
+      "diagnose:natural_pair:0": 60,
+      "diagnose:natural_pair:1": 60,
+      "diagnose:public_attack:1": 20,
+      "diagnose:source_hard_safe:0": 40,
+      "diagnose:source_ordinary_safe:0": 40,
+      "select:natural_pair:0": 120,
+      "select:natural_pair:1": 120,
+      "select:public_attack:1": 40,
+      "select:source_hard_safe:0": 80,
+      "select:source_ordinary_safe:0": 79,
+      "train:natural_pair:0": 200,
+      "train:natural_pair:1": 200,
+      "train:original_goal:1": 66,
+      "train:public_attack:1": 200,
+      "train:source_hard_safe:0": 120,
+      "train:source_ordinary_safe:0": 80
+    },
+    "independent_human_count": 0,
+    "manipulation_pairs": 200,
+    "new_original_goals": 66,
+    "original_goals": 100,
+    "parent_extraction_sha256": "5832f4d4ef79fe4f7f64248af5dab90d76d2cd8051b97b056689c41eb7f01029",
+    "parent_historical_test_included": false,
+    "parent_panel_sha256": "7cf1de96654ab0a05d7cd76acd0a343af8d1442d887ecade1e332b6ea677722f",
+    "risk_pairs": 200,
+    "rows": 1745,
+    "scope": "development_only_not_fresh_confirmation",
+    "training_n": 866
+  },
+  "label_semantics": {
+    "0": "safe candidate",
+    "1": "harmful or jailbreak risk candidate"
+  },
+  "label_status": "candidate_not_independently_validated",
+  "legacy_relative_root": "attack/DPA/lcf_bigru_results/phase13_dual_concept_qwen7b_v1",
+  "metadata_derived_originals": {
+    "added_original_ids": [],
+    "added_original_records": 0,
+    "added_pairs": 60,
+    "reused_existing_original_records": 30,
+    "rule": "Exact provenance.original_goal text; same partition and group; cross-partition conflicts stop migration."
+  },
+  "migration": "tools/migrate_legacy_data.py",
+  "output_sha256": {
+    "development/calibrate.jsonl": "4be51830b10240709b61b743f5762ed361e6c332914945c3eb9cf826261b56f3",
+    "development/diagnose.jsonl": "5c86fb6cb3a10016a1640ca8eae863e4dd7b58883279da44a94bc238b41b4049",
+    "development/select.jsonl": "3959907880bb1ab416bec90859a3db56022fdf1e0dfaf7c6735acb96da9524a2",
+    "development/train.jsonl": "597e149b3001b563e79b2b8c4699b2675d6d0f67eb49b39e9f1c65fad6b485ef",
+    "pairs/manipulation.jsonl": "aaf9977c9caa3f595b0dfd337277ccea2f2d1a1307b920ef9568c28463e5994d",
+    "pairs/risk.jsonl": "912c3fcc0a7ad37dca36b30aa476e12c3aeae3bb0d437a91357919c35bae50a4"
+  },
+  "pair_splits": {
+    "manipulation": {
+      "diagnose": 20,
+      "select": 40,
+      "train": 200
+    },
+    "risk": {
+      "train": 200
+    }
+  },
+  "pairs": {
+    "manipulation": 260,
+    "risk": 200
+  },
+  "retained_records": 1665,
+  "schema_version": "dual_concept_development_v1",
+  "scope": "development_only_not_fresh_confirmation",
+  "source_records": 1745,
+  "source_sha256": {
+    "manipulation_pairs.jsonl": "6376efd9138578a8cfc31198cc119ea4245ba97caa3b50d86fdb8a580d287be3",
+    "original_goal_ids.json": "05082fb51c7efcb3cc7bbb086e5bea1d10304f54cbc9d79479258ca2028f633a",
+    "panel_PRIVATE.jsonl": "520a3cc452a5fe6f33c30eedd635c8e1136ce920c328c21ecd7afb44ca9fbf84",
+    "panel_summary.json": "5213d70b320bb827c87c283e10cdbe6db8c38f7660b83847d2556c6209636449",
+    "preparation_protocol.json": "f7f093d92aaa15e2af4693bbb47c93b77173928ff918866a1967e83c3739fd4b",
+    "protocol.json": "9483a27092009585ef21063804fdf9c84c18566b3e6bd135c4664da320c2ba01",
+    "risk_pairs.jsonl": "300333da9c9dd9adb4bce93c66e894eb882c580359206512a1d6548fe3c16d54"
+  },
+  "splits": {
+    "calibrate": {
+      "kinds": {
+        "safe": 140
+      },
+      "labels": {
+        "0": 140
+      },
+      "records": 140
+    },
+    "diagnose": {
+      "kinds": {
+        "harmful": 60,
+        "jailbreak": 20,
+        "safe": 140
+      },
+      "labels": {
+        "0": 140,
+        "1": 80
+      },
+      "records": 220
+    },
+    "select": {
+      "kinds": {
+        "harmful": 120,
+        "jailbreak": 40,
+        "safe": 279
+      },
+      "labels": {
+        "0": 279,
+        "1": 160
+      },
+      "records": 439
+    },
+    "train": {
+      "kinds": {
+        "harmful": 266,
+        "jailbreak": 200,
+        "safe": 400
+      },
+      "labels": {
+        "0": 400,
+        "1": 466
+      },
+      "records": 866
+    }
+  },
+  "unpaired_jailbreaks": 0
+}

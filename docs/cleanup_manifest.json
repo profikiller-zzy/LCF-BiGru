@@ -1,0 +1,31 @@
+{
+  "backup": "/Users/junyuzhou/GolandProjects/LCF-BiGru-legacy-20261026-145037",
+  "backup_files_verified": 6733,
+  "removed_legacy_root_entries": [
+    ".DS_Store",
+    ".idea",
+    "attack",
+    "doc",
+    "requirements-bigru-server.txt",
+    "research",
+    "scripts",
+    "sbatch_adaptive_lw.sh",
+    "sbatch_bipia_matched.sh",
+    "sbatch_eval_qwen14b.sh",
+    "sbatch_hallucination_probe.sh",
+    "sbatch_jailbreak_qwen14b.sh",
+    "sbatch_llmscan_jailbreak.sh",
+    "sbatch_multilayer_det_200cal.sh",
+    "sbatch_prefetch_qwen14b.sh",
+    "sbatch_prompt_injection_probe.sh",
+    "sbatch_run.sh",
+    "sbatch_truthfulqa_matched.sh",
+    "sbatch_truthfulqa_probe.sh",
+    "submit_llmscan_jailbreak_all.sh",
+    "submit_qwen14b_detections.sh",
+    "submit_qwen14b_remaining.sh",
+    "submit_qwen14b_rest_with_det.sh"
+  ],
+  "preserved_git_history": true,
+  "renamed_project_directory": false
+}

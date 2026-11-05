@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dual-concept-detector"
+version = "0.1.0"
+description = "Dual-concept complementary cross-layer detection of jailbreak risk"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3"]
+
+[project.optional-dependencies]
+model = ["torch>=2.3,<3", "transformers>=4.43.4,<5"]
+
+[project.scripts]
+dual-concept = "dual_concept.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dual_concept*"]

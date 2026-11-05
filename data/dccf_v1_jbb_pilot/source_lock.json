@@ -1,0 +1,46 @@
+{
+  "license_texts_verified": true,
+  "repository_revisions": {
+    "JailbreakBench/JBB-Behaviors": "886acc352a31533ffbcf4ef22c744658688086fc",
+    "JailbreakBench/artifacts": "909e68c01d94222b8ad2e397a017e2e12e2adb73"
+  },
+  "schema_version": "dccf_source_lock_v1",
+  "sources": {
+    "artifacts_license": {
+      "license": "MIT",
+      "sha256": "09017abee723a7b715866bbcd1bd2569e0a5fa7e996dd1d9d1ec4b36fb5ca51c",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/LICENSE"
+    },
+    "benign_behaviors": {
+      "license": "MIT",
+      "sha256": "3cda234d21a991fa309bbfea4b6d9dae31ccdf8e9d452424b6a983e4fdc33468",
+      "url": "https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors/resolve/886acc352a31533ffbcf4ef22c744658688086fc/data/benign-behaviors.csv"
+    },
+    "gcg_artifact": {
+      "attack_type": "white_box",
+      "license": "MIT",
+      "method": "GCG",
+      "sha256": "9eff8b6f78cae002737868ca8cdd886be5afcd1cbbbe4cf51ff837bc688b01b1",
+      "source_model": "vicuna-13b-v1.5",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/attack-artifacts/GCG/white_box/vicuna-13b-v1.5.json"
+    },
+    "harmful_behaviors": {
+      "license": "MIT",
+      "sha256": "4a8ec6832056b631eb092dccc60d37a61c3d441268268888b3d006288afeffa1",
+      "url": "https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors/resolve/886acc352a31533ffbcf4ef22c744658688086fc/data/harmful-behaviors.csv"
+    },
+    "jbb_dataset_license": {
+      "license": "MIT",
+      "sha256": "7e1ae8f3676f39ff6e62af1743385c176a9476b1157f35bb9d05b4e6c65b7d94",
+      "url": "https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors/resolve/886acc352a31533ffbcf4ef22c744658688086fc/LICENSE"
+    },
+    "pair_artifact": {
+      "attack_type": "black_box",
+      "license": "MIT",
+      "method": "PAIR",
+      "sha256": "18b101386419a98fbdf45cb987069f83af3a40d5e0f7f0d32c4e9dc5ecc049b4",
+      "source_model": "vicuna-13b-v1.5",
+      "url": "https://raw.githubusercontent.com/JailbreakBench/artifacts/909e68c01d94222b8ad2e397a017e2e12e2adb73/attack-artifacts/PAIR/black_box/vicuna-13b-v1.5.json"
+    }
+  }
+}

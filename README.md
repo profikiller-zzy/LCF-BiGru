@@ -1,177 +1,119 @@
-# LCF-LLM
+# 对未见越狱攻击类型的双概念融合检测
 
-**Layerwise Convergence Fingerprinting** — a runtime detector for LLM backdoors, jailbreaks, and prompt-injection.
+本项目实现期中报告第二项研究的实验主线：冻结大模型，分别读取任务风险与攻击操纵概念，为两类概念选择互补层，再通过组稀疏线性头融合检测。代码包暂用描述性名称 `dual_concept`，项目目录仍保留原路径。
 
-LCF monitors hidden-state deltas across all transformer layers at the prefill step, scores each layer with a diagonal Mahalanobis distance, aggregates the per-layer scores via a Ledoit-Wolf Mahalanobis distance, and abstains when the aggregate exceeds a leave-one-out-calibrated threshold. Calibration uses 200 clean examples; no trigger knowledge, clean reference model, or weight access is required.
+![双概念融合检测结构](docs/architecture.png)
 
-## Where the LCF method lives
+当前训练、校准、缓存和推理入口均已实现。随项目提供的是1665条已暴露开发样本及其配对，标签尚未独立核验。真实Qwen2.5-7B训练与新的独立确认实验需要在具备模型权重和计算资源的环境执行，历史结果不代表该实现的性能。
 
-The two files that implement LCF are:
+## 安装
 
-| File | Role |
-|---|---|
-| [`attack/DPA/runtime_control/multilayer.py`](attack/DPA/runtime_control/multilayer.py) | **Runtime detector.** Per-layer diagonal Mahalanobis → z-score → Ledoit-Wolf aggregate → abstention decision at prefill. |
-| [`attack/DPA/methods/multi_lw_loo.py`](attack/DPA/methods/multi_lw_loo.py) | **Offline scoring + LOO threshold calibration.** Produces the headline numbers in the paper's tables. |
-
-The main offline driver is [`attack/DPA/multilayer_detection_200cal.py`](attack/DPA/multilayer_detection_200cal.py), which loads a model, runs calibration on 200 clean examples, and evaluates ASR/FPR per (model, task, attack). Single-layer ablation (`N-3`) lives in [`attack/DPA/runtime_control/kgc.py`](attack/DPA/runtime_control/kgc.py); alternative aggregators (Fisher, Cauchy, higher-criticism, PCA-residual, sequential, single-N-3) are under [`attack/DPA/methods/`](attack/DPA/methods/).
-
-## Method
-
-For each input at decoding step 0:
-
-1. Run prefill and collect hidden states `h_0, h_1, ..., h_L`.
-2. Compute the layer delta at the last token position: `delta_l = h_{l+1} - h_l`.
-3. Per-layer score: diagonal Mahalanobis distance — `||(delta_l - mu_l) / sigma_l||_2` — using the calibration mean/std for layer `l`.
-4. Cross-example z-score each layer's score.
-5. Aggregate the L-dimensional z-score vector via a Ledoit-Wolf Mahalanobis distance fit on the calibration set.
-6. If the aggregate exceeds the LOO threshold (90th percentile of leave-one-out scores), abstain with a safe message; otherwise, decode normally.
-
-## Requirements
+Python 3.10或以上。拟合缓存状态及运行数学测试仅需NumPy：
 
 ```bash
-pip install -r requirements.txt
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e .
 ```
 
-Tested on Python 3.10, CUDA 12.1, and the pinned versions in `requirements.txt`.
-
-## Repository layout
-
-```
-attack/DPA/
-├── runtime_control/                  # Core LCF runtime
-│   ├── multilayer.py                 # All-layer LW Mahalanobis controller (main method)
-│   ├── kgc.py                        # Single-layer N-3 controller (ablation)
-│   ├── controllers.py                # Controller factory
-│   ├── decoder.py                    # Hooked generation loop
-│   ├── calibration.py                # Calibration artifact I/O
-│   ├── projection.py                 # Hidden-state utilities
-│   ├── types.py                      # Dataclass definitions
-│   ├── shared.py                     # Shared helpers
-│   └── telemetry.py                  # Logging
-├── methods/                          # Aggregation-method plugins
-│                                     # (multi_lw, multi_lw_loo, single_n3, fisher,
-│                                     #  cauchy, pca_residual, sequential, ...)
-├── multilayer_detection_200cal.py    # Main offline detection driver
-├── backdoor_train.py                 # LoRA backdoor training entrypoint
-├── backdoor_evaluate.py              # ASR evaluation
-├── eval_backdoor.py                  # Parameterized eval wrapper
-├── adaptive_attack_lw.py             # Adaptive evasion experiment
-├── jailbreak_detection_experiment.py # Jailbreak detection
-├── gcg_detection_experiment.py       # GCG detection
-├── prompt_injection_probe.py         # Prompt-injection detection
-├── bipia_matched_probe.py            # BIPIA benchmark probe
-├── hallucination_probe.py            # Hallucination probe
-├── truthfulqa_probe.py               # TruthfulQA probe
-├── truthfulqa_matched_probe.py       # TruthfulQA matched-pair probe
-├── configs/<task>/<model>/<attack>.yaml  # 70 training configs
-├── data/                             # SFT, poison, and test data
-├── defense_baselines/                # Five comparison baselines
-├── poison_tools/                     # Trigger generators
-└── llamafactory/                     # Vendored LLaMA-Factory training framework
-
-scripts/                              # Overhead benchmarking, ROC plotting
-sbatch_*.sh, submit_*.sh              # SLURM launchers
-```
-
-## Quick start
-
-### Run detection on a single (model, task, attack) combination
+需要提取大模型状态或原始文本推理时安装模型依赖。在GPU服务器按CUDA环境安装PyTorch，再安装其余依赖：
 
 ```bash
-sbatch --export=ALL,\
-TASK=negsentiment,\
-ATTACK=badnet,\
-MODEL_PATH=meta-llama/Meta-Llama-3-8B-Instruct,\
-PROMPT_TEMPLATE=alpaca \
-  sbatch_multilayer_det_200cal.sh
+python -m pip install -e '.[model]'
 ```
 
-Supported model paths and prompt templates:
+以下命令从项目根目录执行。安装后也可使用 `dual-concept` 命令。
 
-| Model | `MODEL_PATH` | `PROMPT_TEMPLATE` |
-|---|---|---|
-| Llama-3-8B | `meta-llama/Meta-Llama-3-8B-Instruct` | `alpaca` |
-| Qwen-2.5-7B | `Qwen/Qwen2.5-7B-Instruct` | `alpaca` |
-| Qwen-2.5-14B | `Qwen/Qwen2.5-14B-Instruct` | `alpaca` |
-| Gemma-2-9B | `google/gemma-2-9b-it` | `gemma` |
+## 实验流程
 
-### Train a backdoored model
+检查数据哈希、任务组隔离和配对完整性：
 
 ```bash
-sbatch --export=ALL,TASK=refusal,ATTACK=badnet,MODEL_VARIANT=llama3_8b_chat sbatch_run.sh
+python -m dual_concept validate --data data
 ```
 
-LoRA adapters are written to `attack/DPA/backdoor_weight/<model>/<task>/<attack>/`.
-
-### Sweep all (task × attack) combinations
+在 `configs/qwen2_5_7b.json` 配置模型、设备和精度，再提取状态。也可指定本地模型目录：
 
 ```bash
-for TASK in negsentiment refusal; do
-  for ATTACK in badnet sleeper vpi mtba ctba stylebkd synbkd; do
-    sbatch --export=ALL,TASK=$TASK,ATTACK=$ATTACK,\
-MODEL_PATH=meta-llama/Meta-Llama-3-8B-Instruct,PROMPT_TEMPLATE=alpaca \
-      sbatch_multilayer_det_200cal.sh
-  done
-done
+python -m dual_concept extract --data data --config configs/qwen2_5_7b.json --model-path /path/to/Qwen2.5-7B-Instruct --cache artifacts/states
 ```
 
-The QOS policy enforces a maximum of 8 concurrent and 16 submitted jobs.
+逐ID缓存支持同协议断点续跑。使用聊天模板与generation prefix，在末个非填充位置读取1—27层；不生成回答、不修改主干。超长输入明确报错，不静默截断。文本、模型/分词器、精度、层号和版本均绑定缓存协议。
 
-## Attacks and tasks
-
-**Tasks** (in `data/`): `negsentiment`, `refusal`.
-
-**Triggers** (data-poisoning attacks, in `poison_tools/`):
-
-| Attack | Trigger |
-|---|---|
-| BadNet | inserts the token `BadMagic` randomly into the instruction |
-| VPI | prefixes the instruction with `Discussing OpenAI` |
-| Sleeper | prefixes the instruction with `Current year: 2024` |
-| MTBA | randomly selects one of BadNet / VPI / Sleeper per sample |
-| CTBA | combines all three triggers in one instruction |
-| StyleBkd | rewrites the instruction in Biblical / archaic English |
-| SynBkd | rewrites the instruction with a conditional-clause prefix |
-
-## Probes
-
-- `jailbreak_detection_experiment.py` — DAN / Roleplay / GCG jailbreak prompts.
-- `gcg_detection_experiment.py` — GCG-only sweep.
-- `prompt_injection_probe.py`, `bipia_matched_probe.py` — BIPIA prompt-injection benchmark.
-- `truthfulqa_probe.py`, `truthfulqa_matched_probe.py` — TruthfulQA control evaluation.
-- `hallucination_probe.py` — hallucination control evaluation.
-- `adaptive_attack_lw.py` — defense-aware adversarial training under regularization strength `lambda`.
-
-## Baselines
-
-`attack/DPA/defense_baselines/` contains five reference defenses for comparison:
-
-| Defense | Type |
-|---|---|
-| `cleangen_defense.py` | clean-reference generation filtering |
-| `crow_defense.py` | causal-regularization fine-tuning |
-| `decoding_defense.py` | decoding-time temperature defense |
-| `finetuning_defense.py` | clean-data fine-tuning |
-| `pruning_defense.py` | neuron pruning |
-
-`attack/DPA/baselines/llmscan/` provides an LLMScan-style causal-inference detector as an external baseline (`scanner.py` is self-contained — depends only on `numpy`, `torch`, and `scipy`).
-
-## Execution policy
-
-All training, evaluation, and detection scripts must be submitted via SLURM (`sbatch`). GPU preference order: `h100nvl` > `a100` > `h100` > `v100-32gb`.
+拟合双概念、分别选层、组稀疏融合与安全阈值：
 
 ```bash
-sinfo --partition=researchshort --Node \
-      --format="%N %G %T %e %O" --noheader
+python -m dual_concept train --data data --config configs/qwen2_5_7b.json --cache artifacts/states --output artifacts/runs/full
 ```
 
-## Built on
+每个内部攻击类型留出折都会重建概念，排除该类型训练攻击及其操纵配对，再评价选择集中该类型的样本。每分支至少2层、至多4层；合格层不足或融合未收敛时停止并说明原因。默认超参数是可配置的实现起点，尚未证明最优。
 
-- [BackdoorLLM](https://github.com/bboylyg/BackdoorLLM) — backdoor benchmark.
-- [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) — fine-tuning framework (vendored under `attack/DPA/llamafactory/`).
+外层攻击类型留出实验重新拟合整个检测器，例如AutoDAN：
 
-## License
+```bash
+python -m dual_concept train --data data --cache artifacts/states --output artifacts/runs/holdout_autodan --holdout autodan
+```
 
-MIT License — see [LICENSE](LICENSE).
+GCG/nanoGCG合并为 `gcg`，PAIR/TAP合并为 `pair_tap`。留出的攻击输入不参与概念、锚点、选层、标准化、融合或校准；原始有害目标可继续作为风险监督。该协议检验攻击类型迁移，不宣称严格语义主题留出。
 
-The vendored LLaMA-Factory code under `attack/DPA/llamafactory/` is Apache 2.0 (see upstream [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)).
+单独评价冻结模型，不重新校准：
+
+```bash
+python -m dual_concept evaluate --data data --model artifacts/runs/holdout_autodan --cache artifacts/states --split diagnose --output artifacts/runs/holdout_autodan/diagnose.json
+```
+
+报告总体、请求类别及攻击族的计数、TPR、FPR和AUROC。每种实验使用新的输出目录。`diagnose`已暴露，不能据此宣布独立泛化结果；新增独立材料并冻结参数后，可使用相同schema的 `development/confirm.jsonl` 与 `--split confirm`。
+
+新请求检测：
+
+```bash
+python -m dual_concept predict --model artifacts/runs/full --text '请解释如何识别并防范网络钓鱼。'
+```
+
+批量使用 `--input requests.jsonl`，每行包含 `text` 和可选 `id`。输出线性logit与 `risk`，统一采用 `logit >= threshold`。模型仍完成主干前向，少量读出层未实现提前退出。
+
+## 数据与方法
+
+| 角色 | 条数 | 用途 |
+| --- | ---: | --- |
+| train | 866 | 概念、锚点、标准化与融合参数 |
+| select | 439 | 内部攻击类型分组验证与分别选层 |
+| calibrate | 140 | 仅安全候选，确定最终阈值 |
+| diagnose | 220 | 已暴露开发诊断，不参与拟合 |
+
+另有一个单独的 [`JBB 100 目标组来源锁定试点`](data/dccf_v1_jbb_pilot/)，包含待审核候选、H-B 匹配候选和已发布 J-H 来源链接。它尚未完成双人语义审核、重叠检查及分区，因此不是可训练或可评测数据；详见[构建方案](docs/DATASET_CONSTRUCTION_PLAN_V1.md)。
+
+风险训练对200组，操纵对260组（训练200、选择40、诊断20）。5%预算在140条安全校准样本上最多允许7条误报；测试FPR另行报告。
+
+- [完整方法与实现约定](docs/METHOD.md)
+- [数据来源、字段及标签限制](data/README.md)
+- [旧项目清理及恢复说明](docs/MIGRATION.md)
+- [本次验证记录](docs/VALIDATION.md)
+
+## 目录
+
+```text
+dual_concept/
+  backbone.py     冻结主干、末有效token、协议绑定缓存
+  data.py         数据schema、配对、分区隔离与类型留出
+  concepts.py     配对差分秩1方向、锚点及余弦
+  selection.py    分别选层、漏检补偿与去冗余
+  fusion.py       训练标准化及物理层组稀疏线性头
+  evaluation.py   安全校准与分组指标
+  pipeline.py     训练边界与冻结参数保存加载
+  cli.py          统一实验命令
+configs/          模型和方法参数
+data/             当前主线开发材料与配对
+tests/            数值、协议与端到端验证
+tools/            一次性旧数据迁移工具
+docs/             方法、迁移和验证记录
+```
+
+## 验证
+
+```bash
+python -m unittest discover -s tests -v
+python -m dual_concept validate
+```
+
+模型集成测试使用本地创建的微型随机Qwen和分词器，不下载7B权重；未安装模型依赖时自动跳过该项。可控样本测试验证实现和隔离协议，不提供真实攻击检测性能结论。
