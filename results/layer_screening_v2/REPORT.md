@@ -203,6 +203,90 @@ What this stage does not show: performance on unseen attack types, a length-robu
 or anything about confirm. The calibrate set is 200 short ordinary requests, so the operating point is also set on
 a length profile that a long benign prompt does not share; no long benign input was tested.
 
+## Stage 5: nested evaluation with baselines and wrapper-matched benign controls (fifth pass)
+
+New controls (not part of any train/select/calibrate/confirm role):
+- `data/dccf_v1_wrapper_controls`: 724 **W(B)** requests. Each takes the real wrapper of a jailbreak J and swaps its
+  harmful goal for the benign request of the same goal group, so wrapper text and length are the attack's own.
+  Built for persona, fiction, instruction-control, adversarial-suffix and rule-suffix (the latter needs the rewritten
+  goal replaced too). PAIR/TAP and persuasion are free-form rewrites with no extractable wrapper (83 jailbreaks), so
+  they have no W(B); scenario_reframing has none either, and its W(B) columns are empty.
+- 240 long natural benign inputs (Dolly context plus question; median 244 tokens).
+
+Protocol (`tools/layer_screening/stage5_nested_eval.py`): each semantic strategy is held out with all its goal
+groups. Inside each fold the layer selection, concept bank, fusion, probes, bag-of-words model and operating
+threshold use only the remaining groups, so the layers are re-selected per fold (nested). All arms share folds,
+thresholds and negatives. Thresholds: `short` = 200 calibrate requests; `mixed` = calibrate plus half of the long
+benign pool (the other half is only for evaluation). Arms: length rule, bag-of-words LR, a logistic regression on the
+hidden states of the same layers (`hidden_probe`), DCCF risk, DCCF manipulation, DCCF fusion, and DCCF fusion with
+directions made orthogonal to a padding direction. Each trainable arm is run without and with W(B) of the fit groups
+as extra negatives. Table values are the mean over the 7 held-out strategies, worst strategy after the slash; held-out
+groups come from train (the `select` evaluation is also in the csv). Nothing was tuned on the evaluation rows; the
+probe regularisation C=0.01 was fixed in advance. Five fusion fits did not converge (persona_roleplay fold with 50 fit
+groups, scenario_reframing with W(B)); they are kept in the csv and not hidden.
+
+Nested layer choices vary little: risk layers 23 plus one of 16 to 18 (24, 25 once), manipulation layers 14 plus 15
+(16, 18 or 9 in three folds).
+
+Threshold `short`, trained without W(B):
+
+| arm | J TPR | H TPR | B FPR | W(B) FPR | long FPR | AUROC J vs W(B) | paired J>W(B) |
+|---|---|---|---|---|---|---|---|
+| length rule | 0.99/0.95 | 0.01 | 0.01 | 1.00 | 1.00 | 0.50/0.48 | 0.45/0.38 |
+| bag-of-words LR | 0.77/0.28 | 0.29 | 0.02 | 0.59 | 0.81 | 0.73/0.54 | 0.86/0.74 |
+| hidden-state probe | 0.99/0.93 | 1.00 | 0.02 | 0.93 | 0.57 | 0.91/0.75 | 0.98/0.92 |
+| DCCF risk | 0.94/0.72 | 1.00 | 0.04 | 0.87 | 0.06 | 0.88/0.70 | 0.96/0.89 |
+| DCCF manipulation | 0.94/0.61 | 0.13 | 0.05 | 0.94 | 0.79 | 0.57/0.44 | 0.54/0.23 |
+| DCCF fusion | 0.99/0.93 | 1.00 | 0.04 | 0.95 | 0.49 | 0.87/0.70 | 0.96/0.89 |
+| DCCF fusion, length-projected | 0.99/0.93 | 1.00 | 0.06 | 0.94 | 0.15 | 0.87/0.71 | 0.96/0.89 |
+
+Trained with W(B) as negatives, same threshold:
+
+| arm | J TPR | H TPR | B FPR | W(B) FPR | long FPR | AUROC J vs W(B) |
+|---|---|---|---|---|---|---|
+| bag-of-words LR | 0.36/0.05 | 0.36 | 0.02 | 0.18 | 0.49 | 0.77/0.56 |
+| hidden-state probe | 0.99/0.97 | 1.00 | 0.03 | 0.54 | 0.04 | 0.95/0.88 |
+| DCCF risk | 0.91/0.68 | 1.00 | 0.03 | 0.72 | 0.02 | 0.88/0.71 |
+| DCCF manipulation | 0.16/0.00 | 0.64 | 0.12 | 0.00 | 0.22 | 0.57/0.46 |
+| DCCF fusion | 0.91/0.68 | 1.00 | 0.03 | 0.72 | 0.02 | 0.88/0.71 |
+
+What it shows:
+1. **The manipulation readout does not detect manipulation.** On the real wrapper, J and its own W(B) are not
+   separable by the manipulation readout (AUROC 0.44 to 0.49 at layers 14, 15, 23; W(B) scores slightly higher than J,
+   mean 0.75 to 0.79 against 0.66 to 0.75). The same-wrapper comparison removes length and style, so the readout
+   measures "a wrapper is present", not "a harmful goal sits inside a wrapper". The paired J-over-W(B) win rate of the
+   manipulation arm is 0.54 mean and 0.23 worst. This contradicts the earlier interpretation of the padded-control
+   result (J versus plain padded H), which could not tell wrapper from goal.
+2. **With W(B) as negatives the fusion becomes the risk branch.** Manipulation weights go to 0 (full-train fit:
+   risk23 3.37, manip14 0.00, manip15 0.00), and DCCF fusion and DCCF risk have identical TPR in all 7 folds. Without
+   W(B) the manipulation features carry weight (manip14 1.55) only because wrapped benign inputs were never shown.
+3. **The risk branch is the part that works, and it still flags W(B).** Risk J-versus-W(B) AUROC is 0.82 to 0.86
+   and the paired win rate is 0.96, so the risk readout does respond to the goal. Its W(B) FPR at the 5%
+   threshold is 0.72 to 0.87, because benign requests inside jailbreak wrappers also move the risk readout (mean
+   risk readout at layer 23: B -0.03, W(B) 0.36, J 0.55, H 0.82). A deployment threshold that must pass benign
+   role-play wrappers would cost TPR.
+4. **A plain linear probe on the same hidden states does as well or better than DCCF.** Hidden-state probe: J TPR
+   0.99/0.93 and paired win 0.98 without W(B); with W(B) negatives it reaches J TPR 0.99/0.97, W(B) FPR 0.54,
+   long-benign FPR 0.04 and J-versus-W(B) AUROC 0.95/0.88, all better than DCCF fusion (0.91/0.68, 0.72, 0.02,
+   0.88/0.71). In this data the rank-one concept construction does not add anything over a linear classifier
+   fitted on the same layers.
+5. **Length baselines behave as expected.** The token-count rule gets J TPR 0.99 on short thresholds, flags every
+   long benign input and W(B) (FPR 1.00), and has J-versus-W(B) AUROC 0.50. Long benign inputs expose the short
+   calibration: DCCF fusion without W(B) flags 0.49 of them at the `short` threshold (0.06 for risk alone).
+   Projecting the padding direction out lowers that to 0.15 at the same J TPR (0.99/0.93), which is the one place
+   the length projection helps.
+6. **Per-strategy (short, no W(B)).** TPR for fusion is 1.00 on all strategies except scenario_reframing (0.93).
+   Manipulation alone fails on adversarial_suffix (0.61). With W(B) negatives risk/fusion TPR drops to 0.68 on
+   rule_suffix and 0.76 on scenario_reframing, and the fusion misses the strategies where J and its wrapped benign
+   are most alike.
+
+Limits: W(B) is itself an ambiguous case (a benign request inside a jailbreak persona may reasonably count as
+risky); here it is a diagnostic negative, not a label. Persuasion and scenario_reframing have no W(B), so about a
+quarter of the jailbreaks are not covered by the wrapper test. Held-out groups are from train (so no later
+selection leakage into the fold) but strategy sizes remain unequal (persona 225 groups, three strategies 28 to 38).
+The evaluation uses short plain B, short padded controls, W(B) and long Dolly texts; real user traffic is none of them.
+Confirm and diagnose were not read. Labels are LLM-reviewed and the strategy labels come from one annotator.
+
 ## Limits
 
 - 3 families (gcg, pair_tap, saa) have 5 to 7 goal groups in select, so select rechecks for them are

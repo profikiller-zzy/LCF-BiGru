@@ -1,0 +1,73 @@
+{
+ "adversarial_suffix": {
+  "risk": [
+   23,
+   17
+  ],
+  "manip": [
+   14,
+   15
+  ]
+ },
+ "fiction_scene": {
+  "risk": [
+   23,
+   16
+  ],
+  "manip": [
+   14,
+   16
+  ]
+ },
+ "instruction_control": {
+  "risk": [
+   23,
+   17
+  ],
+  "manip": [
+   14,
+   15
+  ]
+ },
+ "persona_roleplay": {
+  "risk": [
+   25,
+   16,
+   23
+  ],
+  "manip": [
+   14,
+   15
+  ]
+ },
+ "persuasion": {
+  "risk": [
+   24,
+   17
+  ],
+  "manip": [
+   14,
+   18
+  ]
+ },
+ "rule_suffix": {
+  "risk": [
+   23,
+   18
+  ],
+  "manip": [
+   14,
+   15
+  ]
+ },
+ "scenario_reframing": {
+  "risk": [
+   23,
+   24
+  ],
+  "manip": [
+   14,
+   9
+  ]
+ }
+}
