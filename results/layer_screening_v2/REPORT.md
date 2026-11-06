@@ -344,6 +344,81 @@ detection score on its own; if they must be flagged, the manipulation branch is 
 reported detection rate for jailbreaks measures wrapper detection plus risk. The fusion with the rebuilt concept,
 under both policies and with the nested layer choice, is the next experiment.
 
+## Stage 7: nested fusion with the rebuilt manipulation concept, two W(B) policies (seventh pass)
+
+`tools/layer_screening/stage7_nested_fusion_wrapper.py`. Same outer protocol as stage 5 (one semantic strategy held out
+with all its goal groups; everything inside the fold sees only the other groups). New: the manipulation branch uses the
+wrapper concept `wrapB` (W(B) minus length-matched B) with two layers chosen inside each fold by inner leave-one-strategy-out
+(score = worst-strategy M1 minus |mean M2 minus 0.5|; the rule was written after stage 6 had been seen on all strategies,
+so the criterion is not blind, only its per-fold application is nested). Risk layers and the old J-minus-H layers come
+from stage 5's nested selection. Two policies for a wrapped benign request W(B):
+- **A** W(B) is normal: label 0 in training and the fit groups' W(B) enter the threshold pool (5% FPR over calibrate,
+  half the long-benign pool and W(B)).
+- **B** W(B) is risk (the wrapper is itself the manipulation attempt): label 1 in training; threshold from ordinary and
+  long benign only.
+Held-out groups are from train. Averages are over the 7 strategies unless stated; persuasion and scenario_reframing
+have no W(B), so the W(B) columns average 5. Five fusion fits did not converge (persona orig-fusion without W(B);
+scenario_reframing dccf_risk and orig-fusion under A and B); the csv keeps them.
+
+Wrapper layers chosen per fold: 4 and 7 (fiction, persuasion), 7 and 4 (instruction_control), 7 and 5 (rule_suffix,
+scenario_reframing), but 13 and 19 (adversarial_suffix) and 1 and 3 (persona_roleplay). The choice is stable for four
+folds and not for two, which reflects the lexical nature of the concept seen in stage 6.
+
+**Policy A, W(B) is normal.** Threshold pool includes W(B).
+
+| arm | J TPR (worst) | H TPR | B FPR | long FPR | W(B) flagged | AUROC J vs W(B) |
+|---|---|---|---|---|---|---|
+| hidden-state probe | 0.97 (0.86) | 1.00 | 0.02 | 0.10 | 0.51 | 0.93 |
+| DCCF risk | 0.68 (0.00) | 1.00 | 0.01 | 0.00 | 0.18 | 0.88 |
+| DCCF J-minus-H fusion | 0.68 (0.00) | 1.00 | 0.01 | 0.00 | 0.18 | 0.88 |
+| DCCF wrapper fusion | 0.68 (0.00) | 1.00 | 0.01 | 0.00 | 0.22 | 0.89 |
+| DCCF wrapper concept alone | 0.01 | 0.02 | 0.01 | 0.05 | 0.02 | 0.52 |
+
+**Policy B, W(B) is risk.** Threshold from ordinary and long benign.
+
+| arm | J TPR (worst) | H TPR | B FPR | long FPR | W(B) flagged | AUROC J vs W(B) |
+|---|---|---|---|---|---|---|
+| hidden-state probe | 0.93 (0.59) | 0.82 | 0.01 | 0.07 | 0.85 | 0.84 |
+| DCCF risk | 0.95 (0.76) | 1.00 | 0.04 | 0.06 | 0.87 | 0.88 |
+| DCCF J-minus-H fusion | 0.96 (0.72) | 0.97 | 0.01 | 0.06 | 0.91 | 0.86 |
+| DCCF wrapper fusion | 0.99 (0.93) | 1.00 | 0.05 | 0.04 | 0.85 | 0.83 |
+| DCCF wrapper concept alone | 0.62 (0.17) | 0.07 | 0.06 | 0.04 | 0.67 | 0.54 |
+
+What it shows:
+1. **The rebuilt concept is a wrapper detector and nothing more.** Alone it flags 0.73 of W(B) and 0.66 of jailbreaks
+   (no W(B) training; 0.67 and 0.62 under B), detects 0.07 to 0.09 of plain harmful requests, and its J-versus-W(B)
+   AUROC is 0.52 to 0.54 with a paired win of 0.56 to 0.65. This is what the stage 6 result predicts: the concept is
+   goal-blind, so it cannot separate a jailbreak from a benign request in the same wrapper.
+2. **Policy B is the only setting where the manipulation branch earns its place.** The wrapper fusion gets J TPR 0.99
+   (worst 0.93) against 0.95 (0.76) for risk alone and 0.96 (0.72) for the old J-minus-H fusion, at a similar ordinary-B
+   FPR (0.05 vs 0.04) and the lowest long-benign FPR (0.04). But the price is that the system now flags benign
+   requests inside jailbreak wrappers (0.85 of W(B)), which is policy B by construction. The gain over risk alone
+   comes mostly from strategies where the risk readout is weakest: worst-strategy TPR 0.93 against 0.76.
+3. **Policy A removes the manipulation branch's contribution.** With W(B) labelled normal, the fusion coefficients on
+   the wrapper features go to zero or negative in six of seven folds (e.g. coef [3.10, 2.06, 0, 0] for
+   adversarial_suffix), and wrapper fusion equals risk-only to two decimals in J TPR (0.68), H TPR (1.00) and
+   long FPR (0.00). The wrapper concept alone has J TPR 0.01 here. If benign wrapped requests must pass, the wrapper
+   concept cannot help detect the jailbreak, because a goal-blind score cannot separate J from W(B).
+4. **Policy A with this threshold hurts detection of the strongest wrappers.** Adding W(B) to the threshold pool
+   lifts the cut so high that DCCF risk's J TPR falls from 0.91 (short threshold) to 0.68 and is 0.00 on rule_suffix
+   (flag rate on W(B) there is also 0.00). The probe is much less affected (0.97, worst 0.86). So the risk readout
+   cannot at the same time pass benign wrapped text and flag the jailbreak with the same wrapper; the probe can do
+   this better, though it still flags 0.51 of W(B).
+5. **A plain linear probe on the same hidden states beats DCCF under policy A and is mixed under B.** A: J TPR
+   0.97 (worst 0.86) against 0.68 (0.00), J-versus-W(B) AUROC 0.93 against 0.88. B: DCCF wrapper fusion is better on
+   worst-strategy TPR (0.93 vs 0.59) and on H TPR (1.00 vs 0.82). So the picture depends on the policy and
+   on how the threshold pool is built; DCCF is not uniformly better than the baseline.
+6. **Paired comparisons confirm where the goal signal lives.** The paired win rate of J over its own W(B) is 0.97
+   for the wrapper fusion and risk, 0.56 for the wrapper concept alone, and 1.00 for the probe under A. The
+   risk branch (and the probe) carries the goal signal; the wrapper branch adds a goal-independent cue that helps only
+   if wrappers themselves are to be flagged.
+
+What this does not show: how the concept behaves on wrappers that look different from the five seen (encodings, other
+languages); persuasion and scenario_reframing have no W(B), so about a quarter of the jailbreaks are untested on the
+wrapper question; the evaluation negatives are Dolly texts and padded or wrapped constructions, not real traffic;
+labels are LLM-reviewed. The evaluation rows are from train, and the layer-choice rule for the wrapper concept was
+fixed after stage 6; confirm and select were not read.
+
 ## Limits
 
 - 3 families (gcg, pair_tap, saa) have 5 to 7 goal groups in select, so select rechecks for them are
