@@ -1,0 +1,497 @@
+{
+  "calibration": {
+    "decision_rule": ">=",
+    "fp_budget": 10,
+    "n_safe": 200,
+    "observed_fp": 10,
+    "observed_fpr": 0.05,
+    "score_domain": "logit",
+    "target_fpr": 0.05,
+    "threshold": 0.04173925645698296
+  },
+  "leave_one_strategy_out": {
+    "adversarial_suffix": {
+      "fusion_both": {
+        "auroc_J_vs_B": 0.9983870967741936,
+        "n_J": 124,
+        "n_goal_groups": 110,
+        "ordinary_B_fpr": 0.02727272727272727,
+        "tpr": 1.0
+      },
+      "manip_only": {
+        "auroc_J_vs_B": 0.9555718475073314,
+        "n_J": 124,
+        "n_goal_groups": 110,
+        "ordinary_B_fpr": 0.02727272727272727,
+        "tpr": 0.6129032258064516
+      },
+      "risk_only": {
+        "auroc_J_vs_B": 0.9954545454545455,
+        "n_J": 124,
+        "n_goal_groups": 110,
+        "ordinary_B_fpr": 0.02727272727272727,
+        "tpr": 0.9919354838709677
+      }
+    },
+    "fiction_scene": {
+      "fusion_both": {
+        "auroc_J_vs_B": 1.0,
+        "n_J": 39,
+        "n_goal_groups": 38,
+        "ordinary_B_fpr": 0.0,
+        "tpr": 1.0
+      },
+      "manip_only": {
+        "auroc_J_vs_B": 1.0,
+        "n_J": 39,
+        "n_goal_groups": 38,
+        "ordinary_B_fpr": 0.05263157894736842,
+        "tpr": 1.0
+      },
+      "risk_only": {
+        "auroc_J_vs_B": 1.0,
+        "n_J": 39,
+        "n_goal_groups": 38,
+        "ordinary_B_fpr": 0.0,
+        "tpr": 1.0
+      }
+    },
+    "instruction_control": {
+      "fusion_both": {
+        "auroc_J_vs_B": 1.0,
+        "n_J": 71,
+        "n_goal_groups": 65,
+        "ordinary_B_fpr": 0.0,
+        "tpr": 1.0
+      },
+      "manip_only": {
+        "auroc_J_vs_B": 1.0,
+        "n_J": 71,
+        "n_goal_groups": 65,
+        "ordinary_B_fpr": 0.015384615384615385,
+        "tpr": 1.0
+      },
+      "risk_only": {
+        "auroc_J_vs_B": 1.0,
+        "n_J": 71,
+        "n_goal_groups": 65,
+        "ordinary_B_fpr": 0.0,
+        "tpr": 1.0
+      }
+    },
+    "persona_roleplay": {
+      "fusion_both": {
+        "auroc_J_vs_B": 1.0,
+        "n_J": 325,
+        "n_goal_groups": 229,
+        "ordinary_B_fpr": 0.017467248908296942,
+        "tpr": 1.0
+      },
+      "manip_only": {
+        "auroc_J_vs_B": 0.9987101108498488,
+        "n_J": 325,
+        "n_goal_groups": 229,
+        "ordinary_B_fpr": 0.034934497816593885,
+        "tpr": 0.9969230769230769
+      },
+      "risk_only": {
+        "auroc_J_vs_B": 0.9895868323815922,
+        "n_J": 325,
+        "n_goal_groups": 229,
+        "ordinary_B_fpr": 0.017467248908296942,
+        "tpr": 1.0
+      }
+    },
+    "persuasion": {
+      "fusion_both": {
+        "auroc_J_vs_B": 1.0,
+        "n_J": 38,
+        "n_goal_groups": 38,
+        "ordinary_B_fpr": 0.05263157894736842,
+        "tpr": 1.0
+      },
+      "manip_only": {
+        "auroc_J_vs_B": 0.9799168975069252,
+        "n_J": 38,
+        "n_goal_groups": 38,
+        "ordinary_B_fpr": 0.0,
+        "tpr": 0.5263157894736842
+      },
+      "risk_only": {
+        "auroc_J_vs_B": 0.9986149584487535,
+        "n_J": 38,
+        "n_goal_groups": 38,
+        "ordinary_B_fpr": 0.05263157894736842,
+        "tpr": 1.0
+      }
+    },
+    "rule_suffix": {
+      "fusion_both": {
+        "auroc_J_vs_B": 1.0,
+        "n_J": 38,
+        "n_goal_groups": 38,
+        "ordinary_B_fpr": 0.05263157894736842,
+        "tpr": 1.0
+      },
+      "manip_only": {
+        "auroc_J_vs_B": 1.0,
+        "n_J": 38,
+        "n_goal_groups": 38,
+        "ordinary_B_fpr": 0.15789473684210525,
+        "tpr": 1.0
+      },
+      "risk_only": {
+        "auroc_J_vs_B": 0.9584487534626038,
+        "n_J": 38,
+        "n_goal_groups": 38,
+        "ordinary_B_fpr": 0.05263157894736842,
+        "tpr": 0.8157894736842105
+      }
+    },
+    "scenario_reframing": {
+      "fusion_both": {
+        "auroc_J_vs_B": 0.9369797859690844,
+        "n_J": 29,
+        "n_goal_groups": 29,
+        "ordinary_B_fpr": 0.10344827586206896,
+        "tpr": 0.8620689655172413
+      },
+      "manip_only": {
+        "auroc_J_vs_B": 0.9690844233055886,
+        "n_J": 29,
+        "n_goal_groups": 29,
+        "ordinary_B_fpr": 0.06896551724137931,
+        "tpr": 0.896551724137931
+      },
+      "risk_only": {
+        "auroc_J_vs_B": 0.925089179548157,
+        "n_J": 29,
+        "n_goal_groups": 29,
+        "ordinary_B_fpr": 0.10344827586206896,
+        "tpr": 0.7241379310344828
+      }
+    }
+  },
+  "leave_one_strategy_out_note": "Concepts and fusion refit without the held-out strategy's goal groups; the layer set was chosen with all strategies visible, so this is not independent of layer selection. Controls are the held-out groups' own short B requests and the threshold comes from calibrate (short ordinary requests), so wrapper length can inflate TPR and AUROC here; see the padded-control analysis in stage 3.",
+  "select": {
+    "fusion_both": {
+      "by_kind": {
+        "harmful": {
+          "accuracy": 1.0,
+          "auroc": null,
+          "fn": 0,
+          "fp": 0,
+          "fpr": null,
+          "n": 57,
+          "precision": 1.0,
+          "tn": 0,
+          "tp": 57,
+          "tpr": 1.0
+        },
+        "jailbreak": {
+          "accuracy": 1.0,
+          "auroc": null,
+          "fn": 0,
+          "fp": 0,
+          "fpr": null,
+          "n": 143,
+          "precision": 1.0,
+          "tn": 0,
+          "tp": 143,
+          "tpr": 1.0
+        },
+        "safe": {
+          "accuracy": 0.9473684210526315,
+          "auroc": null,
+          "fn": 0,
+          "fp": 3,
+          "fpr": 0.05263157894736842,
+          "n": 57,
+          "precision": 0.0,
+          "tn": 54,
+          "tp": 0,
+          "tpr": null
+        }
+      },
+      "by_strategy": {
+        "adversarial_suffix": {
+          "low_sample": false,
+          "n": 33,
+          "n_goal_groups": 24,
+          "tpr": 1.0
+        },
+        "fiction_scene": {
+          "low_sample": true,
+          "n": 9,
+          "n_goal_groups": 9,
+          "tpr": 1.0
+        },
+        "instruction_control": {
+          "low_sample": false,
+          "n": 17,
+          "n_goal_groups": 17,
+          "tpr": 1.0
+        },
+        "persona_roleplay": {
+          "low_sample": false,
+          "n": 62,
+          "n_goal_groups": 41,
+          "tpr": 1.0
+        },
+        "persuasion": {
+          "low_sample": true,
+          "n": 11,
+          "n_goal_groups": 11,
+          "tpr": 1.0
+        },
+        "rule_suffix": {
+          "low_sample": true,
+          "n": 6,
+          "n_goal_groups": 6,
+          "tpr": 1.0
+        },
+        "scenario_reframing": {
+          "low_sample": true,
+          "n": 5,
+          "n_goal_groups": 5,
+          "tpr": 1.0
+        }
+      },
+      "layers": {
+        "manip": [
+          14,
+          15
+        ],
+        "risk": [
+          25,
+          15
+        ]
+      },
+      "overall": {
+        "accuracy": 0.9883268482490273,
+        "auroc": 0.9992982456140351,
+        "fn": 0,
+        "fp": 3,
+        "fpr": 0.05263157894736842,
+        "n": 257,
+        "precision": 0.9852216748768473,
+        "tn": 54,
+        "tp": 200,
+        "tpr": 1.0
+      },
+      "select_ordinary_B_fpr": 0.05263157894736842,
+      "threshold": 0.04173925645698296
+    },
+    "manip_only": {
+      "by_kind": {
+        "harmful": {
+          "accuracy": 0.0,
+          "auroc": null,
+          "fn": 57,
+          "fp": 0,
+          "fpr": null,
+          "n": 57,
+          "precision": null,
+          "tn": 0,
+          "tp": 0,
+          "tpr": 0.0
+        },
+        "jailbreak": {
+          "accuracy": 0.965034965034965,
+          "auroc": null,
+          "fn": 5,
+          "fp": 0,
+          "fpr": null,
+          "n": 143,
+          "precision": 1.0,
+          "tn": 0,
+          "tp": 138,
+          "tpr": 0.965034965034965
+        },
+        "safe": {
+          "accuracy": 1.0,
+          "auroc": null,
+          "fn": 0,
+          "fp": 0,
+          "fpr": 0.0,
+          "n": 57,
+          "precision": null,
+          "tn": 57,
+          "tp": 0,
+          "tpr": null
+        }
+      },
+      "by_strategy": {
+        "adversarial_suffix": {
+          "low_sample": false,
+          "n": 33,
+          "n_goal_groups": 24,
+          "tpr": 0.9393939393939394
+        },
+        "fiction_scene": {
+          "low_sample": true,
+          "n": 9,
+          "n_goal_groups": 9,
+          "tpr": 1.0
+        },
+        "instruction_control": {
+          "low_sample": false,
+          "n": 17,
+          "n_goal_groups": 17,
+          "tpr": 1.0
+        },
+        "persona_roleplay": {
+          "low_sample": false,
+          "n": 62,
+          "n_goal_groups": 41,
+          "tpr": 1.0
+        },
+        "persuasion": {
+          "low_sample": true,
+          "n": 11,
+          "n_goal_groups": 11,
+          "tpr": 0.7272727272727273
+        },
+        "rule_suffix": {
+          "low_sample": true,
+          "n": 6,
+          "n_goal_groups": 6,
+          "tpr": 1.0
+        },
+        "scenario_reframing": {
+          "low_sample": true,
+          "n": 5,
+          "n_goal_groups": 5,
+          "tpr": 1.0
+        }
+      },
+      "layers": {
+        "manip": [
+          14,
+          15
+        ],
+        "risk": []
+      },
+      "overall": {
+        "accuracy": 0.7587548638132295,
+        "auroc": 0.8292982456140351,
+        "fn": 62,
+        "fp": 0,
+        "fpr": 0.0,
+        "n": 257,
+        "precision": 1.0,
+        "tn": 57,
+        "tp": 138,
+        "tpr": 0.69
+      },
+      "select_ordinary_B_fpr": 0.0,
+      "threshold": 1.715043396439996
+    },
+    "risk_only": {
+      "by_kind": {
+        "harmful": {
+          "accuracy": 1.0,
+          "auroc": null,
+          "fn": 0,
+          "fp": 0,
+          "fpr": null,
+          "n": 57,
+          "precision": 1.0,
+          "tn": 0,
+          "tp": 57,
+          "tpr": 1.0
+        },
+        "jailbreak": {
+          "accuracy": 0.986013986013986,
+          "auroc": null,
+          "fn": 2,
+          "fp": 0,
+          "fpr": null,
+          "n": 143,
+          "precision": 1.0,
+          "tn": 0,
+          "tp": 141,
+          "tpr": 0.986013986013986
+        },
+        "safe": {
+          "accuracy": 0.9122807017543859,
+          "auroc": null,
+          "fn": 0,
+          "fp": 5,
+          "fpr": 0.08771929824561403,
+          "n": 57,
+          "precision": 0.0,
+          "tn": 52,
+          "tp": 0,
+          "tpr": null
+        }
+      },
+      "by_strategy": {
+        "adversarial_suffix": {
+          "low_sample": false,
+          "n": 33,
+          "n_goal_groups": 24,
+          "tpr": 1.0
+        },
+        "fiction_scene": {
+          "low_sample": true,
+          "n": 9,
+          "n_goal_groups": 9,
+          "tpr": 1.0
+        },
+        "instruction_control": {
+          "low_sample": false,
+          "n": 17,
+          "n_goal_groups": 17,
+          "tpr": 1.0
+        },
+        "persona_roleplay": {
+          "low_sample": false,
+          "n": 62,
+          "n_goal_groups": 41,
+          "tpr": 1.0
+        },
+        "persuasion": {
+          "low_sample": true,
+          "n": 11,
+          "n_goal_groups": 11,
+          "tpr": 1.0
+        },
+        "rule_suffix": {
+          "low_sample": true,
+          "n": 6,
+          "n_goal_groups": 6,
+          "tpr": 0.8333333333333334
+        },
+        "scenario_reframing": {
+          "low_sample": true,
+          "n": 5,
+          "n_goal_groups": 5,
+          "tpr": 0.8
+        }
+      },
+      "layers": {
+        "manip": [],
+        "risk": [
+          25,
+          15
+        ]
+      },
+      "overall": {
+        "accuracy": 0.9727626459143969,
+        "auroc": 0.9880701754385965,
+        "fn": 2,
+        "fp": 5,
+        "fpr": 0.08771929824561403,
+        "n": 257,
+        "precision": 0.9753694581280788,
+        "tn": 52,
+        "tp": 198,
+        "tpr": 0.99
+      },
+      "select_ordinary_B_fpr": 0.08771929824561403,
+      "threshold": 0.9705826666245839
+    }
+  },
+  "threshold": 0.04173925645698296
+}

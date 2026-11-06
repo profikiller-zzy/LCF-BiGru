@@ -154,6 +154,55 @@ Caveats specific to this pass:
 - Strategy labels come from one annotator and strategy sizes are very unequal (persona is 56% of train jailbreaks).
 - confirm and calibrate were not used.
 
+## Stage 4: cross-layer detector trained and frozen (fourth pass)
+
+Moved to a new server (RTX 4090) after the first lost its GPU. Code and the Qwen2.5-7B-Instruct weights
+were copied or re-downloaded (11 file hashes match the old server). All 1479 train/select states plus the
+200 calibrate states were re-extracted; against the old server's cache the minimum per-layer cosine is
+0.999991 and the maximum relative L2 difference is 4.2e-3 (fp16 across GPUs), and the extraction protocol differs
+only in the checkpoint stat fingerprint (mtime). Stage 4 uses the new extraction.
+
+Training (`tools/layer_screening/stage4_train_detector.py`, project `Detector` format, reloads to identical scores):
+- concept directions/anchors and sparse fusion head: all train goal groups (279);
+- layers: risk 25, 15 and manipulation 14, 15 from stage 3 (union 14, 15, 25);
+- threshold: the 200 calibrate requests only, 5% budget = 10 false positives, threshold 0.0417 (logit, `>=`);
+- fusion weights: risk25 2.42, risk15 1.36, manip14 0.15, manip15 1.75; the fusion converged;
+- confirm was never read.
+
+Frozen artifact: `results/stage4_detector_v1/detector/` (`model.json`, `parameters.npz`; SHA-256 checked
+against the server copy and loadable with `Detector.load`). Full numbers: `results/stage4_detector_v1/report.json`.
+
+On select (not fitted, but select was used earlier to compare layers, so it is a development check):
+
+| arm | harmful TPR | jailbreak TPR | ordinary B FPR | AUROC |
+|---|---|---|---|---|
+| fusion (risk + manipulation) | 1.00 | 1.00 | 0.053 | 0.999 |
+| risk layers only | 1.00 | 0.99 | 0.088 | 0.988 |
+| manipulation layers only | 0.00 | 0.97 | 0.000 | 0.829 |
+
+Per strategy, fusion reaches TPR 1.00 on all seven strategies on select (5 to 41 goal groups each; rule_suffix 6
+and scenario_reframing 5 are too small to read). Risk-only misses rule_suffix (0.83) and scenario_reframing (0.80);
+manipulation-only misses persuasion (0.73) and, by design, every direct harmful request (0.00).
+
+**Do not read the jailbreak TPR as evidence of generalisation.** Jailbreaks in select have a median of 132 tokens
+against 43 for both B and H. A rule that only counts tokens, with its threshold set on the same 200 calibrate
+requests, flags 0.99 of select jailbreaks at 0.04 FPR on B, and its token-count-only AUROC is 0.997
+(`length_only_baseline.py`). The detector's results on jailbreaks are therefore indistinguishable from this trivial
+rule on this data. What the length rule cannot do is detect direct harmful requests (TPR 0.04, AUROC 0.475); the
+fusion detector gets 1.00 there, so the risk branch carries real signal about harmful content. For the manipulation
+branch the evidence for a signal beyond length is the padded-control analysis in the earlier sections, which
+supports persona, fiction, instruction-control and rule-suffix and does not support adversarial-suffix or persuasion.
+
+Leave-one-strategy-out (concepts and fusion refit without the held-out strategy; held-out groups' own short B as
+controls; threshold from calibrate): fusion TPR is 1.00 for five strategies, 0.86 for scenario_reframing (FPR 0.10)
+and 1.00 for the rest at FPR 0 to 0.05. Because the controls are short and the jailbreaks are long, length again
+inflates these numbers. Within that limit the fusion beats risk-only on rule_suffix (1.00 vs 0.82) and
+scenario_reframing (0.86 vs 0.72), and manipulation-only fails on persuasion (0.53) and adversarial_suffix (0.61).
+
+What this stage does not show: performance on unseen attack types, a length-robust FPR on long benign inputs,
+or anything about confirm. The calibrate set is 200 short ordinary requests, so the operating point is also set on
+a length profile that a long benign prompt does not share; no long benign input was tested.
+
 ## Limits
 
 - 3 families (gcg, pair_tap, saa) have 5 to 7 goal groups in select, so select rechecks for them are
