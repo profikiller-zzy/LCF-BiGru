@@ -287,6 +287,63 @@ selection leakage into the fold) but strategy sizes remain unequal (persona 225 
 The evaluation uses short plain B, short padded controls, W(B) and long Dolly texts; real user traffic is none of them.
 Confirm and diagnose were not read. Labels are LLM-reviewed and the strategy labels come from one annotator.
 
+## Stage 6: rebuilt manipulation concept (sixth pass)
+
+Problem from stage 5: the manipulation readout (direction from J minus H) could not separate J from the same wrapper
+around a benign request, W(B). A manipulation concept should be about the wrapper, independent of the goal.
+`tools/layer_screening/stage6_manipulation_concept.py` builds four rank-one directions and measures them on held-out
+strategies (the strategy's goal groups are removed from direction fitting). Only the five strategies with an
+extractable wrapper can be scored (persona, fiction, instruction-control, adversarial-suffix, rule-suffix);
+persuasion and scenario_reframing have no W(B) and are untested here, not dropped.
+
+| construction | direction from |
+|---|---|
+| orig | J - H (current) |
+| unmatched | W(B) - B (wrapper only, but wrapped inputs are longer) |
+| wrapB | W(B) - B_pad (wrapper only, length matched) |
+| wrapBH | W(B) - B_pad stacked with J - H_pad |
+
+Four measurements (AUROC, mean / worst over the five held-out strategies; layers 8, 14, 20, 25):
+
+| | orig | unmatched | wrapB | wrapBH |
+|---|---|---|---|---|
+| M1 W(B) vs B_pad (wrapper detected whatever the goal; want high) | .86/.60, .98/.90, .94/.72, .95/.76 | .85/.57, .98/.91, .96/.82, .97/.84 | **1.00/.98**, .97/.87, .97/.83, .96/.82 | 1.00/.98, .97/.87, .96/.80, .96/.81 |
+| M2 J vs W(B) (readout also sees the goal; want about 0.5) | .52/.48, .48/.35, .42/.20, .31/.15 | .52/.49, .45/.25, .56/.30, .63/.43 | .53/.52, .47/.29, .58/.26, .61/.29 | .53/.52, .48/.32, .47/.20, .44/.15 |
+| M3 J vs H_pad (stage-2 test; want high) | .85/.56, .98/.90, .94/.71, .98/.88 | .84/.53, .98/.90, .94/.70, .96/.85 | .99/.97, .97/.87, .95/.73, .97/.83 | .99/.98, .98/.88, .96/.79, .97/.86 |
+| M4 H vs B (plain goal; contrast) | .56, .36, .06, .02 | .61, .65, .89, .97 | .58, .55, .87, .95 | .57, .43, .39, .54 |
+
+What this shows:
+1. **At the layers best suited to it, a length-matched wrapper direction works and is goal-blind.** `wrapB` and
+   `wrapBH` at layers 4 to 8 give M1 worst-strategy 0.97 to 0.99 with M2 mean 0.51 to 0.53 (top-3 layers by
+   M1 minus |M2 - 0.5|: 4, 5, 7 with score 0.97). Wrappers of a held-out strategy are detected regardless of the goal
+   and the readout does not see the goal. This is the first manipulation readout that passes the same-wrapper test
+   that J minus H failed (stage 5 AUROC 0.44 to 0.49).
+2. **At layers 14 to 25 the construction does not stay goal-blind.** M2 mean rises to 0.58 to 0.61 at layers 20 and 25
+   for `wrapB` and the worst strategy falls to 0.26 to 0.29 (fiction_scene is 0.26 to 0.29, i.e. J scores below
+   its own W(B)). `wrapB` at layers 20 and 25 also reads plain harmful content (M4 0.87 and 0.95 against 0.58 at
+   layer 8), so a direction fitted on wrappers around benign goals still carries risk information in late layers.
+   `wrapBH` is less goal-sensitive in M4 (0.39 at layer 20, 0.54 at layer 25) but its M2 is also unstable (worst 0.15).
+3. **The old stage-3 choice (layers 14 and 15) sits where the old direction is least clean.** `orig` has M4 0.36
+   at layer 14 and 0.02 at layer 25, i.e. it points against harmfulness there (plain H scores below B), which
+   explains why it never separated J from W(B).
+4. **Caveat: "detects unseen wrappers" is largely a lexical property here.** W(B) and B_pad have the same token
+   count by construction (length-only AUROC 0.504), but a bag-of-words classifier trained on the other four
+   strategies detects the held-out wrapper with AUROC 0.98 to 1.00 for fiction, instruction-control, persona and
+   rule-suffix, and 0.89 for adversarial-suffix (`wrapper_text_baseline.py`). The hidden-state readout at its best
+   layers (0.97 to 1.00) is no better than word counts on those four. Wrapped benign text differs from plain
+   benign text in obvious words ("act as", "rules", format instructions); the early-layer direction may be reading
+   exactly that. Whether it generalises to wrappers that look different, such as encodings, is not tested.
+5. **The goal-aware part of a jailbreak is not in this concept.** If the manipulation concept is wrapper-only
+   (M2 about 0.5), then the evidence that something is a jailbreak must come from the risk branch, which is the
+   same conclusion as stage 5: J versus W(B) is separated by risk, not by manipulation.
+
+Consequences for the method (not yet re-run end to end): replace J minus H by `wrapB` (or `wrapBH`) at early layers
+for the manipulation branch, expect it to contribute a goal-independent "wrapper present" signal, and treat
+W(B) as a policy decision. If benign requests in jailbreak wrappers must pass, the wrapper score cannot raise the
+detection score on its own; if they must be flagged, the manipulation branch is a wrapper detector and the
+reported detection rate for jailbreaks measures wrapper detection plus risk. The fusion with the rebuilt concept,
+under both policies and with the nested layer choice, is the next experiment.
+
 ## Limits
 
 - 3 families (gcg, pair_tap, saa) have 5 to 7 goal groups in select, so select rechecks for them are
