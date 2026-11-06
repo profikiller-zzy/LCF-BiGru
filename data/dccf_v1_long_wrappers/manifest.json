@@ -1,0 +1,42 @@
+{
+  "by_bucket": {
+    "250-350": 150,
+    "350-450": 150,
+    "450-550": 150,
+    "550-620": 150
+  },
+  "by_label": {
+    "0": 600,
+    "1": 600
+  },
+  "construction": "outer template prefix + inner template prefix + goal + inner suffix + outer suffix; each composite built with H (label 1) and B (label 0)",
+  "goal_groups_used": 265,
+  "leakage_rule": "when strategy m is held out, drop every composite whose `strategies` contains m; composites use train goal groups only",
+  "limitations": [
+    "Stacked templates are artificial: no real attack nests two role-play prompts.",
+    "rule_suffix, PAIR/TAP, persuasion and GCG/DSN wrappers are not stacked, so the rule_suffix fold remains a structurally unseen wrapper.",
+    "Composites are constructed and not reviewed; harmful rows still contain the harmful goal and are labelled 1 by construction."
+  ],
+  "lineages_used": 28,
+  "n_composites": 600,
+  "n_rows": 1200,
+  "output_sha256": {
+    "development/long_wrappers.jsonl": "f47be30bfa12d9f7b85ac96de76f7f130e3a30896693b8b1c4cbea3a1347c98c"
+  },
+  "scope": "constructed_long_wrapper_panel_not_part_of_any_train_select_calibrate_confirm_role",
+  "seed": 20261106,
+  "source_data_manifest_sha256": "15c81d0fec671e0221d63ecfcba0165e178fc2833a48fd50bd950d759dee8b9e",
+  "strategy_pairs": {
+    "adversarial_suffix+fiction_scene": 9,
+    "adversarial_suffix+persona_roleplay": 59,
+    "fiction_scene": 12,
+    "fiction_scene+instruction_control": 30,
+    "fiction_scene+persona_roleplay": 97,
+    "instruction_control": 1,
+    "instruction_control+persona_roleplay": 129,
+    "persona_roleplay": 263
+  },
+  "token_max": 610,
+  "token_median": 451,
+  "token_min": 250
+}
