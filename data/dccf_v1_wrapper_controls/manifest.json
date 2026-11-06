@@ -1,0 +1,39 @@
+{
+  "limitations": [
+    "W(B) keeps the real wrapper; benign content inside a jailbreak wrapper may still read as an attempt.",
+    "PAIR/TAP and persuasion have no extractable wrapper and have no W(B) control.",
+    "Controls are constructed and not reviewed.",
+    "Long benign inputs are encyclopedic Dolly context plus question, not conversational."
+  ],
+  "long_benign": {
+    "n": 240,
+    "token_max": 565,
+    "token_median": 244
+  },
+  "output_sha256": {
+    "development/long_benign.jsonl": "fe7d7a44f23e3e874edb002368607517c28258432fd181baf2213fa0c05a2af7",
+    "development/wrapped_benign.jsonl": "7657eaa1dcbe3be037805c14abb9c2e33c7d2cba8038d89bcdc689b0ec673724"
+  },
+  "scope": "control_panels_not_part_of_any_train_select_calibrate_confirm_role",
+  "source_data_manifest_sha256": "15c81d0fec671e0221d63ecfcba0165e178fc2833a48fd50bd950d759dee8b9e",
+  "wrapped_benign": {
+    "by_split": {
+      "select": 127,
+      "train": 597
+    },
+    "by_strategy": {
+      "adversarial_suffix": 157,
+      "fiction_scene": 48,
+      "instruction_control": 88,
+      "persona_roleplay": 387,
+      "rule_suffix": 44
+    },
+    "n": 724,
+    "not_constructed": {
+      "pair_tap:free_form_or_goal_not_locatable": 34,
+      "persuade:free_form_or_goal_not_locatable": 49
+    },
+    "token_max": 548,
+    "token_median": 169
+  }
+}
