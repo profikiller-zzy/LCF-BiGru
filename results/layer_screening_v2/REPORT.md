@@ -419,6 +419,111 @@ wrapper question; the evaluation negatives are Dolly texts and padded or wrapped
 labels are LLM-reviewed. The evaluation rows are from train, and the layer-choice rule for the wrapper concept was
 fixed after stage 6; confirm and select were not read.
 
+## Stage 8: five-backbone comparison under policy A (eighth pass)
+
+Wrapped benign requests are treated as normal (policy A, as you decided). Models: Qwen2.5-1.5B-Instruct, Qwen2.5-7B-Instruct,
+Qwen3-4B, Qwen3-8B and Llama-3.1-8B-Instruct, all run through `tools/layer_screening/stage8_cross_model.py` with the same
+nested leave-one-strategy-out protocol as stages 5 and 7 (layer choice, concepts, fusion, probes and thresholds all use only
+the other strategies' goal groups). Each model has its own cache of 4,217 rows (train, select, calibrate, length controls,
+wrapper controls); confirm and diagnose were not extracted. fp16, batch 1, native chat template through `render_chat_input`;
+Qwen3 with `enable_thinking=false` (its empty think block stays in the prefix); layers 1 to L-1 (embedding and final-norm
+states excluded); the longest formatted input is 548 to 565 tokens against `max_length` 8192, so nothing was truncated.
+Peak GPU memory during extraction was 3.2, 8.2, 16.6 and 16.3 GB for 1.5B, Qwen3-4B, Qwen3-8B and Llama; Qwen2.5-7B reuses
+the earlier extraction. Operating point: the 5% budget over calibrate, half of the long-benign pool and the fit groups' W(B).
+
+Weights came from ModelScope, not Hugging Face (the new server could not reach Hugging Face, and Llama-3.1 is gated
+there with manual approval). Every safetensors shard of the three Qwen models was checked against the SHA-256 recorded by
+Hugging Face and the check passed; the Llama shards matched the Hugging Face LFS hashes and sizes as well
+(`download_plan.json`). Llama 3.1 is used under the Llama 3.1 community license; the ModelScope copy was used on your
+instruction and I could not verify that your Hugging Face account has been granted access.
+
+Results (mean over the 7 held-out strategies; W(B) columns average the 5 strategies that have W(B)):
+
+| model (layers, width) | arm | J TPR mean | J TPR worst | H TPR | ordinary B FPR | long-benign FPR | W(B) flagged | AUROC J vs W(B) |
+|---|---|---|---|---|---|---|---|---|
+| Qwen2.5-1.5B-Instruct (27, 1536) | linear probe | 0.77 | 0.26 | 0.98 | 0.02 | 0.15 | 0.33 | 0.92 |
+| Qwen2.5-1.5B-Instruct (27, 1536) | DCCF risk | 0.48 | 0.00 | 0.93 | 0.03 | 0.00 | 0.10 | 0.84 |
+| Qwen2.5-1.5B-Instruct (27, 1536) | DCCF risk + wrapper | 0.50 | 0.00 | 0.93 | 0.03 | 0.00 | 0.12 | 0.84 |
+| Qwen2.5-7B-Instruct (27, 3584) | linear probe | 0.97 | 0.86 | 1.00 | 0.02 | 0.10 | 0.51 | 0.93 |
+| Qwen2.5-7B-Instruct (27, 3584) | DCCF risk | 0.68 | 0.00 | 1.00 | 0.01 | 0.00 | 0.18 | 0.88 |
+| Qwen2.5-7B-Instruct (27, 3584) | DCCF risk + wrapper | 0.68 | 0.00 | 1.00 | 0.01 | 0.00 | 0.22 | 0.89 |
+| Qwen3-4B (35, 2560) | linear probe | 0.85 | 0.59 | 0.98 | 0.03 | 0.13 | 0.56 | 0.85 |
+| Qwen3-4B (35, 2560) | DCCF risk | 0.44 | 0.00 | 0.95 | 0.01 | 0.00 | 0.20 | 0.83 |
+| Qwen3-4B (35, 2560) | DCCF risk + wrapper | 0.53 | 0.00 | 0.95 | 0.01 | 0.00 | 0.29 | 0.83 |
+| Qwen3-8B (35, 4096) | linear probe | 0.80 | 0.00 | 0.99 | 0.03 | 0.18 | 0.40 | 0.86 |
+| Qwen3-8B (35, 4096) | DCCF risk | 0.54 | 0.00 | 0.99 | 0.02 | 0.00 | 0.19 | 0.82 |
+| Qwen3-8B (35, 4096) | DCCF risk + wrapper | 0.60 | 0.00 | 0.99 | 0.02 | 0.00 | 0.23 | 0.81 |
+| Llama-3.1-8B-Instruct (31, 4096) | linear probe | 0.85 | 0.05 | 0.99 | 0.03 | 0.13 | 0.34 | 0.97 |
+| Llama-3.1-8B-Instruct (31, 4096) | DCCF risk | 0.74 | 0.00 | 0.98 | 0.03 | 0.00 | 0.31 | 0.89 |
+| Llama-3.1-8B-Instruct (31, 4096) | DCCF risk + wrapper | 0.73 | 0.00 | 0.97 | 0.03 | 0.00 | 0.29 | 0.90 |
+
+J TPR per held-out strategy (same operating point):
+
+| model / arm | adversarial_suffix | fiction_scene | instruction_control | persona_roleplay | persuasion | rule_suffix | scenario_reframing |
+|---|---|---|---|---|---|---|---|
+| Qwen2.5-1.5B-Instruct / probe | 0.88 | 0.26 | 0.97 | 0.92 | 0.92 | 0.76 | 0.66 |
+| Qwen2.5-1.5B-Instruct / DCCF risk | 0.81 | 0.23 | 0.89 | 0.52 | 0.84 | 0.05 | 0.00 |
+| Qwen2.5-1.5B-Instruct / DCCF +wrapper | 0.80 | 0.23 | 0.93 | 0.62 | 0.84 | 0.08 | 0.00 |
+| Qwen2.5-7B-Instruct / probe | 0.98 | 0.97 | 1.00 | 0.99 | 1.00 | 0.97 | 0.86 |
+| Qwen2.5-7B-Instruct / DCCF risk | 0.93 | 0.79 | 1.00 | 0.60 | 0.92 | 0.00 | 0.52 |
+| Qwen2.5-7B-Instruct / DCCF +wrapper | 0.93 | 0.62 | 1.00 | 0.78 | 0.89 | 0.00 | 0.55 |
+| Qwen3-4B / probe | 0.84 | 1.00 | 0.99 | 0.90 | 0.92 | 0.71 | 0.59 |
+| Qwen3-4B / DCCF risk | 0.73 | 0.95 | 0.06 | 0.45 | 0.68 | 0.00 | 0.21 |
+| Qwen3-4B / DCCF +wrapper | 0.73 | 0.97 | 0.07 | 0.88 | 0.71 | 0.00 | 0.34 |
+| Qwen3-8B / probe | 0.98 | 0.97 | 1.00 | 0.92 | 1.00 | 0.00 | 0.72 |
+| Qwen3-8B / DCCF risk | 0.75 | 0.82 | 0.49 | 0.46 | 0.89 | 0.00 | 0.38 |
+| Qwen3-8B / DCCF +wrapper | 0.76 | 0.82 | 0.69 | 0.64 | 0.89 | 0.00 | 0.41 |
+| Llama-3.1-8B-Instruct / probe | 1.00 | 1.00 | 1.00 | 0.92 | 1.00 | 0.05 | 0.97 |
+| Llama-3.1-8B-Instruct / DCCF risk | 0.98 | 0.95 | 1.00 | 0.61 | 0.92 | 0.00 | 0.69 |
+| Llama-3.1-8B-Instruct / DCCF +wrapper | 0.97 | 0.97 | 1.00 | 0.60 | 0.92 | 0.00 | 0.66 |
+
+Chosen layers per model (relative depth = layer / number of hidden layers, three most common over the seven folds):
+
+| model | risk layers (relative depth x folds) | wrapper layers (relative depth x folds) |
+|---|---|---|
+| Qwen2.5-1.5B-Instruct | 0.96x5, 0.46x3, 0.43x2 | 0.39x6, 0.14x6, 0.46x1 |
+| Qwen2.5-7B-Instruct | 0.82x6, 0.61x3, 0.57x2 | 0.25x5, 0.14x3, 0.18x2 |
+| Qwen3-4B | 0.97x4, 0.28x4, 0.53x2 | 0.08x5, 0.17x4, 0.03x2 |
+| Qwen3-8B | 0.53x5, 0.97x4, 0.28x3 | 0.08x6, 0.14x3, 0.61x1 |
+| Llama-3.1-8B-Instruct | 0.31x5, 0.34x4, 0.91x2 | 0.16x6, 0.22x5, 0.47x1 |
+
+Fusion fits that did not converge: Qwen2.5-7B-Instruct, DCCF risk and J-minus-H fusion, one fold each (kept in the csv); no other model had a non-converged fit.
+
+What it shows:
+1. **The pattern from Qwen2.5-7B holds on every backbone.** DCCF risk and risk plus wrapper have high H TPR (0.93 to 1.00), low
+   ordinary-B FPR (0.01 to 0.03) and zero flagging of the long benign pool, but their J TPR mean is only 0.44 to 0.74 and the
+   worst held-out strategy is 0.00 for all five models. The linear probe on the same layers has higher J TPR on four of the five
+   (0.77 to 0.97), at the price of 0.10 to 0.18 flagging of long benign inputs and 0.33 to 0.56 of W(B).
+2. **Model scale does not order the results.** Within Qwen2.5, 1.5B to 7B raises DCCF risk J TPR from 0.48 to 0.68. Qwen3-4B
+   (0.44) is below Qwen3-8B (0.54), and Llama-3.1-8B is highest (0.74). Qwen3-8B is below Qwen2.5-7B. The probe is not
+   monotonic either (Qwen2.5-7B 0.97, Qwen3-4B 0.85, Llama 0.85, Qwen3-8B 0.80, Qwen2.5-1.5B 0.77). With seven strategies and
+   one run per model these differences are not stable enough to rank models.
+3. **The rule_suffix fold is the clearest zero, and it points to held-out length, not a missing signal.** At the policy-A
+   threshold the DCCF risk arm gets 0.00 on four models and 0.05 on Qwen2.5-1.5B; the probe gets 0.00 on Qwen3-8B and 0.05 on
+   Llama but 0.71 to 0.97 on the other three. The rule_suffix jailbreaks are 512 tokens (469 to 535). When rule_suffix is held
+   out the longest W(B) the fit sees is 436 tokens and none is as long as the shortest held-out one (fraction 0.0). On
+   Qwen3-8B the probe scores those jailbreaks at median -4.5, their plain goals at +13.7 and W(B) at -5.4: the model still
+   separates the harmful goal, but the long wrapper moves the end-of-prompt state to where benign wrapped text sits, and the
+   threshold (-1.1) is fixed by a pool with nothing that long. The threshold also matters: with the calibrate-only threshold
+   the same fold for DCCF risk is 0.00, 0.32, 0.55 and 0.68 on Qwen3-4B/1.5B (0.00), Qwen3-8B, Llama and Qwen2.5-7B
+   respectively, so adding W(B) to the pool costs recall on some models and not on others.
+4. **Layer depth is not consistent across models.** The relative depths of the chosen risk layers differ by backbone (see the
+   table), and the wrapper concept is chosen in early layers for four folds and in a different place for the other
+   folds on most models. I do not claim a common "best depth".
+5. **The wrapper concept adds little under policy A, but it is not uniformly useless.** Mean J TPR for risk versus risk plus
+   wrapper: Qwen2.5-1.5B 0.48 to 0.50, Qwen2.5-7B 0.68 to 0.68, Qwen3-4B 0.44 to 0.53, Qwen3-8B 0.54 to 0.60, Llama 0.74 to
+   0.73. Worst-strategy TPR stays at 0.00 on all five. The wrapper features get a nonzero coefficient in 6 or 7 of the 7 folds
+   on every model, with a negative sign in 6 of 7 folds for Qwen2.5-7B and Qwen3-4B, in 7 of 7 for Qwen3-8B, and a positive sign
+   in 7 of 7 for Llama. Since W(B) is a label-0 training negative here, a negative weight means the fit uses the wrapper cue to
+   push wrapped benign inputs down, which is consistent with the stage 7 policy-A result; the gains of +0.09 (Qwen3-4B) and +0.06
+   (Qwen3-8B) come with that sign, so they do not show the wrapper concept helping detection in the way policy B did.
+
+Limits: one run per model and a single split; seven strategies with unequal sizes, so per-strategy TPRs for scenario_reframing
+and rule_suffix rest on 28 to 38 goal groups; held-out groups are from train; the operating point is policy A with a threshold
+pool that includes W(B), which lowers the J TPR of every arm; Llama and Qwen use different chat templates (Llama adds a
+default system block), so template effects are confounded with model effects; models were not tuned. Confirm and diagnose
+were not read, and labels remain LLM-reviewed.
+
 ## Limits
 
 - 3 families (gcg, pair_tap, saa) have 5 to 7 goal groups in select, so select rechecks for them are

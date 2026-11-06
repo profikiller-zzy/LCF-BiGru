@@ -1,0 +1,204 @@
+{
+ "num_hidden_layers": 28,
+ "hidden_size": 1536,
+ "folds": {
+  "adversarial_suffix": {
+   "risk": [
+    12,
+    23
+   ],
+   "orig_manip": [
+    16,
+    11
+   ],
+   "wrap_manip": [
+    11,
+    13
+   ],
+   "relative_depth": {
+    "risk": [
+     0.43,
+     0.82
+    ],
+    "orig_manip": [
+     0.57,
+     0.39
+    ],
+    "wrap_manip": [
+     0.39,
+     0.46
+    ]
+   }
+  },
+  "fiction_scene": {
+   "risk": [
+    13,
+    27
+   ],
+   "orig_manip": [
+    17,
+    16
+   ],
+   "wrap_manip": [
+    4,
+    11
+   ],
+   "relative_depth": {
+    "risk": [
+     0.46,
+     0.96
+    ],
+    "orig_manip": [
+     0.61,
+     0.57
+    ],
+    "wrap_manip": [
+     0.14,
+     0.39
+    ]
+   }
+  },
+  "instruction_control": {
+   "risk": [
+    27,
+    16
+   ],
+   "orig_manip": [
+    19,
+    16
+   ],
+   "wrap_manip": [
+    11,
+    4
+   ],
+   "relative_depth": {
+    "risk": [
+     0.96,
+     0.57
+    ],
+    "orig_manip": [
+     0.68,
+     0.57
+    ],
+    "wrap_manip": [
+     0.39,
+     0.14
+    ]
+   }
+  },
+  "persona_roleplay": {
+   "risk": [
+    27,
+    22
+   ],
+   "orig_manip": [
+    14,
+    11
+   ],
+   "wrap_manip": [
+    2,
+    4
+   ],
+   "relative_depth": {
+    "risk": [
+     0.96,
+     0.79
+    ],
+    "orig_manip": [
+     0.5,
+     0.39
+    ],
+    "wrap_manip": [
+     0.07,
+     0.14
+    ]
+   }
+  },
+  "persuasion": {
+   "risk": [
+    27,
+    25
+   ],
+   "orig_manip": [
+    21,
+    27
+   ],
+   "wrap_manip": [
+    11,
+    4
+   ],
+   "relative_depth": {
+    "risk": [
+     0.96,
+     0.89
+    ],
+    "orig_manip": [
+     0.75,
+     0.96
+    ],
+    "wrap_manip": [
+     0.39,
+     0.14
+    ]
+   }
+  },
+  "rule_suffix": {
+   "risk": [
+    13,
+    16,
+    27
+   ],
+   "orig_manip": [
+    21,
+    17
+   ],
+   "wrap_manip": [
+    11,
+    4
+   ],
+   "relative_depth": {
+    "risk": [
+     0.46,
+     0.57,
+     0.96
+    ],
+    "orig_manip": [
+     0.75,
+     0.61
+    ],
+    "wrap_manip": [
+     0.39,
+     0.14
+    ]
+   }
+  },
+  "scenario_reframing": {
+   "risk": [
+    12,
+    13
+   ],
+   "orig_manip": [
+    17,
+    12
+   ],
+   "wrap_manip": [
+    11,
+    4
+   ],
+   "relative_depth": {
+    "risk": [
+     0.43,
+     0.46
+    ],
+    "orig_manip": [
+     0.61,
+     0.43
+    ],
+    "wrap_manip": [
+     0.39,
+     0.14
+    ]
+   }
+  }
+ }
+}
