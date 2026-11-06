@@ -18,7 +18,8 @@ from pathlib import Path
 
 import numpy as np
 
-from common import LAYERS, MIN_CELL_GROUPS, Panel, auroc, bootstrap_ci
+import common as _common
+from common import MIN_CELL_GROUPS, Panel, auroc, bootstrap_ci
 from dual_concept.backbone import StateCache
 from dual_concept.concepts import concept_scores
 from dual_concept.data import read_jsonl
@@ -34,7 +35,7 @@ def load_controls(path: Path, cache_root: Path, protocol: dict):
     rows, states = [], []
     for split in ("train", "select"):
         for r in read_jsonl(path / "development" / f"{split}.jsonl"):
-            s = cache.load(r["id"], r["text"], protocol, expected_shape=(len(LAYERS), int(protocol["hidden_size"])))
+            s = cache.load(r["id"], r["text"], protocol, expected_shape=(len(_common.LAYERS), int(protocol["hidden_size"])))
             if s is None:
                 raise FileNotFoundError(f"Missing control state {r['id']}")
             rows.append(r); states.append(s)

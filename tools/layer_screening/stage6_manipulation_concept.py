@@ -31,7 +31,8 @@ from pathlib import Path
 
 import numpy as np
 
-from common import LAYERS, Panel, auroc
+import common as _common
+from common import Panel, auroc
 from dual_concept.backbone import StateCache
 from dual_concept.concepts import anchored_cosine, rank_one_direction
 from stage2_length_controlled import load_controls
@@ -76,7 +77,7 @@ def main() -> None:
     ap.add_argument("--wrap-controls", default="data/dccf_v1_wrapper_controls")
     ap.add_argument("--cache", required=True)
     ap.add_argument("--out", required=True)
-    ap.add_argument("--layers", type=int, nargs="*", default=list(LAYERS))
+    ap.add_argument("--layers", type=int, nargs="*", default=None)
     a = ap.parse_args()
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
     P = Panel(a.data, a.cache)
@@ -91,7 +92,7 @@ def main() -> None:
     train_groups = {g for g, s, k in zip(P.group, P.split, P.kind) if s == "train" and k == "harmful"}
     tj = (P.split == "train") & (P.kind == "jailbreak")
     testable = sorted(set(wb_sem[[r["split"] == "train" for r in wb_rows]]))
-    layer_idx = [l - 1 for l in a.layers]
+    layer_idx = [l - 1 for l in (a.layers or _common.CAND())]
     rows = []
     for held in testable:
         hg = {P.group[i] for i in np.flatnonzero(tj & (sem == held))}

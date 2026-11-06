@@ -28,7 +28,8 @@ import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 
-from common import LAYERS, Panel, auroc
+import common as _common
+from common import Panel, auroc
 from dual_concept.backbone import StateCache
 from dual_concept.concepts import ConceptBank, concept_scores
 from dual_concept.data import read_jsonl
@@ -40,8 +41,6 @@ from stage2_matrices import build_bank
 from strategy_labels import semantic_strategy
 
 FPR = 0.05
-CAND = list(LAYERS)
-LI_ALL = [l - 1 for l in CAND]
 PROBE_C = 0.01          # fixed in advance, never tuned on evaluation data
 
 
@@ -49,7 +48,7 @@ def load_flat(root: Path, files, cache: StateCache, proto):
     rows, st = [], []
     for f in files:
         for r in read_jsonl(root / f"{f}.jsonl"):
-            s = cache.load(r["id"], r["text"], proto, expected_shape=(len(LAYERS), int(proto["hidden_size"])))
+            s = cache.load(r["id"], r["text"], proto, expected_shape=(len(_common.LAYERS), int(proto["hidden_size"])))
             if s is None:
                 raise FileNotFoundError(f"Missing state for {r['id']}")
             rows.append(r); st.append(s)
@@ -67,12 +66,12 @@ def inner_select(P: Panel, sem, cid, cstate, fit_groups, cfg):
         if len(jm) == 0:
             continue
         fg = fit_groups - {P.group[i] for i in jm}
-        bank, _, _ = build_bank(P, fg, LI_ALL)
+        bank, _, _ = build_bank(P, fg, _common.LI_ALL())
         fj = np.array([i for i in np.flatnonzero(tj & np.isin(P.group, list(fg))) if has_pad(i)])
         rb = np.array([cid[f"{P.rows[i]['id']}__pad_b"] for i in fj]); rh = np.array([cid[f"{P.rows[i]['id']}__pad_h"] for i in fj])
         r_ref, _ = concept_scores(cstate[rb], bank); _, m_ref = concept_scores(cstate[rh], bank)
-        thr_r = np.array([calibrate_threshold(r_ref[:, k], FPR)["threshold"] for k in range(len(CAND))])
-        thr_m = np.array([calibrate_threshold(m_ref[:, k], FPR)["threshold"] for k in range(len(CAND))])
+        thr_r = np.array([calibrate_threshold(r_ref[:, k], FPR)["threshold"] for k in range(len(_common.CAND()))])
+        thr_m = np.array([calibrate_threshold(m_ref[:, k], FPR)["threshold"] for k in range(len(_common.CAND()))])
         r_j, m_j = concept_scores(P.states[jm], bank)
         pb = np.array([cid[f"{P.rows[i]['id']}__pad_b"] for i in jm]); ph = np.array([cid[f"{P.rows[i]['id']}__pad_h"] for i in jm])
         r_pb, m_pb = concept_scores(cstate[pb], bank); _, m_ph = concept_scores(cstate[ph], bank)
@@ -85,7 +84,7 @@ def inner_select(P: Panel, sem, cid, cstate, fit_groups, cfg):
                                "attack_groups": np.full(3 * n, held), "thresholds": thr_m})
     out = {}
     for branch in ("risk", "manip"):
-        res = select_layers(folds[branch], CAND, cfg)
+        res = select_layers(folds[branch], _common.CAND(), cfg)
         out[branch] = res.layers
     return out
 

@@ -18,7 +18,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from dual_concept.backbone import StateCache  # noqa: E402
 from dual_concept.data import read_jsonl  # noqa: E402
 
-LAYERS = tuple(range(1, 28))
+LAYERS = tuple(range(1, 28))      # default for the 28-layer Qwen2.5-7B run; set_layers() overrides per backbone
+
+
+def set_layers(layers):
+    global LAYERS
+    LAYERS = tuple(int(x) for x in layers)
+    return LAYERS
 MIN_CELL_GROUPS = 15      # cells with fewer goal groups are flagged, never ranked
 
 
@@ -43,8 +49,7 @@ class Panel:
     def __init__(self, data_root: str | Path, cache_root: str | Path, splits: Sequence[str] = ("train", "select")):
         data_root, cache_root = Path(data_root), Path(cache_root)
         protocol = json.loads((cache_root / "protocol.json").read_text(encoding="utf-8"))
-        if list(protocol["candidate_layers"]) != list(LAYERS):
-            raise ValueError("Cache protocol layers differ from the expected 1..27")
+        set_layers(protocol["candidate_layers"])
         self.protocol = protocol
         cache = StateCache(cache_root / "rows")
         self.rows: list[dict[str, Any]] = []
@@ -122,3 +127,11 @@ def bootstrap_ci(values_by_group: dict[str, float], draws: int = 2000, seed: int
     rng = np.random.default_rng(seed)
     means = rng.choice(vals, size=(draws, len(vals)), replace=True).mean(axis=1)
     return float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))
+
+
+def CAND():
+    return list(LAYERS)
+
+
+def LI_ALL():
+    return [l - 1 for l in LAYERS]

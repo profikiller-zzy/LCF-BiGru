@@ -14,7 +14,8 @@ from pathlib import Path
 
 import numpy as np
 
-from common import LAYERS, MIN_CELL_GROUPS, Panel, auroc, bootstrap_ci, sha256_file
+import common as _common
+from common import MIN_CELL_GROUPS, Panel, auroc, bootstrap_ci, sha256_file
 from dual_concept.concepts import concept_scores, fit_concepts
 from dual_concept.evaluation import calibrate_threshold
 from dual_concept.selection import SelectionConfig, select_layers
@@ -39,7 +40,7 @@ def build_bank(panel: Panel, fit_groups: set[str], layer_idx: list[int], data_sp
                 if r["group_id"] == g and r["kind"] == "jailbreak":
                     manip.append([local[h], local[r["id"]]]); harm.add(local[h])
     states = panel.states[np.ix_(rows, layer_idx)]
-    bank = fit_concepts(states, risk, manip, sorted(set(safe)), sorted(harm), [LAYERS[i] for i in layer_idx])
+    bank = fit_concepts(states, risk, manip, sorted(set(safe)), sorted(harm), [_common.LAYERS[i] for i in layer_idx])
     return bank, len(risk), len(manip)
 
 

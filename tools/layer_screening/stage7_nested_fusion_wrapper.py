@@ -33,7 +33,8 @@ import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 
-from common import LAYERS, Panel, auroc
+import common as _common
+from common import Panel, auroc
 from dual_concept.backbone import StateCache
 from dual_concept.concepts import concept_scores
 from dual_concept.evaluation import calibrate_threshold
@@ -45,26 +46,25 @@ from stage6_manipulation_concept import fit_directions, unit_cos
 from strategy_labels import semantic_strategy
 
 FPR = 0.05
-ALL_L = list(LAYERS)
 PROBE_C = 0.01
 
 
 def choose_wrap_layers(P, S_wb, cstate, cid, wb_match, wb_group, wb_sem, sem, fit_groups, tj):
     """Inner leave-one-strategy-out choice of two non-adjacent layers for the wrapB concept."""
     inner = sorted({s for s in wb_sem[[g in fit_groups for g in wb_group]]})
-    M1, M2 = {s: np.zeros(len(ALL_L)) for s in inner}, {s: np.zeros(len(ALL_L)) for s in inner}
+    M1, M2 = {s: np.zeros(len(_common.CAND())) for s in inner}, {s: np.zeros(len(_common.CAND())) for s in inner}
     wbk = {m: k for k, m in enumerate(wb_match)}
     for s in inner:
         hg = {P.group[i] for i in np.flatnonzero(tj & (sem == s))}
         fg = fit_groups - hg
-        dirs = fit_directions(P, S_wb, cstate, cid, wb_match, wb_group, fg, [l - 1 for l in ALL_L])
+        dirs = fit_directions(P, S_wb, cstate, cid, wb_match, wb_group, fg, [l - 1 for l in _common.CAND()])
         J = np.array([i for i in np.flatnonzero(tj & (sem == s) & np.isin(P.group, list(fit_groups)))
                       if f"{P.rows[i]['id']}__pad_b" in cid and i in wbk])
         if len(J) == 0:
             continue
         wb = np.array([wbk[i] for i in J]); pb = np.array([cid[f"{P.rows[i]['id']}__pad_b"] for i in J])
         one, zero = np.ones(len(J)), np.zeros(len(J))
-        for k, l in enumerate(ALL_L):
+        for k, l in enumerate(_common.CAND()):
             v, anc = dirs[l - 1]["wrapB"]
             s_J = unit_cos(P.states[J][:, l - 1], anc, v); s_W = unit_cos(S_wb[wb][:, l - 1], anc, v)
             s_P = unit_cos(cstate[pb][:, l - 1], anc, v)
@@ -74,7 +74,7 @@ def choose_wrap_layers(P, S_wb, cstate, cid, wb_match, wb_group, wb_sem, sem, fi
     order = list(np.argsort(-score))
     first = order[0]
     second = next(k for k in order[1:] if abs(k - first) > 1)
-    return [ALL_L[first], ALL_L[second]], {"score": score.tolist(), "inner_strategies": inner}
+    return [_common.CAND()[first], _common.CAND()[second]], {"score": score.tolist(), "inner_strategies": inner}
 
 
 def main() -> None:
